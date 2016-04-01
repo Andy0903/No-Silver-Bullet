@@ -49,8 +49,23 @@ public class GameBoardManager : MonoBehaviour
 				{						
 					int index = myTileGidToIndex [tile.Gid];
 					GameObject toInstanceiate = myTiles [index];
-
+				
 					GameObject instance = Instantiate (toInstanceiate, new Vector3 (tile.X, -tile.Y, 0), Quaternion.identity) as GameObject;
+
+					if (tile.HorizontalFlip == true && tile.DiagonalFlip == true)
+					{
+						instance.transform.localRotation = Quaternion.Euler (0, 0, 270);
+					}
+					else if (tile.HorizontalFlip == true && tile.VerticalFlip == true)
+						{
+							instance.transform.localRotation = Quaternion.Euler (0, 0, 180);
+						}
+						else if (tile.VerticalFlip == true && tile.DiagonalFlip == true)
+							{
+								instance.transform.localRotation = Quaternion.Euler (0, 0, 90);
+							}
+
+
 					instance.transform.SetParent (myBoardHolder);
 				}
 			}
