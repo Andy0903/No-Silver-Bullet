@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 521b50008877b5d4b8dfe48b559f71a5
+timeCreated: 1459677950
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IdleForward
+    21300002: Forward01
+    21300004: Forward02
+    21300006: Forward03
+    21300008: Forward04
+    21300010: Forward05
+    21300012: Forward06
+    21300014: Forward07
+    21300016: Forward08
+    21300018: IdleLeft
+    21300020: Left01
+    21300022: Left02
+    21300024: Left03
+    21300026: Left04
+    21300028: Left05
+    21300030: Left06
+    21300032: Left07
+    21300034: Left08
+    21300036: IdleDown
+    21300038: Down01
+    21300040: Down02
+    21300042: Down03
+    21300044: Down04
+    21300046: Down05
+    21300048: Down06
+    21300050: Down07
+    21300052: Down08
+    21300054: IdleRight
+    21300056: Right01
+    21300058: Right02
+    21300060: Right03
+    21300062: Right04
+    21300064: Right05
+    21300066: Right06
+    21300068: Right07
+    21300070: Right08
+    21300072: Death00
+    21300074: Death01
+    21300076: Death02
+    21300078: Death03
+    21300080: Death04
+    21300082: Death05
+    21300084: AttackUp
+    21300086: AttackDown
+    21300088: AttackLeft
+    21300090: AttackRight
+    21300092: RangedHero_46
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: IdleForward
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -5}
+        - {x: -11, y: -14}
+        - {x: -9, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 9}
+        - {x: 5, y: 13}
+        - {x: -1, y: 13}
+        - {x: -9, y: 8}
+    - name: Forward01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 13}
+        - {x: -2, y: 13}
+        - {x: -9, y: 8}
+        - {x: -11, y: -5}
+        - {x: -11, y: -13}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: -1}
+        - {x: 9, y: 9}
+    - name: Forward02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 9}
+        - {x: 2, y: 13}
+        - {x: -1, y: 13}
+        - {x: -8, y: 8}
+        - {x: -11, y: -9}
+        - {x: -11, y: -13}
+        - {x: -7, y: -16}
+        - {x: 8, y: -16}
+        - {x: 10, y: -10}
+        - {x: 10, y: -2}
+    - name: Forward03
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -11, y: 3}
+        - {x: -11, y: -15}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -14}
+        - {x: 10, y: 6}
+        - {x: 4, y: 13}
+    - name: Forward04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 13}
+        - {x: -11, y: 3}
+        - {x: -11, y: -12}
+        - {x: -6, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 8}
+        - {x: 8, y: 13}
+    - name: Forward05
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 13}
+        - {x: -2, y: 13}
+        - {x: -9, y: 8}
+        - {x: -11, y: -5}
+        - {x: -11, y: -13}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: -1}
+        - {x: 9, y: 9}
+    - name: Forward06
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 13}
+        - {x: -6, y: 13}
+        - {x: -11, y: 6}
+        - {x: -11, y: -12}
+        - {x: -9, y: -16}
+        - {x: 6, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: 0}
+        - {x: 9, y: 9}
+    - name: Forward07
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -11, y: 3}
+        - {x: -11, y: -15}
+        - {x: -10, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 6}
+        - {x: 5, y: 13}
+    - name: Forward08
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 13}
+        - {x: -5, y: 13}
+        - {x: -11, y: 3}
+        - {x: -11, y: -12}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -12}
+        - {x: 10, y: 9}
+    - name: IdleLeft
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -9}
+        - {x: -7, y: -16}
+        - {x: 7, y: -16}
+        - {x: 14, y: 4}
+        - {x: 14, y: 13}
+    - name: Left01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -14}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -15}
+        - {x: 14, y: 4}
+        - {x: 14, y: 13}
+    - name: Left02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -15}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 14, y: -2}
+        - {x: 14, y: 12}
+        - {x: 13, y: 13}
+    - name: Left03
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -8}
+        - {x: -6, y: -14}
+        - {x: -4, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -5}
+        - {x: 14, y: 13}
+    - name: Left04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -12}
+        - {x: -9, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: 13}
+    - name: Left05
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 12}
+        - {x: 7, y: 13}
+        - {x: -7, y: 13}
+        - {x: -11, y: 12}
+        - {x: -11, y: -13}
+        - {x: -8, y: -16}
+        - {x: 6, y: -16}
+        - {x: 11, y: -11}
+        - {x: 14, y: -1}
+        - {x: 14, y: 9}
+    - name: Left06
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 13}
+        - {x: -11, y: 13}
+        - {x: -11, y: -15}
+        - {x: -9, y: -16}
+        - {x: 10, y: -16}
+        - {x: 13, y: -11}
+        - {x: 14, y: -5}
+        - {x: 14, y: 12}
+    - name: Left07
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -9}
+        - {x: -7, y: -16}
+        - {x: 11, y: -16}
+        - {x: 14, y: 0}
+        - {x: 14, y: 13}
+    - name: Left08
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -11, y: -8}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: 3}
+        - {x: 14, y: 13}
+    - name: IdleDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -9, y: 16}
+        - {x: -10, y: 15}
+        - {x: -10, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 11}
+        - {x: 3, y: 14}
+    - name: Down01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -9}
+        - {x: -8, y: -16}
+        - {x: 10, y: -16}
+        - {x: 12, y: -12}
+        - {x: 12, y: 11}
+        - {x: -1, y: 16}
+    - name: Down02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -10}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -11}
+        - {x: 12, y: 11}
+        - {x: -1, y: 16}
+    - name: Down03
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 13}
+        - {x: -5, y: 15}
+        - {x: -9, y: 15}
+        - {x: -10, y: 13}
+        - {x: -10, y: -13}
+        - {x: -6, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -10}
+        - {x: 12, y: -3}
+        - {x: 10, y: 9}
+    - name: Down04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -10, y: 16}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -11}
+        - {x: 12, y: 5}
+        - {x: 11, y: 10}
+    - name: Down05
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -9}
+        - {x: -8, y: -16}
+        - {x: 10, y: -16}
+        - {x: 12, y: -12}
+        - {x: 12, y: 11}
+        - {x: -1, y: 16}
+    - name: Down06
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -10, y: -8}
+        - {x: -8, y: -15}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -11}
+        - {x: 12, y: 11}
+        - {x: -1, y: 16}
+    - name: Down07
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 11}
+        - {x: -5, y: 15}
+        - {x: -9, y: 15}
+        - {x: -10, y: 13}
+        - {x: -10, y: -10}
+        - {x: -8, y: -16}
+        - {x: 6, y: -16}
+        - {x: 12, y: -9}
+        - {x: 12, y: -6}
+    - name: Down08
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 16}
+        - {x: -10, y: 16}
+        - {x: -10, y: -8}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -8}
+        - {x: 12, y: 11}
+    - name: IdleRight
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 13}
+        - {x: -14, y: -1}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 11, y: -14}
+        - {x: 11, y: 13}
+    - name: Right01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 13}
+        - {x: -13, y: 12}
+        - {x: -14, y: 9}
+        - {x: -14, y: 0}
+        - {x: -11, y: -11}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 11, y: -13}
+        - {x: 11, y: 8}
+        - {x: 2, y: 13}
+    - name: Right02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 13}
+        - {x: -14, y: -16}
+        - {x: 9, y: -16}
+        - {x: 11, y: -10}
+        - {x: 11, y: 13}
+    - name: Right03
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 13}
+        - {x: -14, y: 11}
+        - {x: -14, y: 4}
+        - {x: -11, y: -11}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 11, y: -10}
+        - {x: 11, y: 11}
+        - {x: 5, y: 13}
+    - name: Right04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 13}
+        - {x: -8, y: 13}
+        - {x: -14, y: 10}
+        - {x: -14, y: 4}
+        - {x: -9, y: -16}
+        - {x: 7, y: -16}
+        - {x: 11, y: -11}
+        - {x: 11, y: 5}
+        - {x: 9, y: 11}
+    - name: Right05
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 13}
+        - {x: -14, y: -15}
+        - {x: -8, y: -16}
+        - {x: 11, y: -16}
+        - {x: 11, y: 12}
+        - {x: 6, y: 13}
+    - name: Right06
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 13}
+        - {x: -14, y: 13}
+        - {x: -14, y: 0}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 11, y: -10}
+    - name: Right07
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -14, y: 11}
+        - {x: -14, y: 5}
+        - {x: -9, y: -15}
+        - {x: -7, y: -16}
+        - {x: 5, y: -16}
+        - {x: 11, y: -10}
+        - {x: 11, y: 9}
+        - {x: 5, y: 13}
+    - name: Right08
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 13}
+        - {x: -10, y: 13}
+        - {x: -14, y: 10}
+        - {x: -14, y: -13}
+        - {x: -11, y: -16}
+        - {x: 11, y: -16}
+        - {x: 11, y: 9}
+        - {x: 9, y: 11}
+    - name: Death00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 14}
+        - {x: -5, y: 16}
+        - {x: -10, y: 16}
+        - {x: -10, y: -15}
+        - {x: -8, y: -16}
+        - {x: 11, y: -16}
+        - {x: 12, y: -11}
+        - {x: 12, y: 4}
+        - {x: 10, y: 10}
+    - name: Death01
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -10, y: 16}
+        - {x: -10, y: -13}
+        - {x: -4, y: -16}
+        - {x: 11, y: -16}
+        - {x: 13, y: -9}
+        - {x: 13, y: 2}
+        - {x: 8, y: 12}
+    - name: Death02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 11}
+        - {x: -8, y: 11}
+        - {x: -9, y: 10}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 13, y: -9}
+        - {x: 13, y: 3}
+        - {x: 12, y: 6}
+    - name: Death03
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 9}
+        - {x: -9, y: 9}
+        - {x: -9, y: -16}
+        - {x: 10, y: -16}
+        - {x: 13, y: -11}
+        - {x: 13, y: 1}
+        - {x: 12, y: 4}
+    - name: Death04
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 5}
+        - {x: -10, y: 4}
+        - {x: -10, y: -16}
+        - {x: 12, y: -16}
+        - {x: 14, y: -12}
+        - {x: 14, y: 0}
+        - {x: 4, y: 5}
+    - name: Death05
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -14}
+        - {x: -9, y: -16}
+        - {x: 13, y: -16}
+        - {x: 15, y: -15}
+        - {x: 15, y: 1}
+        - {x: 13, y: 3}
+        - {x: 11, y: 6}
+        - {x: -4, y: 6}
+        - {x: -10, y: 4}
+    - name: AttackUp
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 16}
+        - {x: -6, y: 16}
+        - {x: -10, y: -2}
+        - {x: -10, y: -15}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 10, y: -9}
+        - {x: 10, y: 9}
+    - name: AttackDown
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 15}
+        - {x: -8, y: -10}
+        - {x: -4, y: -16}
+        - {x: 12, y: -16}
+        - {x: 12, y: 14}
+        - {x: 7, y: 15}
+    - name: AttackLeft
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -16, y: 10}
+        - {x: -16, y: -7}
+        - {x: -11, y: -16}
+        - {x: 10, y: -16}
+        - {x: 15, y: 4}
+        - {x: 15, y: 10}
+        - {x: 9, y: 16}
+    - name: AttackRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -12, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 9}
+        - {x: 12, y: 16}
+      - - {x: -16, y: 3}
+        - {x: -16, y: -3}
+        - {x: -11, y: -3}
+        - {x: -11, y: 2}
+        - {x: -13, y: 3}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
