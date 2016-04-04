@@ -42,7 +42,10 @@ public class PlayerController : MonoBehaviour
 	private void FixedUpdate ()
 	{
 		Movement ();
+	}
 
+	private void Update()
+	{
 		if (myIsAttacking == true) 
 		{
 			if (myTimeSinceAttacking >= AttackDuration)
