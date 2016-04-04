@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
 	private Vector3 myMovement;
 	private Direction myDirection;
 
+	bool myIsAttacking;
+	float myTimeSinceAttacking;
+	const float AttackDuration = 0.2f;
 
 	int myHorizontal;
 	int myVertical;
@@ -32,11 +35,27 @@ public class PlayerController : MonoBehaviour
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
+		myIsAttacking = false;
+		myTimeSinceAttacking = 0;
 	}
 	
 	private void FixedUpdate ()
 	{
 		Movement ();
+
+		if (myIsAttacking == true) 
+		{
+
+			if (myTimeSinceAttacking >= AttackDuration)
+			{
+				myIsAttacking = false;
+				myTimeSinceAttacking = 0;
+			}
+			else
+			{
+				myTimeSinceAttacking += Time.deltaTime;
+			}
+		}
 	}
 
 	private void Movement ()
@@ -85,21 +104,26 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetButtonDown ("Attack")) {
 				switch (myDirection) {
 				case Direction.Down:
+					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackDown");
 					break;
 				case Direction.Left:
+					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackLeft");
 					break;
 				case Direction.Right:
+					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackRight");
 					break;
 				case Direction.Up:
+					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackUp");
 					break;
 				default:
 					break;
 				}
 			}
+		myAnimator.SetBool ("IsAttacking", myIsAttacking);
 	}
 
 	#endregion
