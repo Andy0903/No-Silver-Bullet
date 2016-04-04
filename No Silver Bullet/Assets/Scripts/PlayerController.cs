@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
 
 		if (myIsAttacking == true) 
 		{
-
 			if (myTimeSinceAttacking >= AttackDuration)
 			{
 				myIsAttacking = false;
@@ -73,9 +72,12 @@ public class PlayerController : MonoBehaviour
 
 	private void Move ()
 	{
-		myMovement.Set (myHorizontal, myVertical, 0);
-		myMovement = myMovement.normalized * mySpeed * Time.deltaTime;
-		myRidigBody.MovePosition (transform.position + myMovement);
+		if (myIsAttacking == false)
+		{
+			myMovement.Set (myHorizontal, myVertical, 0);
+			myMovement = myMovement.normalized * mySpeed * Time.deltaTime;
+			myRidigBody.MovePosition (transform.position + myMovement);
+		}
 	}
 
 	private void UpdateAnimation ()
@@ -103,19 +105,23 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetButtonDown ("Attack")) {
 				switch (myDirection) {
-				case Direction.Down:
+			case Direction.Down:
+				myAnimator.SetBool ("PressedNothing", true);
 					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackDown");
 					break;
-				case Direction.Left:
+			case Direction.Left:
+				myAnimator.SetBool ("PressedNothing", true);
 					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackLeft");
 					break;
-				case Direction.Right:
+			case Direction.Right:
+				myAnimator.SetBool ("PressedNothing", true);
 					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackRight");
 					break;
-				case Direction.Up:
+			case Direction.Up:
+				myAnimator.SetBool ("PressedNothing", true);
 					myIsAttacking = true;
 					myAnimator.SetTrigger ("AttackUp");
 					break;
