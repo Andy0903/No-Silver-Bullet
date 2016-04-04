@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	private Vector3 myMovement;
 	private Direction myDirection;
 
+
 	int myHorizontal;
 	int myVertical;
 
@@ -32,15 +33,7 @@ public class PlayerController : MonoBehaviour
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
 	}
-
-	private void LateUpdate ()
-	{
-		if (myHorizontal == 0 && myVertical == 0 && myAnimator.isActiveAndEnabled == true)
-		{
-			myAnimator.enabled = false;
-		}
-	}
-
+	
 	private void FixedUpdate ()
 	{
 		Movement ();
@@ -68,56 +61,45 @@ public class PlayerController : MonoBehaviour
 
 	private void UpdateAnimation ()
 	{
-		if (myHorizontal > 0)
-		{
-			myAnimator.SetBool ("PressedNothing", false);
-			myAnimator.SetTrigger ("PressedRight");
-			myDirection = Direction.Right;
-		}
-		else if (myHorizontal < 0)
-		{
-			myAnimator.SetBool ("PressedNothing", false);
-			myAnimator.SetTrigger ("PressedLeft");
-			myDirection = Direction.Left;
-		}
-		else if (myVertical > 0)
-		{
-			myAnimator.SetBool ("PressedNothing", false);
-			myAnimator.SetTrigger ("PressedUp");
-			myDirection = Direction.Up;
-		}
-		else if (myVertical < 0)
-		{
-			myAnimator.SetBool ("PressedNothing", false);
-			myAnimator.SetTrigger ("PressedDown");
-			myDirection = Direction.Down;
-		}
-		else
-		{
-			myAnimator.SetBool ("PressedNothing", true);
-		}
-
-
-		if (Input.GetButtonDown ("Attack"))
-		{
-			switch (myDirection)
-			{
-			case Direction.Down:
-				myAnimator.SetTrigger ("AttackDown");
-				break;
-			case Direction.Left:
-				myAnimator.SetTrigger ("AttackLeft");
-				break;
-			case Direction.Right:
-				myAnimator.SetTrigger ("AttackRight");
-				break;
-			case Direction.Up:
-				myAnimator.SetTrigger ("AttackUp");
-				break;
-			default:
-				break;
+		if (myHorizontal > 0) {
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedRight");
+				myDirection = Direction.Right;
+			} else if (myHorizontal < 0) {
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedLeft");
+				myDirection = Direction.Left;
+			} else if (myVertical > 0) {
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedUp");
+				myDirection = Direction.Up;
+			} else if (myVertical < 0) {
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedDown");
+				myDirection = Direction.Down;
+			} else {
+				myAnimator.SetBool ("PressedNothing", true);
 			}
-		}
+
+
+			if (Input.GetButtonDown ("Attack")) {
+				switch (myDirection) {
+				case Direction.Down:
+					myAnimator.SetTrigger ("AttackDown");
+					break;
+				case Direction.Left:
+					myAnimator.SetTrigger ("AttackLeft");
+					break;
+				case Direction.Right:
+					myAnimator.SetTrigger ("AttackRight");
+					break;
+				case Direction.Up:
+					myAnimator.SetTrigger ("AttackUp");
+					break;
+				default:
+					break;
+				}
+			}
 	}
 
 	#endregion
