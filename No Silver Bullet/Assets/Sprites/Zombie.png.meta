@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: d513129a53f4cc5468cbd4d5f1f6dad6
+timeCreated: 1459868997
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ZombieDown01
+    21300002: ZombieDown02
+    21300004: ZombieDown03
+    21300006: ZombieLeft01
+    21300008: ZombieLeft02
+    21300010: ZombieLeft03
+    21300012: ZombieRight01
+    21300014: ZombieRight02
+    21300016: ZombieRight03
+    21300018: ZombieForward01
+    21300020: ZombieForward02
+    21300022: ZombieForward03
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ZombieDown01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.57582235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.999998, y: 13.573685}
+        - {x: 9.999998, y: 11.573685}
+        - {x: 10.999998, y: 8.573685}
+        - {x: 7.999998, y: 13.573685}
+        - {x: -8.000002, y: 13.573685}
+        - {x: -13.000002, y: 8.573685}
+        - {x: -14.000002, y: 4.5736847}
+        - {x: -14.000002, y: -13.426315}
+        - {x: -9.000002, y: -18.426315}
+        - {x: 8.999998, y: -18.426315}
+        - {x: 15.999998, y: -10.426315}
+        - {x: 15.999998, y: 12.573685}
+        - {x: 12.999998, y: 13.573685}
+    - name: ZombieDown02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -13, y: 12}
+        - {x: -16, y: -3}
+        - {x: -16, y: -7}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 13, y: -7}
+        - {x: 13, y: 15}
+        - {x: 11, y: 16}
+    - name: ZombieDown03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -13}
+        - {x: -9, y: -16}
+        - {x: 12, y: -16}
+        - {x: 14, y: -14}
+        - {x: 14, y: 13}
+        - {x: 8, y: 16}
+    - name: ZombieLeft01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 16}
+        - {x: -12, y: 16}
+        - {x: -13, y: 15}
+        - {x: -13, y: -9}
+        - {x: -11, y: -16}
+        - {x: 7, y: -16}
+        - {x: 9, y: -14}
+        - {x: 10, y: -11}
+        - {x: 10, y: 13}
+    - name: ZombieLeft02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -14, y: 15}
+        - {x: -14, y: -8}
+        - {x: -10, y: -16}
+        - {x: 5, y: -16}
+        - {x: 10, y: -8}
+        - {x: 10, y: 16}
+    - name: ZombieLeft03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -15}
+        - {x: -12, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: 13}
+        - {x: 8, y: 16}
+    - name: ZombieRight01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: -3}
+        - {x: -10, y: -16}
+        - {x: 10, y: -16}
+        - {x: 11, y: -12}
+        - {x: 11, y: 16}
+    - name: ZombieRight02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -12, y: 14}
+        - {x: -12, y: -14}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -9}
+        - {x: 12, y: 12}
+        - {x: 10, y: 16}
+    - name: ZombieRight03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: -7}
+        - {x: -11, y: -16}
+        - {x: 11, y: -16}
+        - {x: 12, y: -15}
+        - {x: 12, y: 12}
+        - {x: 10, y: 16}
+    - name: ZombieForward01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -12, y: 10}
+        - {x: -14, y: -1}
+        - {x: -14, y: -9}
+        - {x: -8, y: -16}
+        - {x: 13, y: -16}
+        - {x: 13, y: 13}
+        - {x: 9, y: 16}
+    - name: ZombieForward02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -13, y: 12}
+        - {x: -14, y: 7}
+        - {x: -14, y: -10}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 13, y: -9}
+        - {x: 13, y: -1}
+        - {x: 11, y: 11}
+    - name: ZombieForward03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -13, y: 10}
+        - {x: -14, y: -2}
+        - {x: -14, y: -10}
+        - {x: -6, y: -16}
+        - {x: 8, y: -16}
+        - {x: 13, y: -13}
+        - {x: 13, y: 7}
+        - {x: 9, y: 16}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
