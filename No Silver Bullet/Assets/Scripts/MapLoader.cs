@@ -59,13 +59,13 @@ public class MapLoader : MonoBehaviour
 						instance.transform.localRotation = Quaternion.Euler (0, 0, 270);
 					}
 					else if (tile.HorizontalFlip == true && tile.VerticalFlip == true)
-						{
-							instance.transform.localRotation = Quaternion.Euler (0, 0, 180);
-						}
-						else if (tile.VerticalFlip == true && tile.DiagonalFlip == true)
-							{
-								instance.transform.localRotation = Quaternion.Euler (0, 0, 90);
-							}
+					{
+						instance.transform.localRotation = Quaternion.Euler (0, 0, 180);
+					}
+					else if (tile.VerticalFlip == true && tile.DiagonalFlip == true)
+					{
+						instance.transform.localRotation = Quaternion.Euler (0, 0, 90);
+					}
 
 					instance.transform.SetParent (myBoardHolder);
 				}
