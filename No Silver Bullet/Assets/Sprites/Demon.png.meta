@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 418db9388470b014abb0647123fb03d5
+timeCreated: 1459872375
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DemonDown01
+    21300002: DemonDown02
+    21300004: DemonDown03
+    21300006: DemonDown04
+    21300008: DemonForward01
+    21300010: DemonForward02
+    21300012: DemonForward03
+    21300014: DemonForward04
+    21300016: DemonRight01
+    21300018: DemonRight02
+    21300020: DemonRight03
+    21300022: DemonRight04
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DemonDown01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -7}
+        - {x: -12, y: -15}
+        - {x: -9, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 16}
+    - name: DemonDown02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -10}
+        - {x: -10, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -5}
+        - {x: 16, y: 16}
+    - name: DemonDown03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -7}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 16}
+    - name: DemonDown04
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -3}
+        - {x: -14, y: -15}
+        - {x: -13, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: DemonForward01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -13}
+        - {x: -11, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 16}
+    - name: DemonForward02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -9}
+        - {x: -12, y: -12}
+        - {x: -11, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -4}
+        - {x: 16, y: 16}
+    - name: DemonForward03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -11}
+        - {x: -11, y: -16}
+        - {x: 9, y: -16}
+        - {x: 15, y: -8}
+        - {x: 16, y: 9}
+        - {x: 16, y: 16}
+    - name: DemonForward04
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -16, y: 16}
+        - {x: -16, y: 1}
+        - {x: -14, y: -8}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 15, y: -10}
+        - {x: 14, y: -4}
+        - {x: 16, y: 6}
+    - name: DemonRight01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -12, y: -16}
+        - {x: 11, y: -16}
+        - {x: 11, y: 11}
+        - {x: 4, y: 16}
+    - name: DemonRight02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -12, y: 14}
+        - {x: -12, y: -6}
+        - {x: -9, y: -16}
+        - {x: 7, y: -16}
+        - {x: 9, y: -15}
+        - {x: 9, y: 12}
+        - {x: 7, y: 16}
+    - name: DemonRight03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -14}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 11, y: -15}
+        - {x: 11, y: 0}
+        - {x: 10, y: 10}
+    - name: DemonRight04
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -12, y: -7}
+        - {x: -10, y: -16}
+        - {x: 6, y: -16}
+        - {x: 8, y: -15}
+        - {x: 9, y: 2}
+        - {x: 9, y: 11}
+        - {x: 3, y: 16}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
