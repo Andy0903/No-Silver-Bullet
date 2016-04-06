@@ -39,13 +39,9 @@ public class PlayerController : MonoBehaviour
 		myTimeSinceAttacking = 0;
 	}
 
-	private void FixedUpdate ()
-	{
-		Movement ();
-	}
-
 	private void Update ()
 	{
+		Movement ();
 		if (myIsAttacking == true)
 		{
 			if (myTimeSinceAttacking >= AttackDuration)
@@ -130,6 +126,7 @@ public class PlayerController : MonoBehaviour
 		{
 			myAnimator.SetBool ("PressedNothing", true);
 			myIsAttacking = true;
+			
 			switch (myDirection)
 			{
 			case Direction.Down:
