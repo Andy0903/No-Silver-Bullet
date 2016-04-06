@@ -63,25 +63,25 @@
   <image source="../../../../../../Desktop/No-Silver-Bullet-master/Content/Sprite Sheet - No silver Bullet/alla tiles/bergHöjning.png" width="68" height="34"/>
  </tileset>
  <tileset firstgid="17" name="hela sprotes" tilewidth="34" tileheight="34" tilecount="100" columns="10">
-  <image source="../../../../../../Desktop/Hela sprites/hela sprotes.png" width="340" height="340"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/hela sprotes.png" width="340" height="340"/>
  </tileset>
  <tileset firstgid="117" name="Bergvägg på sidan.Bättre perspektiv" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="../../../../../../Desktop/saknadetiles/Bergvägg på sidan.Bättre perspektiv.png" width="35" height="34"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/Bergvägg på sidan.Bättre perspektiv.png" width="35" height="34"/>
  </tileset>
  <tileset firstgid="118" name="berhörna.mednytt sidoberg" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="../../../../../../Desktop/saknadetiles/berhörna.mednytt sidoberg.png" width="34" height="34"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/berhörna.mednytt sidoberg.png" width="34" height="34"/>
  </tileset>
  <tileset firstgid="119" name="bild på omgivning" tilewidth="32" tileheight="32" tilecount="96" columns="8">
-  <image source="../../../../../../Desktop/Hela sprites/bild på omgivning.png" width="272" height="408"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/bild på omgivning.png" width="272" height="408"/>
  </tileset>
  <tileset firstgid="215" name="väg2.0" tilewidth="34" tileheight="34" tilecount="1" columns="1">
-  <image source="../../../../../../Desktop/saknadetiles/väg2.0.png" width="34" height="34"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/väg2.0.png" width="34" height="34"/>
  </tileset>
  <tileset firstgid="216" name="wip" tilewidth="32" tileheight="32" tilecount="1" columns="1">
-  <image source="../../../../../../Desktop/wip.png" width="32" height="32"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/wip.png" width="32" height="32"/>
  </tileset>
  <tileset firstgid="217" name="Bro vöer vatten, lägg på nytt layer" tilewidth="32" tileheight="32" tilecount="2" columns="1">
-  <image source="../../../../../../Desktop/saknadetiles/Bro vöer vatten, lägg på nytt layer.png" width="34" height="68"/>
+  <image source="../../../Content/Sprite Sheet - No silver Bullet/alla tiles/Bro vöer vatten, lägg på nytt layer.png" width="34" height="68"/>
  </tileset>
  <layer name="Tile Layer 1" width="100" height="80" opacity="0.9">
   <data encoding="csv">
