@@ -13,6 +13,17 @@ public class EnemyController : MonoBehaviour
 		Down
 	}
 
+	private enum State
+	{
+		Attacking,
+		Idle,
+		Running,
+		Walking
+	}
+
+	private Direction myDirection;
+	private State myCurrentState;
+
 	public float mySpeed;
 	public float myRange;
 	private float myHorizontal;
@@ -20,12 +31,9 @@ public class EnemyController : MonoBehaviour
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
 	private Vector3 myMovement;
-	private Direction myDirection;
 	private GameObject myTarget;
 	private bool myIsMoving = true;
-
-
-
+	private float myTimeSinceIdle;
 
 	#endregion
 
@@ -36,6 +44,7 @@ public class EnemyController : MonoBehaviour
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
+		myCurrentState = State.Idle;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
 	}
 
@@ -45,6 +54,7 @@ public class EnemyController : MonoBehaviour
 		myMovement.Normalize ();
 		myHorizontal = myMovement.x;
 		myVertical = myMovement.y;
+		myTimeSinceIdle += Time.deltaTime;
 		UpdateWalkAnimation ();
 		Movement ();
 	}
@@ -56,47 +66,84 @@ public class EnemyController : MonoBehaviour
 			float distance = Vector3.Distance (transform.position, myTarget.transform.position);
 			if (distance < myRange)
 			{
-
+				myCurrentState = State.Attacking;
 				myMovement = myMovement * mySpeed * Time.deltaTime;
 				myRidigBody.MovePosition (transform.position + myMovement);
 			}
+			else
+			{
+				myCurrentState = State.Idle;
+			}	
 		}
-
 	}
 
 	private void UpdateWalkAnimation ()
 	{
-		//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
-		if (myHorizontal * myHorizontal > myVertical * myVertical) 
+		if (myCurrentState == State.Attacking)
 		{
-			if (myHorizontal > 0)
+			//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
+			if (myHorizontal * myHorizontal > myVertical * myVertical)
 			{
-				myAnimator.SetTrigger ("PressedRight");
-				myDirection = Direction.Right;
-
-			}
-			else if (myHorizontal < 0)
+				if (myHorizontal > 0)
 				{
-					myAnimator.SetTrigger ("PressedLeft");
-					myDirection = Direction.Left;
+					myAnimator.SetTrigger ("PressedRight");
+					myDirection = Direction.Right;
+					myAnimator.SetBool ("PressedNothing", false);
 				}
-		}
-		else
-		{
-			if (myVertical > 0)
+				else if (myHorizontal < 0)
+					{
+						myAnimator.SetTrigger ("PressedLeft");
+						myDirection = Direction.Left;
+						myAnimator.SetBool ("PressedNothing", false);
+					}
+					else
+					{
+						myAnimator.SetBool ("PressedNothing", true);
+					}
+			}
+			else
 			{
-				myAnimator.SetTrigger ("PressedUp");
+				if (myVertical > 0)
+				{
+					myAnimator.SetTrigger ("PressedUp");
+					myDirection = Direction.Up;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else if (myVertical < 0)
+					{
+						myAnimator.SetTrigger ("PressedDown");
+						myDirection = Direction.Down;
+						myAnimator.SetBool ("PressedNothing", false);
+					}
+					else
+					{
+						myAnimator.SetBool ("PressedNothing", true);
+					}
+			}
+		}
+		if (myCurrentState == State.Idle && myTimeSinceIdle > 0.4f) //While the GO is idle it looks around
+		{
+			if (myDirection == Direction.Down)
+			{
+				myDirection = Direction.Left;
+				myAnimator.SetBool ("PressedNothing", true);
+			}
+			if (myDirection == Direction.Left)
+			{
 				myDirection = Direction.Up;
+				myAnimator.SetBool ("PressedNothing", true);
 			}
-			else if (myVertical < 0)
-				{
-					myAnimator.SetTrigger ("PressedDown");
-					myDirection = Direction.Down;
-				}
+			if (myDirection == Direction.Up)
+			{
+				myDirection = Direction.Right;
+				myAnimator.SetBool ("PressedNothing", true);
+			}
+			if (myDirection == Direction.Right)
+			{
+				myDirection = Direction.Down;
+				myAnimator.SetBool ("PressedNothing", true);
+			}
 		}
-
-
-
 	}
 
 
