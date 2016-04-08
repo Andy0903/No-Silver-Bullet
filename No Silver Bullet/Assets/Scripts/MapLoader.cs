@@ -85,11 +85,11 @@ public class MapLoader : MonoBehaviour
 				GameObject instance = Instantiate (toInstantiate, new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight), Quaternion.identity) as GameObject;
 				instance.transform.SetParent (myBoardHolder);
 
-				switch (index)
+				/*switch (index)
 				{
 				default:
-					throw new System.Exception ("Missing case for objectIndex");
-				}
+				/	throw new System.Exception ("Missing case for objectIndex");
+				}*/
 			}
 		}
 	}
