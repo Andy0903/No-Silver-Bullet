@@ -479,7 +479,7 @@
   </tile>
   <tile id="27">
    <properties>
-    <property name="98" value=""/>
+    <property name="UnityTileIndex" value="98"/>
    </properties>
   </tile>
   <tile id="28">
