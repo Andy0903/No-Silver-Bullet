@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
 		myDirection = Direction.Down;
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
+
+
+		transform.position = new Vector3 (15, -57, 0);
 	}
 
 	private void Update ()
