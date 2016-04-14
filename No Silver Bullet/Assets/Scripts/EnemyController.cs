@@ -18,12 +18,14 @@ public class EnemyController : MonoBehaviour
 		Attacking,
 		Idle,
 		Running,
-		Walking
+		Walking,
+		Dead
 	}
 
 	private Direction myDirection;
 	private State myCurrentState;
 
+	public int myHealth;
 	public float mySpeed;
 	public float myRange;
 	private float myHorizontal;
@@ -36,6 +38,14 @@ public class EnemyController : MonoBehaviour
 	private GameObject myTarget;
 	private bool myIsMoving = true;
 	private float myTimeSinceIdle;
+
+	#endregion
+
+	#region Public methods
+	public void TakeDamage(int aDamage)
+	{
+		myHealth -= aDamage;
+	}
 
 	#endregion
 
@@ -60,6 +70,15 @@ public class EnemyController : MonoBehaviour
 		myTimeSinceIdle += Time.deltaTime;
 		UpdateWalkAnimation ();
 		Movement ();
+	}
+
+	private void LateUpdate()
+	{
+		if (myHealth <= 0)
+		{
+			myCurrentState = State.Dead;
+			Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
+		}
 	}
 
 	private void Movement()
@@ -194,7 +213,9 @@ public class EnemyController : MonoBehaviour
 				myAnimator.SetBool ("PressedNothing", false);
 				myAnimator.SetTrigger ("PressedRight");
 			}
-		} 
+		}
+
+
 	}
 
 
@@ -208,6 +229,7 @@ public class EnemyController : MonoBehaviour
 
 		if (other.CompareTag("Untagged"))
 		{
+			//myHealth = 0; //Used for testing health system
 			if (myCurrentState == State.Idle)
 			{
 				if (myDirection == Direction.Down)
