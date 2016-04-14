@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyController : MonoBehaviour 
+public class EnemyController : MonoBehaviour
 {
 	#region Member variables
 
@@ -36,13 +36,14 @@ public class EnemyController : MonoBehaviour
 	private Vector3 myMovement;
 	private Vector3 myIdleStartPosition;
 	private GameObject myTarget;
-	private bool myIsMoving = true;
+	private bool myIsMoving;
 	private float myTimeSinceIdle;
 
 	#endregion
 
 	#region Public methods
-	public void TakeDamage(int aDamage)
+
+	public void TakeDamage (int aDamage)
 	{
 		myHealth -= aDamage;
 	}
@@ -59,9 +60,10 @@ public class EnemyController : MonoBehaviour
 		myDirection = Direction.Down;
 		myCurrentState = State.Idle;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
+		myIsMoving = true;
 	}
 
-	private void Update()
+	private void Update ()
 	{
 		myMovement = myTarget.transform.position - transform.position;
 		myMovement.Normalize ();
@@ -72,7 +74,7 @@ public class EnemyController : MonoBehaviour
 		Movement ();
 	}
 
-	private void LateUpdate()
+	private void LateUpdate ()
 	{
 		if (myHealth <= 0)
 		{
@@ -81,7 +83,7 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-	private void Movement()
+	private void Movement ()
 	{
 		if (myIsMoving == true)
 		{
@@ -103,24 +105,24 @@ public class EnemyController : MonoBehaviour
 				if (myDirection == Direction.Down)
 				{
 					myMovement = Vector3.down * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition(transform.position + myMovement);
+					myRidigBody.MovePosition (transform.position + myMovement);
 				}
 				else if (myDirection == Direction.Up)
 				{
 					myMovement = Vector3.up * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition(transform.position + myMovement);
+					myRidigBody.MovePosition (transform.position + myMovement);
 
 				}
 				else if (myDirection == Direction.Left)
 				{
 					myMovement = Vector3.left * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition(transform.position + myMovement);
+					myRidigBody.MovePosition (transform.position + myMovement);
 
 				}
 				else if (myDirection == Direction.Right)
 				{
 					myMovement = Vector3.right * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition(transform.position + myMovement);
+					myRidigBody.MovePosition (transform.position + myMovement);
 
 				}
 
@@ -160,15 +162,15 @@ public class EnemyController : MonoBehaviour
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myHorizontal < 0)
-					{
-						myAnimator.SetTrigger ("PressedLeft");
-						myDirection = Direction.Left;
-						myAnimator.SetBool ("PressedNothing", false);
-					}
-					else
-					{
-						myAnimator.SetBool ("PressedNothing", true);
-					}
+				{
+					myAnimator.SetTrigger ("PressedLeft");
+					myDirection = Direction.Left;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else
+				{
+					myAnimator.SetBool ("PressedNothing", true);
+				}
 			}
 			else
 			{
@@ -179,15 +181,15 @@ public class EnemyController : MonoBehaviour
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myVertical < 0)
-					{
-						myAnimator.SetTrigger ("PressedDown");
-						myDirection = Direction.Down;
-						myAnimator.SetBool ("PressedNothing", false);
-					}
-					else
-					{
-						myAnimator.SetBool ("PressedNothing", true);
-					}
+				{
+					myAnimator.SetTrigger ("PressedDown");
+					myDirection = Direction.Down;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else
+				{
+					myAnimator.SetBool ("PressedNothing", true);
+				}
 			}
 		}
 
@@ -219,15 +221,15 @@ public class EnemyController : MonoBehaviour
 	}
 
 
-	private void OnTriggerEnter2D(Collider2D other)
+	private void OnTriggerEnter2D (Collider2D other)
 	{
 		
-		if(other.gameObject.CompareTag("Player")) //The GO stops moving when it enters a collision with a player
+		if (other.gameObject.CompareTag ("Player")) //The GO stops moving when it enters a collision with a player
 		{
 			myIsMoving = false; 	
 		}
 
-		if (other.CompareTag("Untagged"))
+		if (other.CompareTag ("Untagged"))
 		{
 			//myHealth = 0; //Used for testing health system
 			if (myCurrentState == State.Idle)
@@ -252,9 +254,9 @@ public class EnemyController : MonoBehaviour
 		} 
 	}
 
-	private void OnTriggerExit2D(Collider2D other)
+	private void OnTriggerExit2D (Collider2D other)
 	{
-		if(other.gameObject.CompareTag("Player")) //When the GO and Player no longer collides the GO starts moving again
+		if (other.gameObject.CompareTag ("Player")) //When the GO and Player no longer collides the GO starts moving again
 		{
 			myIsMoving = true;	
 		}
@@ -282,6 +284,7 @@ public class EnemyController : MonoBehaviour
 			}	
 		}	
 	}*/
+
 	#endregion
 
 

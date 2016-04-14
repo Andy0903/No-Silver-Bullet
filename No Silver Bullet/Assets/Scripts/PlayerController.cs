@@ -45,17 +45,53 @@ public class PlayerController : MonoBehaviour
 	private void Update ()
 	{
 		Movement ();
+
 		if (myIsAttacking == true)
 		{
-			if (myTimeSinceAttacking >= AttackDuration)
+			Attack ();
+
+			Vector3 direction = Vector3.zero;
+			switch (myDirection)
 			{
-				myIsAttacking = false;
-				myTimeSinceAttacking = 0;
+			case Direction.Down:
+				direction = Vector3.down;
+				break;
+			case Direction.Left:
+				direction = Vector3.left;
+				break;
+			case Direction.Right:
+				direction = Vector3.right;
+				break;
+			case Direction.Up:
+				direction = Vector3.forward;
+				break;
 			}
-			else
+
+			RaycastHit target;
+			if (Physics.Raycast (transform.position, direction, out target, 200f))
 			{
-				myTimeSinceAttacking += Time.deltaTime;
+				if (target.collider.tag == "Enemy")
+				{
+					GameObject enemy = target.collider.gameObject;
+					EnemyController enemyController = enemy.GetComponent<EnemyController> ();
+
+					enemyController.TakeDamage (50);
+				}
 			}
+		}
+
+	}
+
+	private void Attack ()
+	{
+		if (myTimeSinceAttacking >= AttackDuration)
+		{
+			myIsAttacking = false;
+			myTimeSinceAttacking = 0;
+		}
+		else
+		{
+			myTimeSinceAttacking += Time.deltaTime;
 		}
 	}
 
