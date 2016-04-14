@@ -30,7 +30,9 @@ public class EnemyController : MonoBehaviour
 	private float myVertical;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
+	private CircleCollider2D myCircleCollider;
 	private Vector3 myMovement;
+	private Vector3 myIdleStartPosition;
 	private GameObject myTarget;
 	private bool myIsMoving = true;
 	private float myTimeSinceIdle;
@@ -43,6 +45,7 @@ public class EnemyController : MonoBehaviour
 	{
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
+		myCircleCollider = GetComponent<CircleCollider2D> ();
 		myDirection = Direction.Down;
 		myCurrentState = State.Idle;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
@@ -73,7 +76,54 @@ public class EnemyController : MonoBehaviour
 			else
 			{
 				myCurrentState = State.Idle;
-			}	
+				myIdleStartPosition = transform.position;
+			}
+
+			if (myCurrentState == State.Idle)
+			{
+				if (myDirection == Direction.Down)
+				{
+					myMovement = Vector3.down * mySpeed * Time.deltaTime;
+					myRidigBody.MovePosition(transform.position + myMovement);
+				}
+				else if (myDirection == Direction.Up)
+				{
+					myMovement = Vector3.up * mySpeed * Time.deltaTime;
+					myRidigBody.MovePosition(transform.position + myMovement);
+
+				}
+				else if (myDirection == Direction.Left)
+				{
+					myMovement = Vector3.left * mySpeed * Time.deltaTime;
+					myRidigBody.MovePosition(transform.position + myMovement);
+
+				}
+				else if (myDirection == Direction.Right)
+				{
+					myMovement = Vector3.right * mySpeed * Time.deltaTime;
+					myRidigBody.MovePosition(transform.position + myMovement);
+
+				}
+
+				//Whenever the enemy has walked far away from it's starting idle position
+				/*if (transform.position.y - myIdleStartPosition.y > 1)
+				{
+					myDirection = Direction.Left;
+				}
+				else if (transform.position.x - myIdleStartPosition.x < 1)
+				{
+					myDirection = Direction.Up;
+				}
+				else if (transform.position.y - myIdleStartPosition.y < 1)
+				{
+					myDirection = Direction.Right;
+				}
+				else if (transform.position.x - myIdleStartPosition.x > 1)
+				{
+					myDirection = Direction.Down;
+				} */
+
+			}
 		}
 	}
 
@@ -121,29 +171,30 @@ public class EnemyController : MonoBehaviour
 					}
 			}
 		}
-		if (myCurrentState == State.Idle && myTimeSinceIdle > 0.4f) //While the GO is idle it looks around
+
+		if (myCurrentState == State.Idle) //Changes the animation based on direction
 		{
 			if (myDirection == Direction.Down)
 			{
-				myDirection = Direction.Left;
-				myAnimator.SetBool ("PressedNothing", true);
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedDown");
 			}
 			if (myDirection == Direction.Left)
 			{
-				myDirection = Direction.Up;
-				myAnimator.SetBool ("PressedNothing", true);
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedLeft");
 			}
 			if (myDirection == Direction.Up)
 			{
-				myDirection = Direction.Right;
-				myAnimator.SetBool ("PressedNothing", true);
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedUp");
 			}
 			if (myDirection == Direction.Right)
 			{
-				myDirection = Direction.Down;
-				myAnimator.SetBool ("PressedNothing", true);
+				myAnimator.SetBool ("PressedNothing", false);
+				myAnimator.SetTrigger ("PressedRight");
 			}
-		}
+		} 
 	}
 
 
@@ -154,6 +205,29 @@ public class EnemyController : MonoBehaviour
 		{
 			myIsMoving = false; 	
 		}
+
+		if (other.CompareTag("Untagged"))
+		{
+			if (myCurrentState == State.Idle)
+			{
+				if (myDirection == Direction.Down)
+				{
+					myDirection = Direction.Left;
+				}
+				else if (myDirection == Direction.Left)
+				{
+					myDirection = Direction.Up;
+				}
+				else if (myDirection == Direction.Up)
+				{
+					myDirection = Direction.Right;
+				}
+				else if (myDirection == Direction.Right)
+				{
+					myDirection = Direction.Down;
+				}	
+			}	
+		} 
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
@@ -164,7 +238,28 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-
+	/*private void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.collider.IsTouching(myCircleCollider))
+		{
+			if (myDirection == Direction.Down)
+			{
+				myDirection = Direction.Left;
+			}
+			if (myDirection == Direction.Left)
+			{
+				myDirection = Direction.Up;
+			}
+			if (myDirection == Direction.Up)
+			{
+				myDirection = Direction.Right;
+			}
+			if (myDirection == Direction.Right)
+			{
+				myDirection = Direction.Down;
+			}	
+		}	
+	}*/
 	#endregion
 
 
