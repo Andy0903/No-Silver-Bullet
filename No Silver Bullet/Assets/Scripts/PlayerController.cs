@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody2D myRidigBody;
 	private Vector3 myMovement;
 	private Direction myDirection;
+	private int myDamange;
+	private float myRange;
 
 	private bool myIsAttacking;
 	private float myTimeSinceAttacking;
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
 		myDirection = Direction.Down;
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
+		myDamange = 50;
+		myRange = 5.0f;
 
 
 		transform.position = new Vector3 (15, -57, 0);
@@ -49,41 +53,46 @@ public class PlayerController : MonoBehaviour
 		if (myIsAttacking == true)
 		{
 			Attack ();
-
-			Vector3 direction = Vector3.zero;
-			switch (myDirection)
-			{
-			case Direction.Down:
-				direction = Vector3.down;
-				break;
-			case Direction.Left:
-				direction = Vector3.left;
-				break;
-			case Direction.Right:
-				direction = Vector3.right;
-				break;
-			case Direction.Up:
-				direction = Vector3.forward;
-				break;
-			}
-
-			RaycastHit target;
-			if (Physics.Raycast (transform.position, direction, out target, 200f))
-			{
-				if (target.collider.tag == "Enemy")
-				{
-					GameObject enemy = target.collider.gameObject;
-					EnemyController enemyController = enemy.GetComponent<EnemyController> ();
-
-					enemyController.TakeDamage (50);
-				}
-			}
 		}
 
 	}
 
 	private void Attack ()
 	{
+		if (myIsAttacking == true && myTimeSinceAttacking == 0)
+		{
+			Vector2 direction = Vector2.zero;
+			switch (myDirection)
+			{
+			case Direction.Down:
+				direction = Vector2.down;
+				break;
+			case Direction.Left:
+				direction = Vector2.left;
+				break;
+			case Direction.Right:
+				direction = Vector2.right;
+				break;
+			case Direction.Up:
+				direction = Vector2.up;
+				break;
+			}
+
+			//Debug.DrawRay (transform.position, direction * 200f);
+			RaycastHit2D[] hits = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y), direction, myRange);
+
+			for (int i = 0; i < hits.Length; i++)
+			{
+				if (hits [i].collider.tag == "Enemy")
+				{
+					GameObject enemy = hits [i].collider.gameObject;
+					EnemyController enemyController = enemy.GetComponent<EnemyController> ();
+
+					enemyController.TakeDamage (myDamange);
+				}
+			}
+		}
+
 		if (myTimeSinceAttacking >= AttackDuration)
 		{
 			myIsAttacking = false;
