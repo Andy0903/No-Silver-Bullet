@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
 		Dead
 	}
 
-	private Direction myDirection;
+	private Direction myCurrentDirection;
 	private State myCurrentState;
 
 	public int myHealth;
@@ -32,9 +32,9 @@ public class EnemyController : MonoBehaviour
 	private float myHorizontal;
 	private float myVertical;
 	private Animator myAnimator;
-	private Rigidbody2D myRidigBody;
+	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
-	private Vector3 myIdleStartPosition;
+	private Vector3 myIdleStartPosition; //Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
 	private bool myIsMoving;
 	private float myTimeSinceIdle;
@@ -62,12 +62,12 @@ public class EnemyController : MonoBehaviour
 	private void Awake ()
 	{
 		myAnimator = GetComponent<Animator> ();
-		myRidigBody = GetComponent<Rigidbody2D> ();
-		myDirection = Direction.Down;
+		myRigidBody = GetComponent<Rigidbody2D> ();
+		myCurrentDirection = Direction.Down;
 		myCurrentState = State.Idle;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
 		myIsMoving = true;
-		myIdleStartPosition = myRidigBody.transform.position;
+		myIdleStartPosition = myRigidBody.transform.position;
 	}
 
 	private void Update ()
@@ -99,7 +99,7 @@ public class EnemyController : MonoBehaviour
 			{
 				myCurrentState = State.Attacking;
 				myMovement = myMovement * mySpeed * Time.deltaTime;
-				myRidigBody.MovePosition (transform.position + myMovement);
+				myRigidBody.MovePosition (transform.position + myMovement);
 			}
 			else if (myCurrentState == State.Attacking)
 			{
@@ -109,27 +109,27 @@ public class EnemyController : MonoBehaviour
 
 			if (myCurrentState == State.Idle)
 			{
-				if (myDirection == Direction.Down)
+				if (myCurrentDirection == Direction.Down)
 				{
 					myMovement = Vector3.down * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition (transform.position + myMovement);
+					myRigidBody.MovePosition (transform.position + myMovement);
 				}
-				else if (myDirection == Direction.Up)
+				else if (myCurrentDirection == Direction.Up)
 				{
 					myMovement = Vector3.up * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition (transform.position + myMovement);
+					myRigidBody.MovePosition (transform.position + myMovement);
 
 				}
-				else if (myDirection == Direction.Left)
+				else if (myCurrentDirection == Direction.Left)
 				{
 					myMovement = Vector3.left * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition (transform.position + myMovement);
+					myRigidBody.MovePosition (transform.position + myMovement);
 
 				}
-				else if (myDirection == Direction.Right)
+				else if (myCurrentDirection == Direction.Right)
 				{
 					myMovement = Vector3.right * mySpeed * Time.deltaTime;
-					myRidigBody.MovePosition (transform.position + myMovement);
+					myRigidBody.MovePosition (transform.position + myMovement);
 
 				}
 
@@ -140,7 +140,7 @@ public class EnemyController : MonoBehaviour
 				if (distanceFromIdleStart > myWalkingLength)
 				{
 					ChangeDirection ();
-					myIdleStartPosition = myRidigBody.transform.position;
+					myIdleStartPosition = myRigidBody.transform.position;
 				}
 
 
@@ -158,13 +158,13 @@ public class EnemyController : MonoBehaviour
 				if (myHorizontal > 0)
 				{
 					myAnimator.SetTrigger ("PressedRight");
-					myDirection = Direction.Right;
+					myCurrentDirection = Direction.Right;
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myHorizontal < 0)
 				{
 					myAnimator.SetTrigger ("PressedLeft");
-					myDirection = Direction.Left;
+					myCurrentDirection = Direction.Left;
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else
@@ -177,13 +177,13 @@ public class EnemyController : MonoBehaviour
 				if (myVertical > 0)
 				{
 					myAnimator.SetTrigger ("PressedUp");
-					myDirection = Direction.Up;
+					myCurrentDirection = Direction.Up;
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myVertical < 0)
 				{
 					myAnimator.SetTrigger ("PressedDown");
-					myDirection = Direction.Down;
+					myCurrentDirection = Direction.Down;
 					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else
@@ -195,22 +195,22 @@ public class EnemyController : MonoBehaviour
 
 		if (myCurrentState == State.Idle) //Changes the animation based on direction
 		{
-			if (myDirection == Direction.Down)
+			if (myCurrentDirection == Direction.Down)
 			{
 				myAnimator.SetBool ("PressedNothing", false);
 				myAnimator.SetTrigger ("PressedDown");
 			}
-			if (myDirection == Direction.Left)
+			if (myCurrentDirection == Direction.Left)
 			{
 				myAnimator.SetBool ("PressedNothing", false);
 				myAnimator.SetTrigger ("PressedLeft");
 			}
-			if (myDirection == Direction.Up)
+			if (myCurrentDirection == Direction.Up)
 			{
 				myAnimator.SetBool ("PressedNothing", false);
 				myAnimator.SetTrigger ("PressedUp");
 			}
-			if (myDirection == Direction.Right)
+			if (myCurrentDirection == Direction.Right)
 			{
 				myAnimator.SetBool ("PressedNothing", false);
 				myAnimator.SetTrigger ("PressedRight");
@@ -235,7 +235,7 @@ public class EnemyController : MonoBehaviour
 			if (myCurrentState == State.Idle)
 			{
 				ChangeDirection ();
-				myIdleStartPosition = myRidigBody.transform.position;
+				myIdleStartPosition = myRigidBody.transform.position;
 			}	
 		} 
 	}
@@ -250,21 +250,21 @@ public class EnemyController : MonoBehaviour
 
 	private void ChangeDirection()
 	{
-		if (myDirection == Direction.Down)
+		if (myCurrentDirection == Direction.Down)
 		{
-			myDirection = Direction.Left;
+			myCurrentDirection = Direction.Left;
 		}
-		else if (myDirection == Direction.Left)
+		else if (myCurrentDirection == Direction.Left)
 		{
-			myDirection = Direction.Up;
+			myCurrentDirection = Direction.Up;
 		}
-		else if (myDirection == Direction.Up)
+		else if (myCurrentDirection == Direction.Up)
 		{
-			myDirection = Direction.Right;
+			myCurrentDirection = Direction.Right;
 		}
-		else if (myDirection == Direction.Right)
+		else if (myCurrentDirection == Direction.Right)
 		{
-			myDirection = Direction.Down;
+			myCurrentDirection = Direction.Down;
 		}
 	}
 
