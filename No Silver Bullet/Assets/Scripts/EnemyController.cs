@@ -26,13 +26,13 @@ public class EnemyController : MonoBehaviour
 	private State myCurrentState;
 
 	public int myHealth;
+	public int myWalkingLength;
 	public float mySpeed;
 	public float myRange;
 	private float myHorizontal;
 	private float myVertical;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
-	private CircleCollider2D myCircleCollider;
 	private Vector3 myMovement;
 	private Vector3 myIdleStartPosition;
 	private GameObject myTarget;
@@ -56,11 +56,11 @@ public class EnemyController : MonoBehaviour
 	{
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
-		myCircleCollider = GetComponent<CircleCollider2D> ();
 		myDirection = Direction.Down;
 		myCurrentState = State.Idle;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
 		myIsMoving = true;
+		myIdleStartPosition = myRidigBody.transform.position;
 	}
 
 	private void Update ()
@@ -94,7 +94,7 @@ public class EnemyController : MonoBehaviour
 				myMovement = myMovement * mySpeed * Time.deltaTime;
 				myRidigBody.MovePosition (transform.position + myMovement);
 			}
-			else
+			else if (myCurrentState == State.Attacking)
 			{
 				myCurrentState = State.Idle;
 				myIdleStartPosition = transform.position;
@@ -126,23 +126,16 @@ public class EnemyController : MonoBehaviour
 
 				}
 
-				//Whenever the enemy has walked far away from it's starting idle position
-				/*if (transform.position.y - myIdleStartPosition.y > 1)
+				//When the GO has walked a set amount of units from where it last changed direction it'll change direction again while idle
+
+				float distanceFromIdleStart = Vector3.Distance (transform.position, myIdleStartPosition); 
+
+				if (distanceFromIdleStart > myWalkingLength)
 				{
-					myDirection = Direction.Left;
+					ChangeDirection ();
+					myIdleStartPosition = myRidigBody.transform.position;
 				}
-				else if (transform.position.x - myIdleStartPosition.x < 1)
-				{
-					myDirection = Direction.Up;
-				}
-				else if (transform.position.y - myIdleStartPosition.y < 1)
-				{
-					myDirection = Direction.Right;
-				}
-				else if (transform.position.x - myIdleStartPosition.x > 1)
-				{
-					myDirection = Direction.Down;
-				} */
+
 
 			}
 		}
@@ -234,22 +227,8 @@ public class EnemyController : MonoBehaviour
 			//myHealth = 0; //Used for testing health system
 			if (myCurrentState == State.Idle)
 			{
-				if (myDirection == Direction.Down)
-				{
-					myDirection = Direction.Left;
-				}
-				else if (myDirection == Direction.Left)
-				{
-					myDirection = Direction.Up;
-				}
-				else if (myDirection == Direction.Up)
-				{
-					myDirection = Direction.Right;
-				}
-				else if (myDirection == Direction.Right)
-				{
-					myDirection = Direction.Down;
-				}	
+				ChangeDirection ();
+				myIdleStartPosition = myRidigBody.transform.position;
 			}	
 		} 
 	}
@@ -259,6 +238,26 @@ public class EnemyController : MonoBehaviour
 		if (other.gameObject.CompareTag ("Player")) //When the GO and Player no longer collides the GO starts moving again
 		{
 			myIsMoving = true;	
+		}
+	}
+
+	private void ChangeDirection()
+	{
+		if (myDirection == Direction.Down)
+		{
+			myDirection = Direction.Left;
+		}
+		else if (myDirection == Direction.Left)
+		{
+			myDirection = Direction.Up;
+		}
+		else if (myDirection == Direction.Up)
+		{
+			myDirection = Direction.Right;
+		}
+		else if (myDirection == Direction.Right)
+		{
+			myDirection = Direction.Down;
 		}
 	}
 
