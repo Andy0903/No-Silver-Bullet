@@ -46,6 +46,13 @@ public class EnemyController : MonoBehaviour
 	public void TakeDamage (int aDamage)
 	{
 		myHealth -= aDamage;
+
+		//Test code for knockback, check into this later
+		//myRidigBody.AddForce isn't working
+		/*Vector3 difference = myTarget.transform.position - transform.position;
+		difference.Normalize ();
+		myRidigBody.MovePosition (transform.position + (-difference));*/
+
 	}
 
 	#endregion
@@ -79,7 +86,7 @@ public class EnemyController : MonoBehaviour
 		if (myHealth <= 0)
 		{
 			myCurrentState = State.Dead;
-			Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
+			//Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
 		}
 	}
 

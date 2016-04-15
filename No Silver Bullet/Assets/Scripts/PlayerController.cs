@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
 		myDamange = 50;
-		myRange = 5.0f;
+		myRange = 0.5f;
 
 
 		transform.position = new Vector3 (15, -57, 0);
