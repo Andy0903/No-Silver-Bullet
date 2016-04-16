@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 public class EnemyController : MonoBehaviour
 {
@@ -28,17 +29,21 @@ public class EnemyController : MonoBehaviour
 	public int myHealth;
 	public int myWalkingLength;
 	public int myDamage;
+	public int myParticlesOnDeath;
 	public float myTimeBetweenAttacks;
 	public float mySpeed;
 	public float myDetectionRange;
 	public float myAttackRange;
 
+
 	private float myHorizontal;
 	private float myVertical;
 	private float myTimeSinceLastAttack;
+	private float myTimeSinceDeath;
 	private float myTimeSinceIdle;
 	private bool myIsMoving;
 
+	private ParticleSystem myParticleSystem;
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
@@ -68,6 +73,7 @@ public class EnemyController : MonoBehaviour
 
 	private void Awake ()
 	{
+		myParticleSystem = GetComponent<ParticleSystem> ();
 		myAnimator = GetComponent<Animator> ();
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		myCurrentDirection = Direction.Down;
@@ -94,8 +100,24 @@ public class EnemyController : MonoBehaviour
 	{
 		if (myHealth <= 0)
 		{
+			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
-			Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
+			if (myParticleSystem.isStopped == true)
+			{
+				//TODO: Add death animation or something similar
+				myParticleSystem.Emit (myParticlesOnDeath);
+			}
+			else if (myTimeSinceDeath > myParticleSystem.duration)
+			{
+				Destroy (gameObject);
+			}
+
+			//Code that might be needed in the future for changing values of the component inside the code
+			/*SerializedObject so = new SerializedObject(GetComponent<ParticleSystem>());
+			so.FindProperty ("ShapeModule.arc").floatValue = angleBetweenTargetDegrees;
+			so.ApplyModifiedProperties ();*/
+
+
 		}
 	}
 
@@ -287,6 +309,11 @@ public class EnemyController : MonoBehaviour
 		{
 			myCurrentDirection = Direction.Down;
 		}
+	}
+
+	private void InitiateParticleSystem()
+	{
+
 	}
 
 	/*private void OnCollisionEnter2D(Collision2D other)
