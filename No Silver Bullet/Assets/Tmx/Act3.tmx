@@ -568,11 +568,13 @@
   <object id="5" gid="7" x="2319.5" y="2274.5" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="5"/>
+    <property name="TeleportIndex" value="301"/>
    </properties>
   </object>
   <object id="6" gid="54" x="2523" y="2169" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="6"/>
+    <property name="TeleportIndex" value="301"/>
    </properties>
   </object>
   <object id="8" gid="82" x="3102" y="2333" width="34" height="34">
@@ -588,6 +590,7 @@
   <object id="16" gid="47" x="2898.33" y="2577.33" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="7"/>
+    <property name="TeleportIndex" value="302"/>
    </properties>
   </object>
   <object id="17" gid="7" x="2897.5" y="2509" width="34" height="34">
@@ -598,6 +601,7 @@
   <object id="21" gid="54" x="1029" y="266.5" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="6"/>
+    <property name="TeleportIndex" value="302"/>
    </properties>
   </object>
  </objectgroup>
