@@ -7,6 +7,7 @@ public class MapLoader : MonoBehaviour
 {
 	#region Member variables
 
+	public string myTMXfileName;
 	public GameObject[] myTiles;
 	public GameObject[] myTmxObjects;
 	TmxMap myMap;
@@ -21,7 +22,7 @@ public class MapLoader : MonoBehaviour
 	{
 		myBoardHolder = new GameObject ("Board").transform;
 		myTileGidToIndex = new Dictionary<int,int> ();
-		myMap = new TmxMap ("Assets/Tmx/World.tmx");
+		myMap = new TmxMap ("Assets/Tmx/" + myTMXfileName + ".tmx");
 
 		IndexateTiles ();
 		CreateBoardTmxObjects ();
