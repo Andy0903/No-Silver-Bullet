@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 0a48d0b9ed71cc349a777a522b87fdcf
-timeCreated: 1460756814
+timeCreated: 1460768388
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: DarkRitualTree_0
+    21300002: DarkRitualTree_1
+    21300004: DarkRitualTree_2
+    21300006: DarkRitualTree_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +42,90 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 34
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: DarkRitualTree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 17}
+        - {x: -8, y: 7}
+        - {x: -17, y: -10}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: DarkRitualTree_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 0}
+        - {x: -4, y: 17}
+    - name: DarkRitualTree_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -13}
+        - {x: -5, y: -17}
+        - {x: -2, y: -16}
+        - {x: -2, y: -13}
+        - {x: -6, y: -9}
+        - {x: -9, y: -10}
+      - - {x: -17, y: 17}
+        - {x: -17, y: -4}
+        - {x: 3, y: -15}
+        - {x: 17, y: -15}
+        - {x: 17, y: 17}
+    - name: DarkRitualTree_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -15}
+        - {x: -12, y: -17}
+        - {x: 9, y: -17}
+        - {x: 17, y: -6}
+        - {x: 17, y: 17}
     outline: []
   spritePackingTag: 
   userData: 
