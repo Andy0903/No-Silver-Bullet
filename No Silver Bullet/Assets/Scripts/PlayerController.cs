@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
 	#region Public methods
 
-	public void TakeDamage(int aDamage)
+	public void TakeDamage (int aDamage)
 	{
 		myHealth -= aDamage;
 	}
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 		myRange = 0.5f;
 
 
-		transform.position = new Vector3 (15, -57, 0);
+		//transform.position = new Vector3 (15, -57, 0);
 	}
 
 	private void Update ()
