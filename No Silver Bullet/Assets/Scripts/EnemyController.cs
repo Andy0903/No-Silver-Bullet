@@ -27,17 +27,24 @@ public class EnemyController : MonoBehaviour
 
 	public int myHealth;
 	public int myWalkingLength;
+	public int myDamage;
+	public float myTimeBetweenAttacks;
 	public float mySpeed;
-	public float myRange;
+	public float myDetectionRange;
+	public float myAttackRange;
+
 	private float myHorizontal;
 	private float myVertical;
+	private float myTimeSinceLastAttack;
+	private float myTimeSinceIdle;
+	private bool myIsMoving;
+
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
 	private Vector3 myIdleStartPosition; //Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
-	private bool myIsMoving;
-	private float myTimeSinceIdle;
+
 
 	#endregion
 
@@ -77,7 +84,9 @@ public class EnemyController : MonoBehaviour
 		myHorizontal = myMovement.x;
 		myVertical = myMovement.y;
 		myTimeSinceIdle += Time.deltaTime;
+		myTimeSinceLastAttack += Time.deltaTime;
 		UpdateWalkAnimation ();
+		UpdateAttack ();
 		Movement ();
 	}
 
@@ -95,7 +104,7 @@ public class EnemyController : MonoBehaviour
 		if (myIsMoving == true)
 		{
 			float distance = Vector3.Distance (transform.position, myTarget.transform.position);
-			if (distance < myRange)
+			if (distance < myDetectionRange)
 			{
 				myCurrentState = State.Attacking;
 				myMovement = myMovement * mySpeed * Time.deltaTime;
@@ -145,6 +154,18 @@ public class EnemyController : MonoBehaviour
 
 
 			}
+		}
+	}
+
+	private void UpdateAttack ()
+	{
+		float distanceFromTarget = Vector3.Distance (transform.position, myTarget.transform.position);
+
+		if (myAttackRange > distanceFromTarget && myTimeSinceLastAttack > myTimeBetweenAttacks)
+		{
+			PlayerController targetController = myTarget.GetComponent<PlayerController> ();
+			targetController.TakeDamage (myDamage);
+			myTimeSinceLastAttack = 0;
 		}
 	}
 

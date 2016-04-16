@@ -14,11 +14,12 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public float mySpeed;
+	public int myHealth;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
 	private Vector3 myMovement;
 	private Direction myDirection;
-	private int myDamange;
+	private int myDamage;
 	private float myRange;
 
 	private bool myIsAttacking;
@@ -27,6 +28,15 @@ public class PlayerController : MonoBehaviour
 
 	private int myHorizontal;
 	private int myVertical;
+
+	#endregion
+
+	#region Public methods
+
+	public void TakeDamage(int aDamage)
+	{
+		myHealth -= aDamage;
+	}
 
 	#endregion
 
@@ -39,7 +49,7 @@ public class PlayerController : MonoBehaviour
 		myDirection = Direction.Down;
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
-		myDamange = 50;
+		myDamage = 50;
 		myRange = 0.5f;
 
 
@@ -88,7 +98,7 @@ public class PlayerController : MonoBehaviour
 					GameObject enemy = hits [i].collider.gameObject;
 					EnemyController enemyController = enemy.GetComponent<EnemyController> ();
 
-					enemyController.TakeDamage (myDamange);
+					enemyController.TakeDamage (myDamage);
 				}
 			}
 		}
