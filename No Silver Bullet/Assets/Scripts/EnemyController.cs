@@ -95,7 +95,7 @@ public class EnemyController : MonoBehaviour
 		if (myHealth <= 0)
 		{
 			myCurrentState = State.Dead;
-			//Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
+			Destroy (gameObject); //TODO: Remove/Change so we can add dead animation and/or loot drop
 		}
 	}
 
