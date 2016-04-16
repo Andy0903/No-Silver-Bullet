@@ -86,11 +86,39 @@ public class MapLoader : MonoBehaviour
 				GameObject instance = Instantiate (toInstantiate, new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight), Quaternion.identity) as GameObject;
 				instance.transform.SetParent (myBoardHolder);
 
-				/*switch (index)
+
+				SceneLoader loadAct = instance.GetComponent<SceneLoader> ();
+				switch (index)
 				{
-				default:
-				/	throw new System.Exception ("Missing case for objectIndex");
-				}*/
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+				case 7:
+					break;
+				case 8:
+					loadAct.myLeadsToSceneName = "Scene";
+					break;
+				case 9:
+					loadAct.myLeadsToSceneName = "Act2";
+					break;
+				case 10:
+					loadAct.myLeadsToSceneName = "Act3";
+					break;
+				case 11:
+					loadAct.myLeadsToSceneName = "Act4";
+					break;
+				case 12:
+					loadAct.myLeadsToSceneName = "Act5";
+					break;
+
+				//default:
+				//throw new System.Exception ("Missing case for objectIndex");
+				}
+
 			}
 		}
 	}

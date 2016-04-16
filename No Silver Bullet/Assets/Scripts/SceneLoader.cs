@@ -6,6 +6,7 @@ public class SceneLoader : MonoBehaviour
 	#region Member variables
 
 	public string myLeadsToSceneName;
+	public Vector2 myStartPosition;
 	float myCooldown;
 	float myTimer;
 
@@ -25,9 +26,10 @@ public class SceneLoader : MonoBehaviour
 		{
 			if (myTimer <= Time.time)
 			{
-				//aOther.transform.position =
+				aOther.transform.position = new Vector3 (myStartPosition.x, myStartPosition.y, 0);
+
 				myTimer = Time.time + myCooldown;
-				Application.LoadLevel (myLeadsToSceneName);
+				Application.LoadLevel ("Scenes/" + myLeadsToSceneName);
 			}
 		}
 	}
