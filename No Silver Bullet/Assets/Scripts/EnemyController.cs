@@ -47,7 +47,8 @@ public class EnemyController : MonoBehaviour
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
-	private Vector3 myIdleStartPosition; //Might rename this to myLastDirectionChangePos? Or similar
+	private Vector3 myIdleStartPosition;
+	//Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
 
 
@@ -185,8 +186,8 @@ public class EnemyController : MonoBehaviour
 
 		if (myAttackRange > distanceFromTarget && myTimeSinceLastAttack > myTimeBetweenAttacks)
 		{
-			PlayerController targetController = myTarget.GetComponent<PlayerController> ();
-			targetController.TakeDamage (myDamage);
+			PlayerHealth targetHealth = myTarget.GetComponent<PlayerHealth> ();
+			targetHealth.TakeDamage (myDamage);
 			myTimeSinceLastAttack = 0;
 		}
 	}
@@ -291,7 +292,7 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-	private void ChangeDirection()
+	private void ChangeDirection ()
 	{
 		if (myCurrentDirection == Direction.Down)
 		{
@@ -311,7 +312,7 @@ public class EnemyController : MonoBehaviour
 		}
 	}
 
-	private void InitiateParticleSystem()
+	private void InitiateParticleSystem ()
 	{
 
 	}
