@@ -62,6 +62,20 @@ public class NPCController : MonoBehaviour {
 				myRigidBody.MovePosition (transform.position + myMovement);
 			}
 
+		
+			else if (myCurrentDirection == Direction.Left)
+			{
+				myMovement = Vector3.left * mySpeed * Time.deltaTime;
+				myRigidBody.MovePosition (transform.position + myMovement);
+
+			}
+			else if (myCurrentDirection == Direction.Right)
+			{
+				myMovement = Vector3.right * mySpeed * Time.deltaTime;
+				myRigidBody.MovePosition (transform.position + myMovement);
+
+			}
+
 			float walked = Vector3.Distance (myLastDirectionChangePos, transform.position);
 
 			if (walked > myWalkingLength)
@@ -98,17 +112,28 @@ public class NPCController : MonoBehaviour {
 		}
 
 	}
+		
+	private void ChangeDirection ()
+	{			
 
-	private void ChangeDirection()
-	{
 		myLastDirectionChangePos = transform.position;
-		if (myCurrentDirection == Direction.Up)
+
+		if (myCurrentDirection == Direction.Down)
 		{
-			myCurrentDirection = Direction.Down;
+			myCurrentDirection = Direction.Left;
+
 		}
-		else if (myCurrentDirection == Direction.Down)
+		else if (myCurrentDirection == Direction.Left)
 		{
 			myCurrentDirection = Direction.Up;
+		}
+		else if (myCurrentDirection == Direction.Up)
+		{
+			myCurrentDirection = Direction.Right;
+		}
+		else if (myCurrentDirection == Direction.Right)
+		{
+			myCurrentDirection = Direction.Down;
 		}
 	}
 
