@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public float mySpeed;
-	public int myHealth;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
 	private Vector3 myMovement;
@@ -28,15 +27,6 @@ public class PlayerController : MonoBehaviour
 
 	private int myHorizontal;
 	private int myVertical;
-
-	#endregion
-
-	#region Public methods
-
-	public void TakeDamage (int aDamage)
-	{
-		myHealth -= aDamage;
-	}
 
 	#endregion
 
