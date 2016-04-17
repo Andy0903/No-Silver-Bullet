@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Dialogues>
     <npcs>
 		<npc name= "QuestGiver1"> 
 			<dialogue>
@@ -7,11 +8,10 @@
 		</npc>
 	  
 		<npc name = "QuestGiver2">
-			<dialoge>
-				<text>I used to be an adventurer like you until I took a silver bullet to the knee</text>
-				<text>Ayy lmao fam</text>
-			</dialoge>
+			<dialogue>
+				I used to be an adventurer like you until I took a silver bullet to the knee
+				Ayy lmao fam
+			</dialogue>
 		</npc>
-		
-		
     </npcs>
+	</Dialogues>
