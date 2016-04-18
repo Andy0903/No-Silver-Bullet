@@ -107,7 +107,7 @@ public class EnemyController : MonoBehaviour
 		{
 			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
-			if (myParticleSystem != null)
+			if (myParticleSystem != null && (myTimeSinceDeath < myParticleSystem.duration))
 			{
 				//TODO: Add death animation or something similar
 				myParticleSystem.Emit (myParticlesOnDeath);
