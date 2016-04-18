@@ -54,6 +54,7 @@ public class DialogueReader
 
 		return null; 
 	}
+		
 
 	#endregion
 
