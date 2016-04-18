@@ -3,8 +3,7 @@ using System.Collections;
 using System.Xml;
 using System.Xml.Serialization;
 
-public class Dialogue {
-
+public class CharacterData {
 
 	[XmlAttribute("name")]
 	public string name;

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class DialogLoader : MonoBehaviour {
 
@@ -12,9 +13,9 @@ public class DialogLoader : MonoBehaviour {
 		
 		DialogueReader dialogues = DialogueReader.Load (FilePath);
 
-		foreach (Dialogue dialog in dialogues.myDialogue)
+		foreach (CharacterData cd in dialogues.myCharacterDataList)
 		{
-			print (dialog.name);
+			print (cd.dialogue);
 		}
 
 	}

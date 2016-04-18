@@ -11,15 +11,11 @@ public class DialogueReader
 
 	#region Member variables
 
-	//XmlReader myReader;
+	[XmlArray("Characters")]
+	[XmlArrayItem("Character")]
+	public List<CharacterData> myCharacterDataList = new List<CharacterData> ();
 
-
-
-	[XmlArray("npcs")]
-	[XmlArrayItem("npc")]
-	public List<Dialogue> myDialogue = new List<Dialogue> ();
 	#endregion
-
 
 	#region Constructors
 
@@ -31,31 +27,34 @@ public class DialogueReader
 	public static DialogueReader Load(string aPath)
 	{
 		
-		// Construct an instance of the XmlSerializer with the type
-		// of object that is being deserialized.
 		XmlSerializer serializer = new XmlSerializer(typeof(DialogueReader));
-		// To read the file, create a FileStream.
+
 		FileStream fileStream = new FileStream(aPath, FileMode.Open);
-		// Call the Deserialize method and cast to the object type.
+
 		DialogueReader dialogueReader = serializer.Deserialize (fileStream) as DialogueReader;
 
 		return dialogueReader;
-
-
-
-		/*
-		TextAsset xml = Resources.Load<TextAsset> (aPath);
-
-		XmlSerializer serializer = new XmlSerializer (typeof(DialogueReader));
-		StringReader reader = new StringReader(xml.text);
-
-		DialogueReader dialogueReader = serializer.Deserialize (reader) as DialogueReader;
-
-		reader.Close ();
-
-		return dialogueReader; 
-		*/
 	}
+
+	/// <summary>
+	/// Finds the character.
+	/// </summary>
+	/// <returns>The character. If not found returns null</returns>
+	/// <param name="aCharacterDataList">A character data list.</param>
+	/// <param name="aNameID">Search ID of the character</param>
+	public static CharacterData FindCharacter(List<CharacterData> aCharacterDataList, string aNameID)
+	{
+		foreach (CharacterData cd in aCharacterDataList)
+		{
+			if (cd.name == aNameID)
+			{
+				return cd;
+			}
+		}
+
+		return null; 
+	}
+		
 
 	#endregion
 
@@ -64,3 +63,5 @@ public class DialogueReader
 	#endregion
 
 }
+
+
