@@ -12,9 +12,9 @@ public class DialogLoader : MonoBehaviour {
 		
 		DialogueReader dialogues = DialogueReader.Load (FilePath);
 
-		foreach (Dialogue dialog in dialogues.myDialogue)
+		foreach (CharacterData cd in dialogues.myCharacterDataList)
 		{
-			print (dialog.dialogue);
+			print (cd.dialogue);
 		}
 
 	}
