@@ -14,7 +14,7 @@ public class DialogLoader : MonoBehaviour {
 
 		foreach (Dialogue dialog in dialogues.myDialogue)
 		{
-			print (dialog.name);
+			print (dialog.dialogue);
 		}
 
 	}

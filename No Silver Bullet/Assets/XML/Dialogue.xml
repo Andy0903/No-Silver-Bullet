@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Dialogues>
-    <npcs>
-		<npc name= "QuestGiver1"> 
+    <Characters>
+		<Character name= "QuestGiver1"> 
 			<dialogue>
-			<text>Insert text from the NPC here</text>
+			Insert text from the NPC here
 			</dialogue>
-		</npc>
+		</Character>
 	  
-		<npc name = "QuestGiver2">
+		<Character name = "QuestGiver2">
 			<dialogue>
 				I used to be an adventurer like you until I took a silver bullet to the knee
 				Ayy lmao fam
 			</dialogue>
-		</npc>
+		</Character>
     </npcs>
-	</Dialogues>
+</Dialogues>
