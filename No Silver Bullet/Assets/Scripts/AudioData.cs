@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AudioData {
 
-	private string myNameID;
+	public string myNameID;
 	private AudioClip myAudioClip;
 
 	public AudioData(string aFilePath, string aNameID)

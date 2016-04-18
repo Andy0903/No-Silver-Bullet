@@ -13,12 +13,15 @@ public class SoundManager : MonoBehaviour
 	public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
 	public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
 
-	private string BackgroundMusicDirectory = Path.Combine(Directory.GetCurrentDirectory(), "\\Assets\\Sounds\\BackgroundMusic");
+	private const string BackgroundMusicFilePath = "Assets\\Sounds\\BackgroundMusic";
+	private string BackgroundMusicDirectory;
 	private string[] myAudioFilePaths;
 
 
 	void Awake ()
 	{
+		myBackgroundAudioData = new List<AudioData> ();
+
 		//Check if there is already an instance of SoundManager
 		if (instance == null)
 			//if not, set it to this.
@@ -31,14 +34,28 @@ public class SoundManager : MonoBehaviour
 		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
 		DontDestroyOnLoad (gameObject);
 
+		BackgroundMusicDirectory = Path.Combine(Directory.GetCurrentDirectory(), BackgroundMusicFilePath);
+
 		myAudioFilePaths = Directory.GetFiles (BackgroundMusicDirectory);
 		foreach (string path in myAudioFilePaths)
 		{
-			//Path.split is for getting a hold of the file name
-			myBackgroundAudioData.Add(new AudioData(path, path.Split('\\')[path.Split('\\').Length-1]));
+			string tempName = path.Split ('\\') [path.Split ('\\').Length - 1];
+
+			if(path.Split ('.') [path.Split ('.').Length - 1] != "meta")
+			{
+				//Path.split is for getting a hold of the file name
+				myBackgroundAudioData.Add(new AudioData(path, tempName));
+			}
+
 		}
 
-		
+		/*
+		 //Used for debugging audiofiles in the AudioData list
+		foreach(AudioData ad in myBackgroundAudioData)
+		{
+			print (ad.myNameID);
+		}
+		*/
 	}
 		
 }

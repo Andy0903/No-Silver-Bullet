@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Music>
+    <BackgroundMusic>
+		<SoundFile name= "PeacefullTown" act = "Act1"> </SoundFile>
+		
+		<SoundFile name = "Ferni" act = "Act5"></SoundFile>
+    </BackgroundMusic>
+</Music>
