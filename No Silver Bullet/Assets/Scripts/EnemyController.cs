@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
 	private float myTimeSinceDeath;
 	private float myTimeSinceIdle;
 	private bool myIsMoving;
-	private bool myIsAttacking; 
+	private bool myIsAttacking;
 
 	private ParticleSystem myParticleSystem;
 	private Animator myAnimator;
@@ -52,6 +52,7 @@ public class EnemyController : MonoBehaviour
 	private Vector3 myIdleStartPosition;
 	//Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
+	private Renderer myRenderer;
 
 
 	#endregion
@@ -84,20 +85,25 @@ public class EnemyController : MonoBehaviour
 		myCurrentState = State.Patrol;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
 		myIsMoving = true;
+		myRenderer = GetComponent<Renderer> ();
 		myIdleStartPosition = myRigidBody.transform.position;
 	}
 
 	private void Update ()
 	{
-		myMovement = myTarget.transform.position - transform.position;
-		myMovement.Normalize ();
-		myHorizontal = myMovement.x;
-		myVertical = myMovement.y;
-		myTimeSinceIdle += Time.deltaTime;
-		myTimeSinceLastAttack += Time.deltaTime;
-		UpdateWalkAnimation ();
-		UpdateAttack ();
-		Movement ();
+		if (myRenderer.isVisible)
+		{
+			myMovement = myTarget.transform.position - transform.position;
+			myMovement.Normalize ();
+			myHorizontal = myMovement.x;
+			myVertical = myMovement.y;
+			myTimeSinceIdle += Time.deltaTime;
+			myTimeSinceLastAttack += Time.deltaTime;
+			UpdateWalkAnimation ();
+			UpdateAttack ();
+			Movement ();
+
+		}
 	}
 
 	private void LateUpdate ()
@@ -113,7 +119,7 @@ public class EnemyController : MonoBehaviour
 				myParticleSystem.Emit (myParticlesOnDeath);
 			}
 			//If you forgot to attach a PS the gameObject is destroyed before an error message can arrive
-			else if (myParticleSystem == null) 
+			else if (myParticleSystem == null)
 			{
 				Destroy (gameObject);
 			}

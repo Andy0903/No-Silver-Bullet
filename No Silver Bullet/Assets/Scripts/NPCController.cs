@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NPCController : MonoBehaviour {
+public class NPCController : MonoBehaviour
+{
 
 
 	#region Member Variables
@@ -16,7 +17,8 @@ public class NPCController : MonoBehaviour {
 
 	private enum State
 	{
-		Idle, //TODO: Change the name?
+		Idle,
+		//TODO: Change the name?
 		Talking
 	}
 
@@ -29,25 +31,30 @@ public class NPCController : MonoBehaviour {
 	private Vector3 myMovement;
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
+	private Renderer myRenderer;
 
 	#endregion
 
 	#region Private Methods
 
-	private void Awake () 
+	private void Awake ()
 	{
 		myAnimator = GetComponent<Animator> ();
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		myCurrentState = State.Idle;
+		myRenderer = GetComponent<Renderer> ();
 	}
 
-	private void Update () 
+	private void Update ()
 	{
-		Movement ();
-		UpdateWalkingAnimation ();
+		if (myRenderer.isVisible)
+		{
+			Movement ();
+			UpdateWalkingAnimation ();
+		}
 	}
 
-	private void Movement()
+	private void Movement ()
 	{
 		if (myCurrentState == State.Idle)
 		{
@@ -61,8 +68,6 @@ public class NPCController : MonoBehaviour {
 				myMovement = Vector3.up * mySpeed * Time.deltaTime;
 				myRigidBody.MovePosition (transform.position + myMovement);
 			}
-
-		
 			else if (myCurrentDirection == Direction.Left)
 			{
 				myMovement = Vector3.left * mySpeed * Time.deltaTime;
@@ -85,7 +90,7 @@ public class NPCController : MonoBehaviour {
 		}
 	}
 
-	private void UpdateWalkingAnimation()
+	private void UpdateWalkingAnimation ()
 	{
 		if (myCurrentState == State.Idle) //Changes the animation based on direction
 		{
@@ -112,7 +117,7 @@ public class NPCController : MonoBehaviour {
 		}
 
 	}
-		
+
 	private void ChangeDirection ()
 	{			
 
