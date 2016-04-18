@@ -6,17 +6,17 @@ using System.IO;
 
 public class SoundManager : MonoBehaviour 
 {
-	//public AudioSource efxSource;                   //Drag a reference to the audio source which will play the sound effects.
+	public AudioSource efxSource;                   //Drag a reference to the audio source which will play the sound effects.
 	public AudioSource myMusicSource;                 //Drag a reference to the audio source which will play the music.
 	private List<AudioData> myBackgroundAudioData;  //All the data for the background music
 	public static SoundManager instance = null;     //Allows other scripts to call functions from SoundManager.             
-	public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
-	public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
+	//public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
+	//public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
 
 	private const string BackgroundMusicFilePath = "Assets\\Sounds\\BackgroundMusic";
-	private string BackgroundMusicDirectory;
+	private string myBackgroundMusicDirectory;
 	private string[] myAudioFilePaths;
-
+	private AudioClip myCurrentlyPlayingClip;
 
 	void Awake ()
 	{
@@ -34,9 +34,9 @@ public class SoundManager : MonoBehaviour
 		//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
 		DontDestroyOnLoad (gameObject);
 
-		BackgroundMusicDirectory = Path.Combine(Directory.GetCurrentDirectory(), BackgroundMusicFilePath);
+		myBackgroundMusicDirectory = Path.Combine(Directory.GetCurrentDirectory(), BackgroundMusicFilePath);
 
-		myAudioFilePaths = Directory.GetFiles (BackgroundMusicDirectory);
+		myAudioFilePaths = Directory.GetFiles (myBackgroundMusicDirectory);
 		foreach (string path in myAudioFilePaths)
 		{
 			string tempName = path.Split ('\\') [path.Split ('\\').Length - 1];
@@ -56,6 +56,20 @@ public class SoundManager : MonoBehaviour
 			print (ad.myNameID);
 		}
 		*/
+	}
+
+	//Might TODO: Remove parameter
+	public void PlayBackgroundMusic(string aCurrentAct)
+	{
+		//TODO: Add functions for changing music during different acts
+		efxSource.clip = myCurrentlyPlayingClip;
+
+		efxSource.Play ();
+	}
+
+	public void StopBackgroundMusic()
+	{
+		efxSource.Stop ();
 	}
 		
 }
