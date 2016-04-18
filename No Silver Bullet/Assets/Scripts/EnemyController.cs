@@ -6,6 +6,8 @@ public class EnemyController : MonoBehaviour
 {
 	#region Member variables
 
+	private const float ChasingSpeedMultiplier = 1.2f;
+
 	private enum Direction
 	{
 		Up,
@@ -16,10 +18,9 @@ public class EnemyController : MonoBehaviour
 
 	private enum State
 	{
+		Chasing,
+		Patrol,
 		Attacking,
-		Idle,
-		Running,
-		Walking,
 		Dead
 	}
 
@@ -42,6 +43,7 @@ public class EnemyController : MonoBehaviour
 	private float myTimeSinceDeath;
 	private float myTimeSinceIdle;
 	private bool myIsMoving;
+	private bool myIsAttacking; 
 
 	private ParticleSystem myParticleSystem;
 	private Animator myAnimator;
@@ -74,11 +76,12 @@ public class EnemyController : MonoBehaviour
 
 	private void Awake ()
 	{
+
 		myParticleSystem = GetComponent<ParticleSystem> ();
 		myAnimator = GetComponent<Animator> ();
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		myCurrentDirection = Direction.Down;
-		myCurrentState = State.Idle;
+		myCurrentState = State.Patrol;
 		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the enemies target to the Player GameObject
 		myIsMoving = true;
 		myIdleStartPosition = myRigidBody.transform.position;
@@ -99,14 +102,20 @@ public class EnemyController : MonoBehaviour
 
 	private void LateUpdate ()
 	{
+
 		if (myHealth <= 0)
 		{
 			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
-			if (myParticleSystem.isStopped == true)
+			if (myParticleSystem != null)
 			{
 				//TODO: Add death animation or something similar
 				myParticleSystem.Emit (myParticlesOnDeath);
+			}
+			//If you forgot to attach a PS the gameObject is destroyed before an error message can arrive
+			else if (myParticleSystem == null) 
+			{
+				Destroy (gameObject);
 			}
 			else if (myTimeSinceDeath > myParticleSystem.duration)
 			{
@@ -129,17 +138,17 @@ public class EnemyController : MonoBehaviour
 			float distance = Vector3.Distance (transform.position, myTarget.transform.position);
 			if (distance < myDetectionRange)
 			{
-				myCurrentState = State.Attacking;
-				myMovement = myMovement * mySpeed * Time.deltaTime;
+				myCurrentState = State.Chasing;
+				myMovement = myMovement * mySpeed * ChasingSpeedMultiplier * Time.deltaTime;
 				myRigidBody.MovePosition (transform.position + myMovement);
 			}
-			else if (myCurrentState == State.Attacking)
+			else if (myCurrentState == State.Chasing)
 			{
-				myCurrentState = State.Idle;
+				myCurrentState = State.Patrol;
 				myIdleStartPosition = transform.position;
 			}
 
-			if (myCurrentState == State.Idle)
+			if (myCurrentState == State.Patrol)
 			{
 				if (myCurrentDirection == Direction.Down)
 				{
@@ -189,27 +198,36 @@ public class EnemyController : MonoBehaviour
 			PlayerHealth targetHealth = myTarget.GetComponent<PlayerHealth> ();
 			targetHealth.TakeDamage (myDamage);
 			myTimeSinceLastAttack = 0;
+			myCurrentState = State.Attacking;
+		}
+		else if (myAttackRange < distanceFromTarget)
+		{
+			
 		}
 	}
 
 	private void UpdateWalkAnimation ()
 	{
-		if (myCurrentState == State.Attacking)
+
+		if (myCurrentState == State.Chasing)
 		{
+
+			myAnimator.SetBool ("IsAttacking", false);
+			myAnimator.SetBool ("IsRunning", true);
+			myAnimator.SetBool ("PressedNothing", false);
 			//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
 			if (myHorizontal * myHorizontal > myVertical * myVertical)
 			{
+				
 				if (myHorizontal > 0)
 				{
 					myAnimator.SetTrigger ("PressedRight");
 					myCurrentDirection = Direction.Right;
-					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myHorizontal < 0)
 				{
 					myAnimator.SetTrigger ("PressedLeft");
 					myCurrentDirection = Direction.Left;
-					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else
 				{
@@ -222,11 +240,55 @@ public class EnemyController : MonoBehaviour
 				{
 					myAnimator.SetTrigger ("PressedUp");
 					myCurrentDirection = Direction.Up;
-					myAnimator.SetBool ("PressedNothing", false);
 				}
 				else if (myVertical < 0)
 				{
 					myAnimator.SetTrigger ("PressedDown");
+					myCurrentDirection = Direction.Down;
+				}
+				else
+				{
+					myAnimator.SetBool ("PressedNothing", true);
+				}
+			}
+		}
+
+		if (myCurrentState == State.Attacking)
+		{
+			myAnimator.SetBool ("IsRunning", false);
+			myAnimator.SetBool ("IsAttacking", true);
+			//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
+			if (myHorizontal * myHorizontal > myVertical * myVertical)
+			{
+				
+				if (myHorizontal > 0)
+				{
+					myAnimator.SetTrigger ("AttackRight");
+					myCurrentDirection = Direction.Right;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else if (myHorizontal < 0)
+				{
+					myAnimator.SetTrigger ("AttackLeft");
+					myCurrentDirection = Direction.Left;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else
+				{
+					myAnimator.SetBool ("PressedNothing", true);
+				}
+			}
+			else
+			{
+				if (myVertical > 0)
+				{
+					myAnimator.SetTrigger ("AttackUp");
+					myCurrentDirection = Direction.Up;
+					myAnimator.SetBool ("PressedNothing", false);
+				}
+				else if (myVertical < 0)
+				{
+					myAnimator.SetTrigger ("AttackDown");
 					myCurrentDirection = Direction.Down;
 					myAnimator.SetBool ("PressedNothing", false);
 				}
@@ -236,9 +298,10 @@ public class EnemyController : MonoBehaviour
 				}
 			}
 		}
-
-		if (myCurrentState == State.Idle) //Changes the animation based on direction
+			
+		if (myCurrentState == State.Patrol) //Changes the animation based on direction
 		{
+			myAnimator.SetBool ("IsRunning", false);
 			if (myCurrentDirection == Direction.Down)
 			{
 				myAnimator.SetBool ("PressedNothing", false);
@@ -276,7 +339,7 @@ public class EnemyController : MonoBehaviour
 		if (other.CompareTag ("Untagged"))
 		{
 			//myHealth = 0; //Used for testing health system
-			if (myCurrentState == State.Idle)
+			if (myCurrentState == State.Patrol)
 			{
 				ChangeDirection ();
 				myIdleStartPosition = myRigidBody.transform.position;
@@ -311,12 +374,7 @@ public class EnemyController : MonoBehaviour
 			myCurrentDirection = Direction.Down;
 		}
 	}
-
-	private void InitiateParticleSystem ()
-	{
-
-	}
-
+		
 	/*private void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.collider.IsTouching(myCircleCollider))
