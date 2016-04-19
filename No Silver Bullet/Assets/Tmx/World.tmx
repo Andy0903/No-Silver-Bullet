@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="80" tilewidth="34" tileheight="34" nextobjectid="189">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="80" tilewidth="34" tileheight="34" nextobjectid="194">
  <tileset firstgid="1" name="BurningAltar" tilewidth="34" tileheight="34" tilecount="30" columns="6">
   <image source="../Sprites/Tiles/BurningAltar.png" width="204" height="170"/>
   <tile id="0">
@@ -1314,6 +1314,9 @@
  <tileset firstgid="387" name="Wolf" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/Wolf.png" width="34" height="34"/>
  </tileset>
+ <tileset firstgid="388" name="TiledAct2Changer" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiled/TiledAct2Changer.png" width="34" height="34"/>
+ </tileset>
  <layer name="Tile Layer 1" width="100" height="80">
   <data encoding="csv">
 47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,379,379,379,379,379,379,277,326,279,47,47,47,47,47,47,47,47,47,47,47,47,47,47,59,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,379,379,379,379,379,379,379,379,379,379,379,
@@ -1592,16 +1595,6 @@
    <properties>
     <property name="ObjectIndex" value="3"/>
     <property name="TeleportIndex" value=""/>
-   </properties>
-  </object>
-  <object id="29" gid="380" x="1365.67" y="160.333" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="10"/>
-   </properties>
-  </object>
-  <object id="30" gid="380" x="1405.67" y="159.667" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="10"/>
    </properties>
   </object>
   <object id="40" gid="383" x="53" y="1102" width="34" height="34">
@@ -2327,6 +2320,17 @@
   <object id="188" gid="381" x="2435" y="733" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="21"/>
+   </properties>
+  </object>
+  <object id="189" gid="388" x="420.5" y="1893" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="9"/>
+   </properties>
+  </object>
+  <object id="190" x="1339.33" y="74.6667" width="144" height="136.667"/>
+  <object id="193" gid="380" x="622.667" y="1896.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="10"/>
    </properties>
   </object>
  </objectgroup>
