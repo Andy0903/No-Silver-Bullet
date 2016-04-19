@@ -225,7 +225,7 @@
   </tile>
  </tileset>
  <tileset firstgid="40" name="Nedgång" tilewidth="34" tileheight="34" tilecount="1" columns="1">
-  <image source="../Sprites/Tiles/Act2/Nedgång.png" width="34" height="34"/>
+  <image source="../Sprites/Tiles/Act2/OasisLadderDown.png" width="34" height="34"/>
   <tile id="0">
    <properties>
     <property name="ObjectIndex" value="15"/>
@@ -605,7 +605,7 @@
   </tile>
  </tileset>
  <tileset firstgid="111" name="StoneHeights2.0" tilewidth="34" tileheight="34" tilecount="16" columns="4">
-  <image source="../Sprites/Tiles/Act2/StoneHeights2.0.png" width="136" height="136"/>
+  <image source="../Sprites/Tiles/Act2/StoneHeights2.png" width="136" height="136"/>
   <tile id="0">
    <properties>
     <property name="UnityTileIndex" value="466"/>
@@ -1031,7 +1031,7 @@
   <image source="../Sprites/Tiles/StoneFloor.png" width="34" height="34"/>
   <tile id="0">
    <properties>
-    <property name="UnityTileIndex" value="496"/>
+    <property name="UnityTileIndex" value="166"/>
    </properties>
   </tile>
  </tileset>
