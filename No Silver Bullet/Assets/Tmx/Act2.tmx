@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="80" tilewidth="34" tileheight="34" nextobjectid="89">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="80" tilewidth="34" tileheight="34" nextobjectid="131">
  <properties>
   <property name="UnityTileIndex" value="370"/>
  </properties>
@@ -127,25 +127,21 @@
   <image source="../Sprites/Tiles/Act2/GroundNextToWater.png" width="68" height="68"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="390"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="391"/>
    </properties>
   </tile>
   <tile id="2">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="392"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="393"/>
    </properties>
   </tile>
@@ -154,43 +150,36 @@
   <image source="../Sprites/Tiles/Act2/HouseInOasis.png" width="102" height="136"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="394"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="395"/>
    </properties>
   </tile>
   <tile id="2">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="396"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="397"/>
    </properties>
   </tile>
   <tile id="4">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="398"/>
    </properties>
   </tile>
   <tile id="5">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="399"/>
    </properties>
   </tile>
   <tile id="6">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="400"/>
    </properties>
   </tile>
@@ -201,25 +190,21 @@
   </tile>
   <tile id="8">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="401"/>
    </properties>
   </tile>
   <tile id="9">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="402"/>
    </properties>
   </tile>
   <tile id="10">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="403"/>
    </properties>
   </tile>
   <tile id="11">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="404"/>
    </properties>
   </tile>
@@ -236,13 +221,11 @@
   <image source="../Sprites/Tiles/Act2/OasisBush.png" width="68" height="34"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="405"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="406"/>
    </properties>
   </tile>
@@ -259,13 +242,11 @@
   <image source="../Sprites/Tiles/Act2/OasisFence.png" width="68" height="34"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="407"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="408"/>
    </properties>
   </tile>
@@ -282,7 +263,6 @@
   <image source="../Sprites/Tiles/Act2/OasisGround2.png" width="34" height="34"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="410"/>
    </properties>
   </tile>
@@ -291,31 +271,26 @@
   <image source="../Sprites/Tiles/Act2/OasisHill.png" width="170" height="136"/>
   <tile id="0">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="411"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="412"/>
    </properties>
   </tile>
   <tile id="2">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="413"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="414"/>
    </properties>
   </tile>
   <tile id="4">
    <properties>
-    <property name="ObjectIndex" value=""/>
     <property name="UnityTileIndex" value="415"/>
    </properties>
   </tile>
@@ -1045,10 +1020,10 @@
 87,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,2,2,2,2,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,2,2,90,90,
 87,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,28,29,30,41,42,28,29,30,41,42,28,29,30,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,2,2,2,90,90,
 87,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,44,45,44,45,46,46,46,46,46,46,46,46,46,46,46,46,31,32,33,44,45,31,32,33,46,46,31,32,33,46,2684354587,2684354585,24,25,26,27,26,27,26,27,131,24,25,131,26,27,26,27,26,27,46,46,2684354587,46,2,2,2,90,90,
-87,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,69,69,69,69,2,2,2,2,2,2,46,47,47,47,47,47,47,47,47,47,44,45,44,45,46,44,45,34,46,36,44,45,34,46,36,46,46,34,46,36,46,2684354586,2684354584,26,27,24,25,24,25,24,25,131,26,27,131,24,25,46,28,29,30,46,131,2684354586,46,46,2,2,90,90,
-87,87,2,79,80,80,80,80,80,80,80,80,80,80,80,80,80,80,4,5,81,80,81,82,2,2,2,2,2,2,2,69,69,2,2,2,2,2,2,2,46,44,45,44,45,46,46,47,47,47,47,44,45,46,46,44,45,37,38,39,46,46,37,38,39,46,47,37,38,39,46,2684354587,2684354585,24,25,26,27,26,27,26,27,131,131,131,131,26,27,46,31,32,33,46,131,2684354587,46,2,2,2,90,90,
-87,87,2,83,84,84,84,84,2,84,84,84,84,84,84,84,84,84,6,7,85,84,85,86,2,2,2,2,2,2,2,2,69,2,2,2,2,2,2,2,46,46,46,46,46,46,46,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,46,46,24,25,26,27,24,25,24,25,24,25,24,25,24,25,24,25,46,34,46,36,46,131,2684354586,46,2,2,2,90,90,
-87,87,2,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,3,3,90,2,2,2,2,2,2,2,2,2,69,2,2,2,2,2,2,46,46,46,46,46,46,46,47,47,47,46,44,45,44,45,44,45,45,44,45,44,45,44,45,41,42,41,42,41,42,46,26,27,24,25,26,27,26,27,26,27,26,27,26,27,26,27,46,37,38,39,46,131,2684354587,46,46,2,2,90,90,
+87,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,47,47,47,47,47,47,47,47,47,44,45,44,45,46,44,45,34,46,36,44,45,34,46,36,46,46,34,46,36,46,2684354586,2684354584,26,27,24,25,24,25,24,25,131,26,27,131,24,25,46,28,29,30,46,131,2684354586,46,46,2,2,90,90,
+87,87,2,79,80,80,80,80,80,80,80,80,80,80,80,80,80,80,4,5,81,80,81,82,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,44,45,44,45,46,46,47,47,47,47,44,45,46,46,44,45,37,38,39,46,46,37,38,39,46,47,37,38,39,46,2684354587,2684354585,24,25,26,27,26,27,26,27,131,131,131,131,26,27,46,31,32,33,46,131,2684354587,46,2,2,2,90,90,
+87,87,2,83,84,84,84,84,2,84,84,84,84,84,84,84,84,84,6,7,85,84,85,86,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,46,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,46,46,24,25,26,27,24,25,24,25,24,25,24,25,24,25,24,25,46,34,46,36,46,131,2684354586,46,2,2,2,90,90,
+87,87,2,87,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,3,3,90,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,46,47,47,47,46,44,45,44,45,44,45,45,44,45,44,45,44,45,41,42,41,42,41,42,46,26,27,24,25,26,27,26,27,26,27,26,27,26,27,26,27,46,37,38,39,46,131,2684354587,46,46,2,2,90,90,
 87,87,2,87,2,2,2,2,2,2,79,4,5,82,2,2,2,2,3,3,3,3,2,90,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,46,47,47,46,46,2684354693,2684354691,2684354693,2684354691,2684354691,2684354693,2684354691,2684354693,2684354691,2684354693,2684354691,2684354693,2684354691,2684354691,2684354691,2684354691,2684354691,2684354691,2684354691,2684354691,2684354691,2684354691,26,27,2684354691,2684354691,2684354691,2684354691,2684354691,131,131,132,131,132,132,132,132,132,132,132,132,132,132,3221225606,46,2,2,90,90,
 87,87,2,87,2,2,2,2,2,2,83,6,7,86,2,2,2,2,3,3,2,2,2,90,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,46,47,47,46,46,46,2684354694,2684354692,2684354694,2684354692,2684354692,2684354694,2684354692,2684354694,2684354692,2684354694,2684354692,2684354694,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,2684354692,133,133,134,133,134,134,134,134,134,134,134,134,134,134,3221225604,46,2,2,90,90,
 87,87,2,87,2,2,2,2,2,2,87,2,2,90,2,2,2,3,3,2,2,2,2,90,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,46,46,46,46,46,47,28,29,30,46,2684354693,2684354691,48,49,49,50,51,49,50,51,50,51,50,51,51,49,50,51,49,50,51,49,50,51,49,50,51,51,51,51,51,51,51,51,51,51,51,51,51,49,50,51,52,3221225604,46,2,2,90,90,
@@ -1129,7 +1104,7 @@
 0,0,127,128,127,128,127,128,127,128,127,128,127,128,127,128,127,128,127,128,69,69,69,69,129,130,69,69,0,143,144,145,146,147,148,0,69,69,69,0,70,71,72,70,71,72,70,71,72,70,71,72,70,70,71,72,70,70,70,70,70,70,70,70,70,70,71,72,70,71,72,72,70,71,72,72,70,71,72,70,70,71,72,72,70,71,72,70,71,72,70,71,72,70,71,72,0,69,0,0,
 0,0,129,130,129,130,129,130,129,130,129,130,129,130,129,130,129,130,129,130,0,0,69,69,69,69,69,127,128,149,150,151,152,153,154,0,0,0,0,0,135,0,0,0,0,186,187,186,187,186,187,186,187,186,187,186,187,0,0,0,0,0,0,0,0,0,0,0,0,0,135,70,71,72,70,71,72,70,71,72,70,71,72,70,71,72,70,71,72,70,71,70,70,71,135,135,0,69,0,0,
 0,0,127,128,127,128,127,128,127,128,127,128,0,0,0,0,0,0,0,69,69,69,69,127,128,69,0,129,130,155,156,157,158,159,160,70,71,72,70,71,72,0,0,0,0,188,189,188,189,188,189,188,189,188,189,188,189,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
-0,0,129,130,129,130,129,130,129,130,129,130,0,0,0,0,0,0,69,69,0,0,0,129,130,69,69,69,69,69,162,163,164,165,69,69,69,69,69,69,69,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
+0,0,129,130,129,130,129,130,129,130,129,130,0,0,0,0,0,0,69,69,0,0,0,129,130,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,0,0,0,0,69,69,0,0,70,71,72,70,71,72,0,0,0,0,186,187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,127,128,127,128,69,0,0,0,0,0,0,0,135,186,187,186,187,188,189,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,129,130,129,130,69,69,0,0,0,0,0,0,135,188,189,188,189,186,187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,135,135,0,69,0,0,
@@ -1204,47 +1179,215 @@
 </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object id="3" gid="1" x="238.5" y="1699.5" width="34" height="34"/>
-  <object id="6" gid="1" x="272.333" y="372.333" width="34" height="34"/>
-  <object id="7" gid="1" x="133.667" y="138.333" width="34" height="34"/>
-  <object id="8" gid="1" x="2516.33" y="65.6667" width="34" height="34"/>
-  <object id="9" gid="1" x="3229.67" y="69" width="34" height="34"/>
-  <object id="10" gid="1" x="3264.33" y="69" width="34" height="34"/>
-  <object id="11" gid="35" x="2244.33" y="787" width="34" height="34"/>
-  <object id="12" gid="35" x="3027" y="378.333" width="34" height="34"/>
-  <object id="13" gid="35" x="2311.67" y="309" width="34" height="34"/>
-  <object id="14" gid="35" x="2145" y="307" width="34" height="34"/>
-  <object id="15" gid="35" x="1971.67" y="307" width="34" height="34"/>
-  <object id="16" gid="35" x="1631" y="581.667" width="34" height="34"/>
-  <object id="17" gid="40" x="1601" y="1666.33" width="34" height="34"/>
-  <object id="18" gid="40" x="1806.33" y="1397" width="34" height="34"/>
-  <object id="19" gid="40" x="1671.67" y="1053.67" width="34" height="34"/>
-  <object id="20" gid="40" x="3125.67" y="275.667" width="34" height="34"/>
-  <object id="21" gid="40" x="2993" y="645.667" width="34" height="34"/>
-  <object id="22" gid="40" x="2921" y="785.667" width="34" height="34"/>
-  <object id="23" gid="43" x="2993" y="1261" width="34" height="34"/>
-  <object id="24" gid="43" x="2991" y="1157" width="34" height="34"/>
-  <object id="25" gid="174" x="2042.33" y="680.333" width="34" height="34"/>
-  <object id="26" gid="174" x="1941.67" y="678.333" width="34" height="34"/>
-  <object id="27" gid="174" x="651.333" y="1459" width="34" height="34"/>
-  <object id="28" gid="174" x="176.333" y="2446.33" width="34" height="34"/>
-  <object id="29" gid="183" x="2108.33" y="1831.67" width="34" height="34"/>
-  <object id="30" gid="183" x="1969" y="1829.67" width="34" height="34"/>
-  <object id="31" gid="183" x="1837" y="1837" width="34" height="34"/>
-  <object id="32" gid="183" x="515.667" y="1456.33" width="34" height="34"/>
-  <object id="33" gid="183" x="309.667" y="1461.67" width="34" height="34"/>
-  <object id="34" gid="183" x="168.333" y="1463" width="34" height="34"/>
-  <object id="35" gid="183" x="645" y="646.333" width="34" height="34"/>
-  <object id="36" gid="183" x="1461" y="607.667" width="34" height="34"/>
-  <object id="37" gid="183" x="1462.33" y="780.333" width="34" height="34"/>
-  <object id="38" gid="183" x="1631.67" y="781.667" width="34" height="34"/>
-  <object id="39" gid="185" x="3267" y="2077" width="34" height="34"/>
-  <object id="40" gid="185" x="410.333" y="511" width="34" height="34"/>
-  <object id="41" gid="185" x="134.333" y="1635" width="34" height="34"/>
-  <object id="42" gid="185" x="578.333" y="2314.33" width="34" height="34"/>
-  <object id="43" gid="185" x="377.667" y="2549.67" width="34" height="34"/>
-  <object id="44" gid="185" x="555.667" y="2686.33" width="34" height="34"/>
-  <object id="46" gid="174" x="1508" y="1932" width="34" height="34"/>
-  <object id="88" gid="183" x="959.667" y="1591.67" width="34" height="34"/>
+  <object id="3" gid="1" x="238.5" y="1699.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="279" y="369.666" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="146.667" y="131.333" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="2520.33" y="59.6667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="9" gid="1" x="3240.67" y="62" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="3275.33" y="61" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="13"/>
+   </properties>
+  </object>
+  <object id="11" gid="35" x="2252.33" y="777.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="12" gid="35" x="3034" y="367.333" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="13" gid="35" x="2322.17" y="298.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="14" gid="35" x="2150" y="296.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="15" gid="35" x="1979.67" y="297" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="16" gid="35" x="1643" y="571.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="14"/>
+   </properties>
+  </object>
+  <object id="17" gid="40" x="1601" y="1666.33" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="18" gid="40" x="1808.33" y="1385" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="19" gid="40" x="1671.67" y="1053.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="20" gid="40" x="3133.67" y="267.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="21" gid="40" x="3000.5" y="640.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="22" gid="40" x="2930" y="777.167" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="15"/>
+   </properties>
+  </object>
+  <object id="23" gid="43" x="2996.5" y="1253.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="16"/>
+   </properties>
+  </object>
+  <object id="24" gid="43" x="2998" y="1148" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="16"/>
+   </properties>
+  </object>
+  <object id="25" gid="174" x="2045.33" y="675.333" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="1"/>
+   </properties>
+  </object>
+  <object id="26" gid="174" x="1943.67" y="675.333" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="1"/>
+   </properties>
+  </object>
+  <object id="27" gid="174" x="655.333" y="1456.33" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="1"/>
+   </properties>
+  </object>
+  <object id="28" gid="174" x="176.333" y="2438.33" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="1"/>
+   </properties>
+  </object>
+  <object id="29" gid="183" x="2116.83" y="1825.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="30" gid="183" x="1979.5" y="1822.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="31" gid="183" x="1843.5" y="1826.5" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="32" gid="183" x="515.667" y="1456.33" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="33" gid="183" x="311.667" y="1457" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="34" gid="183" x="179" y="1461.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="35" gid="183" x="650.333" y="639.666" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="36" gid="183" x="1474.5" y="603.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="37" gid="183" x="1469.83" y="773.333" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="38" gid="183" x="1641.67" y="774.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
+  <object id="39" gid="185" x="3268.33" y="2069.67" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="40" gid="185" x="411.666" y="505.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="41" gid="185" x="134.333" y="1635" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="42" gid="185" x="584.333" y="2303.66" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="43" gid="185" x="382.334" y="2541" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="44" gid="185" x="551.667" y="2682.33" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="3"/>
+   </properties>
+  </object>
+  <object id="46" gid="174" x="1508" y="1932" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="1"/>
+   </properties>
+  </object>
+  <object id="88" gid="183" x="965.667" y="1591" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="2"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
