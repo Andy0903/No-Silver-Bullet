@@ -1,23 +1,25 @@
 fileFormatVersion: 2
-guid: 1c80153f1f3f863429f9c177f08b3504
-timeCreated: 1461089028
+guid: ff8c6ee5ee82a574ca23b1b738955a69
+timeCreated: 1461089107
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: StoneDrylake_0
-    21300002: StoneDrylake_1
-    21300004: StoneDrylake_2
-    21300006: StoneDrylake_3
-    21300008: StoneDrylake_4
-    21300010: StoneDrylake_5
-    21300012: StoneDrylake_6
-    21300014: StoneDrylake_7
-    21300016: StoneDrylake_8
-    21300018: StoneDrylake_9
-    21300020: StoneDrylake_10
-    21300022: StoneDrylake_11
-    21300024: StoneDrylake_12
-    21300026: StoneDrylake_13
+    21300000: StoneHeights2_0
+    21300002: StoneHeights2_1
+    21300004: StoneHeights2_2
+    21300006: StoneHeights2_3
+    21300008: StoneHeights2_4
+    21300010: StoneHeights2_5
+    21300012: StoneHeights2_6
+    21300014: StoneHeights2_7
+    21300016: StoneHeights2_8
+    21300018: StoneHeights2_9
+    21300020: StoneHeights2_10
+    21300022: StoneHeights2_11
+    21300024: StoneHeights2_12
+    21300026: StoneHeights2_13
+    21300028: StoneHeights2_14
+    21300030: StoneHeights2_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,7 +66,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: StoneDrylake_0
+    - name: StoneHeights2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -79,7 +81,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_1
+    - name: StoneHeights2_1
       rect:
         serializedVersion: 2
         x: 34
@@ -94,7 +96,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_2
+    - name: StoneHeights2_2
       rect:
         serializedVersion: 2
         x: 68
@@ -109,7 +111,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_3
+    - name: StoneHeights2_3
       rect:
         serializedVersion: 2
         x: 102
@@ -124,7 +126,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_4
+    - name: StoneHeights2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -139,7 +141,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_5
+    - name: StoneHeights2_5
       rect:
         serializedVersion: 2
         x: 34
@@ -154,7 +156,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_6
+    - name: StoneHeights2_6
       rect:
         serializedVersion: 2
         x: 68
@@ -169,7 +171,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_7
+    - name: StoneHeights2_7
       rect:
         serializedVersion: 2
         x: 102
@@ -184,7 +186,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_8
+    - name: StoneHeights2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -199,7 +201,37 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_9
+    - name: StoneHeights2_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_11
       rect:
         serializedVersion: 2
         x: 102
@@ -214,7 +246,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_10
+    - name: StoneHeights2_12
       rect:
         serializedVersion: 2
         x: 0
@@ -229,7 +261,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_11
+    - name: StoneHeights2_13
       rect:
         serializedVersion: 2
         x: 34
@@ -244,7 +276,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_12
+    - name: StoneHeights2_14
       rect:
         serializedVersion: 2
         x: 68
@@ -259,7 +291,7 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
-    - name: StoneDrylake_13
+    - name: StoneHeights2_15
       rect:
         serializedVersion: 2
         x: 102
