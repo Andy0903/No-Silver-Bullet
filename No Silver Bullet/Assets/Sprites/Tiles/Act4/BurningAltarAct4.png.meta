@@ -1,9 +1,45 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ddf3dc29b24c5c044b442e120064d166
 timeCreated: 1461178578
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 8fad835ff1c69124e8152299b2901c37
+timeCreated: 1461176930
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BurningAltarAct4_0
+    21300002: BurningAltarAct4_1
+    21300004: BurningAltarAct4_2
+    21300006: BurningAltarAct4_3
+    21300008: BurningAltarAct4_4
+    21300010: BurningAltarAct4_5
+    21300012: BurningAltarAct4_6
+    21300014: BurningAltarAct4_7
+    21300016: BurningAltarAct4_8
+    21300018: BurningAltarAct4_9
+    21300020: BurningAltarAct4_10
+    21300022: BurningAltarAct4_11
+    21300024: BurningAltarAct4_12
+    21300026: BurningAltarAct4_13
+    21300028: BurningAltarAct4_14
+    21300030: BurningAltarAct4_15
+    21300032: BurningAltarAct4_16
+    21300034: BurningAltarAct4_17
+    21300036: BurningAltarAct4_18
+    21300038: BurningAltarAct4_19
+    21300040: BurningAltarAct4_20
+    21300042: BurningAltarAct4_21
+    21300044: BurningAltarAct4_22
+    21300046: BurningAltarAct4_23
+    21300048: BurningAltarAct4_24
+    21300050: BurningAltarAct4_25
+    21300052: BurningAltarAct4_26
+    21300054: BurningAltarAct4_27
+>>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +66,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
+=======
+    aniso: 16
+>>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +78,561 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> dev-andy
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 34
+>>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - name: BurningAltarAct4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 8}
+        - {x: 4, y: 1}
+        - {x: -7, y: -5}
+        - {x: -11, y: -9}
+        - {x: -11, y: -13}
+        - {x: -7, y: -17}
+        - {x: -4, y: -17}
+        - {x: 7, y: -9}
+        - {x: 9, y: -7}
+        - {x: 13, y: -2}
+        - {x: 13, y: -1}
+        - {x: 13, y: -5}
+        - {x: 11, y: -7}
+        - {x: 8, y: -13}
+        - {x: 8, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 11}
+        - {x: 9, y: 11}
+      - - {x: -12, y: 1}
+        - {x: -15, y: 0}
+        - {x: -15, y: -6}
+        - {x: -13, y: -7}
+        - {x: -8, y: -7}
+        - {x: -7, y: -4}
+        - {x: -7, y: -2}
+        - {x: -8, y: 1}
+      - - {x: 2, y: 17}
+        - {x: 1, y: 14}
+        - {x: 1, y: 12}
+        - {x: 4, y: 9}
+        - {x: 7, y: 9}
+        - {x: 9, y: 12}
+        - {x: 9, y: 16}
+        - {x: 7, y: 17}
+    - name: BurningAltarAct4_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 17}
+        - {x: -17, y: 16}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 2}
+        - {x: 12, y: 17}
+    - name: BurningAltarAct4_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 10}
+        - {x: -8, y: 5}
+        - {x: -7, y: 2}
+        - {x: -17, y: -10}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 12}
+        - {x: 9, y: 12}
+    - name: BurningAltarAct4_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -8}
+        - {x: 2, y: 9}
+        - {x: -9, y: 12}
+        - {x: -17, y: 12}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -10}
+        - {x: 12, y: -10}
+    - name: BurningAltarAct4_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 17}
+        - {x: 2, y: 17}
+        - {x: -4, y: 16}
+        - {x: -17, y: -6}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 16}
+        - {x: 14, y: 16}
+    - name: BurningAltarAct4_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 16}
+        - {x: -17, y: -17}
+        - {x: -3, y: -17}
+        - {x: -3, y: -3}
+        - {x: -11, y: 16}
+      - - {x: 9, y: -5}
+        - {x: 7, y: -7}
+        - {x: 7, y: -10}
+        - {x: 8, y: -11}
+        - {x: 13, y: -11}
+        - {x: 13, y: -6}
+        - {x: 11, y: -5}
+      - - {x: -6, y: 4}
+        - {x: -4, y: 2}
+        - {x: -1, y: 3}
+        - {x: -1, y: 6}
+        - {x: -3, y: 8}
+        - {x: -6, y: 7}
+    - name: BurningAltarAct4_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -11}
+        - {x: -11, y: -13}
+        - {x: -11, y: -16}
+        - {x: -10, y: -17}
+        - {x: -6, y: -17}
+        - {x: -5, y: -16}
+        - {x: -5, y: -13}
+        - {x: -7, y: -11}
+      - - {x: 8, y: 17}
+        - {x: 9, y: 14}
+        - {x: 2, y: 17}
+        - {x: -8, y: 17}
+        - {x: -11, y: 9}
+        - {x: -11, y: -1}
+        - {x: -6, y: -1}
+        - {x: -3, y: 2}
+        - {x: -3, y: 4}
+        - {x: -4, y: -1}
+        - {x: -3, y: -4}
+        - {x: -2, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 17}
+        - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 9, y: -17}
+        - {x: 9, y: -4}
+        - {x: 8, y: 8}
+      - - {x: 9, y: 12}
+        - {x: 10, y: 9}
+        - {x: 13, y: 9}
+        - {x: 15, y: 11}
+        - {x: 14, y: 14}
+        - {x: 11, y: 14}
+    - name: BurningAltarAct4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17}
+        - {x: -11, y: 15}
+        - {x: -11, y: -5}
+        - {x: -7, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 7, y: -17}
+        - {x: 9, y: -4}
+        - {x: 9, y: 17}
+    - name: BurningAltarAct4_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 17}
+        - {x: 8, y: 10}
+        - {x: 8, y: -9}
+        - {x: 10, y: -15}
+        - {x: 17, y: -15}
+        - {x: 17, y: 17}
+      - - {x: -12, y: -1}
+        - {x: -15, y: -2}
+        - {x: -15, y: -8}
+        - {x: -13, y: -9}
+        - {x: -8, y: -9}
+        - {x: -7, y: -6}
+        - {x: -7, y: -4}
+        - {x: -8, y: -1}
+    - name: BurningAltarAct4_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -15}
+        - {x: -3, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 0, y: -17}
+        - {x: 17, y: -15}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_23
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -15}
+        - {x: -11, y: -15}
+        - {x: 3, y: -5}
+        - {x: 7, y: 6}
+        - {x: 7, y: 17}
+    - name: BurningAltarAct4_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 17}
+        - {x: 3, y: -13}
+        - {x: 7, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -9}
+        - {x: -14, y: -9}
+        - {x: -12, y: -7}
+        - {x: 17, y: 12}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_26
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: -9}
+        - {x: 14, y: -8}
+        - {x: 14, y: -5}
+        - {x: 11, y: -4}
+        - {x: 9, y: -6}
+      - - {x: -17, y: 17}
+        - {x: -17, y: 12}
+        - {x: 17, y: 12}
+        - {x: 17, y: 17}
+    - name: BurningAltarAct4_27
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: -14, y: -9}
+        - {x: -7, y: -9}
+        - {x: -5, y: -7}
+        - {x: -5, y: 17}
+>>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 

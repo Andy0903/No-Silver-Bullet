@@ -1,9 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 16017ab8b95231043ad9bd787bab4369
 timeCreated: 1461178575
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 64f7ce2bd89fa6e449dc292eca173efa
+timeCreated: 1461176895
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BlueFire_0
+    21300002: BlueFire_1
+    21300004: BlueFire_2
+    21300006: BlueFire_3
+>>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +42,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
+=======
+    aniso: 16
+>>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +54,102 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> dev-andy
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 34
+>>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - name: BlueFire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 12}
+        - {x: -17, y: 3}
+        - {x: -17, y: -16}
+        - {x: -16, y: -17}
+        - {x: 11, y: -17}
+        - {x: 11, y: 2}
+        - {x: 9, y: 12}
+    - name: BlueFire_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 17}
+        - {x: -17, y: 8}
+        - {x: -17, y: -17}
+        - {x: 14, y: -17}
+        - {x: 14, y: 16}
+        - {x: 12, y: 17}
+    - name: BlueFire_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 17}
+        - {x: -9, y: 17}
+        - {x: -15, y: 10}
+        - {x: -15, y: -14}
+        - {x: -14, y: -17}
+        - {x: 16, y: -17}
+        - {x: 16, y: 7}
+        - {x: 15, y: 15}
+    - name: BlueFire_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 17}
+        - {x: 4, y: 14}
+        - {x: 4, y: 17}
+        - {x: -11, y: 17}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+>>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 

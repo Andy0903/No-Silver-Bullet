@@ -1,9 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2c6cb18e5ab116041a863e8cdcbac645
 timeCreated: 1461178575
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 6b98072ba645335479bb7379a78e7839
+timeCreated: 1461177149
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BuskeAct4_0
+>>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +39,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
+=======
+    aniso: 16
+>>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -44,12 +57,36 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 34
+>>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - name: BuskeAct4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -16}
+        - {x: -16, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+>>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 

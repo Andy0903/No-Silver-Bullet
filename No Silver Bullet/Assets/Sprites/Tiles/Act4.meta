@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 98763bd3941ecf6449b328e5e2078e53
 folderAsset: yes
 timeCreated: 1461178569
+=======
+guid: 70336f0ab5c80d24bac1d1648c89cce4
+folderAsset: yes
+timeCreated: 1461175221
+>>>>>>> dev-andy
 licenseType: Free
 DefaultImporter:
   userData: 
