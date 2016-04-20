@@ -32,6 +32,7 @@ public class NPCController : MonoBehaviour
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Renderer myRenderer;
+	private DialogueReader myDialogueReader;
 
 	#endregion
 
@@ -43,6 +44,7 @@ public class NPCController : MonoBehaviour
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		myCurrentState = State.Idle;
 		myRenderer = GetComponent<Renderer> ();
+		myDialogueReader = DialogueReader.Load ();
 	}
 
 	private void Update ()
@@ -140,6 +142,16 @@ public class NPCController : MonoBehaviour
 		{
 			myCurrentDirection = Direction.Down;
 		}
+	}
+
+	private void ReadMyDialogue()
+	{
+		int offset = 50;
+
+		//To be used for testing in the future
+		//Needs to be redone
+		GUI.TextField(new Rect(Screen.currentResolution.width/2-offset, Screen.currentResolution.height-offset, 50, 50), 
+			myDialogueReader.FindCharacter(tag));
 	}
 
 	#endregion
