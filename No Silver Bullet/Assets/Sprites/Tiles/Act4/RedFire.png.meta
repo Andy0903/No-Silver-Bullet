@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 6c027211902e63e48991e2119b636836
-timeCreated: 1461175223
+timeCreated: 1461177308
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: RedFire_0
+    21300002: RedFire_1
+    21300004: RedFire_2
+    21300006: RedFire_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +53,79 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: RedFire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 12}
+        - {x: -17, y: 3}
+        - {x: -17, y: -16}
+        - {x: -16, y: -17}
+        - {x: 11, y: -17}
+        - {x: 11, y: 2}
+        - {x: 9, y: 12}
+    - name: RedFire_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 17}
+        - {x: -17, y: 8}
+        - {x: -17, y: -17}
+        - {x: 14, y: -17}
+        - {x: 14, y: 16}
+        - {x: 12, y: 17}
+    - name: RedFire_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 17}
+        - {x: -9, y: 17}
+        - {x: -15, y: 10}
+        - {x: -15, y: -14}
+        - {x: -14, y: -17}
+        - {x: 16, y: -17}
+        - {x: 16, y: 7}
+        - {x: 15, y: 15}
+    - name: RedFire_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 17}
+        - {x: 4, y: 14}
+        - {x: 4, y: 17}
+        - {x: -11, y: 17}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: a062b188ba759f6428410aec33f8e4a3
-timeCreated: 1461175223
+timeCreated: 1461176887
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Act4House_0
+    21300002: Act4House_1
+    21300004: Act4House_2
+    21300006: Act4House_3
+    21300008: Act4House_4
+    21300010: Act4House_5
+    21300012: Act4House_6
+    21300014: Act4House_7
+    21300016: Act4House_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +58,147 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Act4House_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -11, y: 11}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 12}
+        - {x: 16, y: 13}
+    - name: Act4House_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 13}
+        - {x: -17, y: 13}
+    - name: Act4House_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -17}
+        - {x: 10, y: -17}
+        - {x: 10, y: 11}
+        - {x: 9, y: 13}
+        - {x: -17, y: 13}
+    - name: Act4House_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Act4House_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Act4House_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 10, y: -17}
+        - {x: 10, y: 17}
+    - name: Act4House_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -11, y: -5}
+        - {x: -8, y: -13}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: Act4House_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -13}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: Act4House_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -13}
+        - {x: 9, y: -13}
+        - {x: 10, y: -11}
+        - {x: 10, y: 17}
     outline: []
   spritePackingTag: 
   userData: 

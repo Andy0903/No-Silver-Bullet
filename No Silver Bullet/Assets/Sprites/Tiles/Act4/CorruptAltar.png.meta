@@ -1,9 +1,28 @@
 fileFormatVersion: 2
 guid: 142063c454ca1ad41a764467b0d3df36
-timeCreated: 1461175223
+timeCreated: 1461177188
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CorruptAltar_0
+    21300002: CorruptAltar_1
+    21300004: CorruptAltar_2
+    21300006: CorruptAltar_3
+    21300008: CorruptAltar_4
+    21300010: CorruptAltar_5
+    21300012: CorruptAltar_6
+    21300014: CorruptAltar_7
+    21300016: CorruptAltar_8
+    21300018: CorruptAltar_9
+    21300020: CorruptAltar_10
+    21300022: CorruptAltar_11
+    21300024: CorruptAltar_12
+    21300026: CorruptAltar_13
+    21300028: CorruptAltar_14
+    21300030: CorruptAltar_15
+    21300032: CorruptAltar_16
+    21300034: CorruptAltar_17
+    21300036: CorruptAltar_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +68,308 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: CorruptAltar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -16}
+        - {x: 13, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -14}
+        - {x: 15, y: -14}
+    - name: CorruptAltar_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 17}
+        - {x: -17, y: -10}
+        - {x: -17, y: -17}
+        - {x: 12, y: -17}
+        - {x: 17, y: -14}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -14}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17}
+        - {x: -17, y: 17}
+        - {x: -17, y: -14}
+        - {x: -12, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -13}
+        - {x: 15, y: -11}
+    - name: CorruptAltar_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CorruptAltar_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 17}
+        - {x: -1, y: 8}
+        - {x: -3, y: -11}
+        - {x: -3, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 15, y: -17}
+        - {x: 15, y: 9}
+        - {x: 9, y: 17}
+    - name: CorruptAltar_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 17}
+        - {x: -14, y: 7}
+        - {x: -14, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 3, y: -17}
+        - {x: 3, y: 10}
+        - {x: -7, y: 17}
+    - name: CorruptAltar_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 17}
+        - {x: -4, y: -11}
+        - {x: -4, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 8}
+        - {x: 15, y: 17}
+    - name: CorruptAltar_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 5}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 6}
+        - {x: -13, y: 6}
+    - name: CorruptAltar_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 17}
+        - {x: -17, y: 8}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -17}
+        - {x: 4, y: 0}
+        - {x: 3, y: 17}
+        - {x: -17, y: 17}
+        - {x: -17, y: -17}
+    - name: CorruptAltar_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 17}
+        - {x: -5, y: -4}
+        - {x: -3, y: -6}
+        - {x: 17, y: -6}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -6}
+        - {x: -5, y: -7}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: -3, y: -8}
+        - {x: 11, y: -8}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CorruptAltar_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: 5, y: -7}
+        - {x: 5, y: 17}
     outline: []
   spritePackingTag: 
   userData: 

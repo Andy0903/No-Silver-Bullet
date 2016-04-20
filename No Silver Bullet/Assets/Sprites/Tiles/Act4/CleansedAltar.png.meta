@@ -1,9 +1,28 @@
 fileFormatVersion: 2
 guid: c6f0315d35091f44b8e396a03a2b0441
-timeCreated: 1461175223
+timeCreated: 1461177176
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CleansedAltar_0
+    21300002: CleansedAltar_1
+    21300004: CleansedAltar_2
+    21300006: CleansedAltar_3
+    21300008: CleansedAltar_4
+    21300010: CleansedAltar_5
+    21300012: CleansedAltar_6
+    21300014: CleansedAltar_7
+    21300016: CleansedAltar_8
+    21300018: CleansedAltar_9
+    21300020: CleansedAltar_10
+    21300022: CleansedAltar_11
+    21300024: CleansedAltar_12
+    21300026: CleansedAltar_13
+    21300028: CleansedAltar_14
+    21300030: CleansedAltar_15
+    21300032: CleansedAltar_16
+    21300034: CleansedAltar_17
+    21300036: CleansedAltar_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +68,308 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: CleansedAltar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -16}
+        - {x: 13, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -14}
+        - {x: 15, y: -14}
+    - name: CleansedAltar_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 17}
+        - {x: -17, y: -10}
+        - {x: -17, y: -17}
+        - {x: 12, y: -17}
+        - {x: 17, y: -14}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -14}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17}
+        - {x: -17, y: 17}
+        - {x: -17, y: -14}
+        - {x: -12, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -13}
+        - {x: 15, y: -11}
+    - name: CleansedAltar_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CleansedAltar_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 17}
+        - {x: -1, y: 8}
+        - {x: -3, y: -11}
+        - {x: -3, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 15, y: -17}
+        - {x: 15, y: 9}
+        - {x: 9, y: 17}
+    - name: CleansedAltar_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 17}
+        - {x: -14, y: 7}
+        - {x: -14, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 3, y: -17}
+        - {x: 3, y: 10}
+        - {x: -7, y: 17}
+    - name: CleansedAltar_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 17}
+        - {x: -4, y: -11}
+        - {x: -4, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 8}
+        - {x: 15, y: 17}
+    - name: CleansedAltar_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 5}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 6}
+        - {x: -13, y: 6}
+    - name: CleansedAltar_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 17}
+        - {x: -17, y: 8}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -17}
+        - {x: 4, y: 0}
+        - {x: 3, y: 17}
+        - {x: -17, y: 17}
+        - {x: -17, y: -17}
+    - name: CleansedAltar_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 17}
+        - {x: -5, y: -4}
+        - {x: -3, y: -6}
+        - {x: 17, y: -6}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -6}
+        - {x: -5, y: -7}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: -3, y: -8}
+        - {x: 11, y: -8}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: 17, y: -7}
+        - {x: 17, y: 17}
+    - name: CleansedAltar_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -7}
+        - {x: 5, y: -7}
+        - {x: 5, y: 17}
     outline: []
   spritePackingTag: 
   userData: 
