@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: 9cc5c7019d4f42443a2bda4c73ec9d50
+timeCreated: 1461179460
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpiderDown1
+    21300002: SpiderDown2
+    21300004: SpiderDown3
+    21300006: SpiderLeft1
+    21300008: SpiderLeft2
+    21300010: SpiderLeft3
+    21300012: SpiderRight1
+    21300014: vpxgdt_7
+    21300016: vpxgdt_8
+    21300018: SpiderUp1
+    21300020: SpiderUp2
+    21300022: SpiderUp3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpiderDown1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 278
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 14.5}
+        - {x: 33, y: 30.5}
+        - {x: 32, y: 32.5}
+        - {x: -30, y: 32.5}
+        - {x: -32, y: 29.5}
+        - {x: -35, y: 24.5}
+        - {x: -36, y: 15.5}
+        - {x: -36, y: -21.5}
+        - {x: -29, y: -23.5}
+        - {x: -24, y: -15.5}
+        - {x: -22, y: -32.5}
+        - {x: 23, y: -32.5}
+        - {x: 35, y: -28.5}
+        - {x: 36, y: -26.5}
+    - name: SpiderDown2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 274
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 35}
+        - {x: -47.5, y: 32}
+        - {x: -47.5, y: -7}
+        - {x: -22.5, y: -35}
+        - {x: 31.5, y: -35}
+        - {x: 47.5, y: -32}
+        - {x: 47.5, y: 35}
+    - name: SpiderDown3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 274
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.5, y: 35}
+        - {x: -47.5, y: -27}
+        - {x: -33.5, y: -35}
+        - {x: 29.5, y: -35}
+        - {x: 47.5, y: 1}
+        - {x: 47.5, y: 29}
+        - {x: 38.5, y: 35}
+    - name: SpiderLeft1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 184
+        width: 71
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 34}
+        - {x: -35.5, y: 34}
+        - {x: -35.5, y: -33}
+        - {x: -34.5, y: -34}
+        - {x: 34.5, y: -34}
+        - {x: 35.5, y: -26}
+        - {x: 35.5, y: 21}
+    - name: SpiderLeft2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 182
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 30}
+        - {x: -44.5, y: 15}
+        - {x: -44.5, y: -27}
+        - {x: -39.5, y: -24}
+        - {x: -34.5, y: -19}
+        - {x: -34.5, y: -20}
+        - {x: -32.5, y: -22}
+        - {x: -18.5, y: -30}
+        - {x: 36.5, y: -30}
+        - {x: 44.5, y: -29}
+        - {x: 44.5, y: 21}
+        - {x: 40.5, y: 30}
+    - name: SpiderLeft3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 181
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 33.5}
+        - {x: -37.5, y: 22.5}
+        - {x: -37.5, y: -33.5}
+        - {x: 37.5, y: -33.5}
+        - {x: 37.5, y: 33.5}
+    - name: SpiderRight1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 97
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 34}
+        - {x: -36, y: 34}
+        - {x: -36, y: -33}
+        - {x: -35, y: -34}
+        - {x: -21, y: -34}
+        - {x: -16, y: -29}
+        - {x: -18, y: -32}
+        - {x: -18, y: -34}
+        - {x: -11, y: -34}
+        - {x: -8, y: -31}
+        - {x: 2, y: -34}
+        - {x: 36, y: -34}
+    - name: vpxgdt_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 95
+        width: 89
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: 0}
+        - {x: 34.5, y: 7}
+        - {x: 34.5, y: -19}
+        - {x: 40.5, y: -24}
+        - {x: 44.5, y: -24}
+        - {x: 44.5, y: 23}
+        - {x: 40.5, y: 30}
+        - {x: -38.5, y: 30}
+        - {x: -43.5, y: 19}
+        - {x: -44.5, y: 6}
+        - {x: -44.5, y: -28}
+        - {x: -42.5, y: -30}
+        - {x: 42.5, y: -30}
+        - {x: 34.5, y: -20}
+        - {x: 34.5, y: -9}
+    - name: vpxgdt_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 95
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 31.5}
+        - {x: 23, y: 33.5}
+        - {x: -28, y: 33.5}
+        - {x: -29, y: 32.5}
+        - {x: -38, y: 10.5}
+        - {x: -38, y: -25.5}
+        - {x: -24, y: -33.5}
+        - {x: 34, y: -33.5}
+        - {x: 37, y: -32.5}
+        - {x: 38, y: -30.5}
+        - {x: 38, y: 7.5}
+    - name: SpiderUp1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.5, y: 38}
+        - {x: -37.5, y: -38}
+        - {x: 37.5, y: -38}
+        - {x: 37.5, y: 34}
+        - {x: 26.5, y: 38}
+    - name: SpiderUp2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 8
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 40}
+        - {x: -35.5, y: 28}
+        - {x: -35.5, y: -36}
+        - {x: -29.5, y: -37}
+        - {x: -25.5, y: -33}
+        - {x: -13.5, y: -40}
+        - {x: 25.5, y: -40}
+        - {x: 35.5, y: -35}
+        - {x: 35.5, y: 27}
+        - {x: 23.5, y: 40}
+    - name: SpiderUp3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 8
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 40}
+        - {x: -35.5, y: 28}
+        - {x: -35.5, y: -36}
+        - {x: -29.5, y: -37}
+        - {x: -25.5, y: -33}
+        - {x: -13.5, y: -40}
+        - {x: 25.5, y: -40}
+        - {x: 35.5, y: -35}
+        - {x: 35.5, y: 27}
+        - {x: 23.5, y: 40}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
