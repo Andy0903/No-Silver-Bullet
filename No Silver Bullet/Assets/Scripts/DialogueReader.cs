@@ -6,7 +6,7 @@ using System.IO;
 using System.Collections.Generic;
 
 [XmlRoot("Dialogues")]
-public static class DialogueReader
+public class DialogueReader
 {
 
 	#region Member variables

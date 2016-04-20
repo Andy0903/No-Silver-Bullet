@@ -147,11 +147,11 @@ public class NPCController : MonoBehaviour
 	private void ReadMyDialogue()
 	{
 		int offset = 50;
-
+		CharacterData tempData = myDialogueReader.FindCharacter (tag);
 		//To be used for testing in the future
 		//Needs to be redone
 		GUI.TextField(new Rect(Screen.currentResolution.width/2-offset, Screen.currentResolution.height-offset, 50, 50), 
-			myDialogueReader.FindCharacter(tag));
+			tempData.dialogue);
 	}
 
 	#endregion
