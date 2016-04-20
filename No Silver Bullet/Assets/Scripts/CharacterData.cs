@@ -8,6 +8,8 @@ public class CharacterData {
 	[XmlAttribute("name")]
 	public string name;
 
-	[XmlElement("dialogue")]
-	public string dialogue;
+
+	[XmlArray("Dialogue")]
+	[XmlArrayItem("Text")]
+	public string[] dialogue;
 }

@@ -15,7 +15,10 @@ public class DialogLoader : MonoBehaviour {
 
 		foreach (CharacterData cd in dialogues.myCharacterDataList)
 		{
-			print (cd.dialogue);
+			foreach (string line in cd.dialogue)
+			{
+				print (line);
+			}
 		}
 
 	}

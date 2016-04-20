@@ -151,7 +151,7 @@ public class NPCController : MonoBehaviour
 		//To be used for testing in the future
 		//Needs to be redone
 		GUI.TextField(new Rect(Screen.currentResolution.width/2-offset, Screen.currentResolution.height-offset, 50, 50), 
-			tempData.dialogue);
+			tempData.dialogue[0]); //TODO: Write out each dialogue line
 	}
 
 	#endregion

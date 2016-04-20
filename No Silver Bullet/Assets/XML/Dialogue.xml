@@ -2,16 +2,16 @@
 <Dialogues>
     <Characters>
 		<Character name= "QuestGiver1"> 
-			<dialogue>
-			Insert text from the NPC here
-			</dialogue>
+			<Dialogue>
+				<Text>Insert text from the NPC here</Text>
+			</Dialogue>
 		</Character>
 	  
 		<Character name = "QuestGiver2">
-			<dialogue>
-				I used to be an adventurer like you until I took a silver bullet to the knee
-				Ayy lmao fam
-			</dialogue>
+			<Dialogue>
+				<Text>I used to be an adventurer like you until I took a silver bullet to the knee</Text>
+				<Text>Ayy lmao fam</Text>
+			</Dialogue>
 		</Character>
     </Characters>
 </Dialogues>
