@@ -1,11 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 1efd3be16a575d848a5cf3754ac06a89
-timeCreated: 1461178575
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
 guid: 6c027211902e63e48991e2119b636836
 timeCreated: 1461177308
 licenseType: Free
@@ -15,7 +8,6 @@ TextureImporter:
     21300002: RedFire_1
     21300004: RedFire_2
     21300006: RedFire_3
->>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,11 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-<<<<<<< HEAD
-    aniso: -1
-=======
     aniso: 16
->>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -54,28 +42,17 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> dev-andy
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 34
->>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - name: RedFire_0
       rect:
@@ -149,7 +126,6 @@ TextureImporter:
         - {x: -11, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
->>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 

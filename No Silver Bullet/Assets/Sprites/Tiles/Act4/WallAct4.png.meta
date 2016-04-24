@@ -1,11 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 7300ba7313d02c041a937ad722bf6987
-timeCreated: 1461178576
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
 guid: fe62679933d692f4f92f457641f0d96c
 timeCreated: 1461177376
 licenseType: Free
@@ -13,7 +6,6 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: WallAct4_0
     21300002: WallAct4_1
->>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -40,11 +32,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-<<<<<<< HEAD
-    aniso: -1
-=======
     aniso: 16
->>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -52,28 +40,17 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> dev-andy
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 34
->>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - name: WallAct4_0
       rect:
@@ -105,7 +82,6 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
->>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 

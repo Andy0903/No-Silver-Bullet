@@ -1,11 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 520f4ac112e377b42aece7a680936c33
-timeCreated: 1461178576
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
 guid: 1862f7833dbcf5a4ab1bfd42e0925515
 timeCreated: 1461177387
 licenseType: Free
@@ -20,7 +13,6 @@ TextureImporter:
     21300012: WaterAct4_6
     21300014: WaterAct4_7
     21300016: WaterAct4_8
->>>>>>> dev-andy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,11 +39,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-<<<<<<< HEAD
-    aniso: -1
-=======
     aniso: 16
->>>>>>> dev-andy
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -59,28 +47,17 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> dev-andy
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 34
->>>>>>> dev-andy
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< HEAD
-    sprites: []
-=======
     sprites:
     - name: WaterAct4_0
       rect:
@@ -217,7 +194,6 @@ TextureImporter:
         - {x: -17, y: -17}
         - {x: 17, y: -17}
         - {x: 17, y: 17}
->>>>>>> dev-andy
     outline: []
   spritePackingTag: 
   userData: 
