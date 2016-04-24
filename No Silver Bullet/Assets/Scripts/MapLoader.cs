@@ -25,8 +25,8 @@ public class MapLoader : MonoBehaviour
 		myMap = new TmxMap ("Assets/Tmx/" + myTMXfileName + ".tmx");
 
 		IndexateTiles ();
-		CreateBoardTmxObjects ();
 		CreateBoardTiles ();
+		CreateBoardTmxObjects ();
 	}
 
 	private void IndexateTiles ()

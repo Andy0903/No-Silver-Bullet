@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: 072bd337b46100040962485a9f65feb7
-timeCreated: 1460749063
+timeCreated: 1461524942
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: DarkRedHouse_0
+    21300002: DarkRedHouse_1
+    21300004: DarkRedHouse_2
+    21300006: DarkRedHouse_3
+    21300008: DarkRedHouse_4
+    21300010: DarkRedHouse_5
+    21300012: DarkRedHouse_6
+    21300014: DarkRedHouse_7
+    21300016: DarkRedHouse_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +47,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +58,147 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: DarkRedHouse_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 13}
+        - {x: -11, y: 11}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 12}
+        - {x: 16, y: 13}
+    - name: DarkRedHouse_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 13}
+        - {x: -17, y: 13}
+    - name: DarkRedHouse_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -17}
+        - {x: 10, y: -17}
+        - {x: 10, y: 11}
+        - {x: 9, y: 13}
+        - {x: -17, y: 13}
+    - name: DarkRedHouse_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -11, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: DarkRedHouse_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: DarkRedHouse_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 10, y: -17}
+        - {x: 10, y: 17}
+    - name: DarkRedHouse_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -11, y: -5}
+        - {x: -8, y: -13}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: DarkRedHouse_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -13}
+        - {x: 17, y: -13}
+        - {x: 17, y: 17}
+    - name: DarkRedHouse_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -13}
+        - {x: 9, y: -13}
+        - {x: 10, y: -11}
+        - {x: 10, y: 17}
     outline: []
   spritePackingTag: 
   userData: 
