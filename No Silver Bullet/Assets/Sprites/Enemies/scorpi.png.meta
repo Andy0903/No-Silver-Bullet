@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: 6f047aa64ad088846aaf519d246f55ba
-timeCreated: 1461178937
+timeCreated: 1461592556
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ScorpionForward01
+    21300002: ScorpionForward02
+    21300004: ScorpionForward03
+    21300006: ScorpionForward04
+    21300008: ScorpionDown01
+    21300010: ScorpionDown02
+    21300012: ScorpionDown03
+    21300014: ScorpionDown04
+    21300016: ScorpionLeft01
+    21300018: ScorpionLeft02
+    21300020: ScorpionLeft03
+    21300022: ScorpionLeft04
+    21300024: ScorpionIdleForward
+    21300026: ScorpionIdleLeft
+    21300028: ScorpionIdleDown
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +64,382 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: ScorpionForward01
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 486
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 25.5}
+        - {x: -24, y: -24.5}
+        - {x: -20, y: -25.5}
+        - {x: 24, y: -25.5}
+        - {x: 24, y: 25.5}
+    - name: ScorpionForward02
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 484
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -14}
+        - {x: 23.5, y: 24}
+        - {x: 20.5, y: 26}
+        - {x: 8.5, y: 26}
+        - {x: 4.5, y: 18}
+        - {x: 5.5, y: 14}
+        - {x: 7.5, y: 9}
+        - {x: 8.5, y: 8}
+        - {x: 7.5, y: 11}
+        - {x: 3.5, y: 14}
+        - {x: 0.5, y: 14}
+        - {x: -8.5, y: 26}
+        - {x: -18.5, y: 26}
+        - {x: -23.5, y: 22}
+        - {x: -23.5, y: 0}
+        - {x: -19.5, y: -26}
+        - {x: 20.5, y: -26}
+        - {x: 21.5, y: -21}
+        - {x: 17.5, y: -18}
+        - {x: 13.5, y: -16}
+    - name: ScorpionForward03
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 485
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 25.5}
+        - {x: -4.5, y: 13.5}
+        - {x: -8.5, y: 9.5}
+        - {x: -9.5, y: 5.5}
+        - {x: -10.5, y: 7.5}
+        - {x: -5.5, y: 13.5}
+        - {x: -5.5, y: 24.5}
+        - {x: -6.5, y: 25.5}
+        - {x: -24.5, y: 25.5}
+        - {x: -24.5, y: -25.5}
+        - {x: 21.5, y: -25.5}
+        - {x: 24.5, y: -20.5}
+        - {x: 24.5, y: 25.5}
+    - name: ScorpionForward04
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 484
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 25}
+        - {x: -24, y: -25}
+        - {x: 24, y: -25}
+        - {x: 24, y: 25}
+    - name: ScorpionDown01
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 252
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 4}
+        - {x: 17, y: 4}
+        - {x: 20, y: 5}
+        - {x: 17, y: 16}
+        - {x: 8, y: 32}
+        - {x: -9, y: 32}
+        - {x: -21, y: 11}
+        - {x: -25, y: 5}
+        - {x: -25, y: -31}
+        - {x: -24, y: -32}
+        - {x: -16, y: -32}
+        - {x: -14, y: -30}
+        - {x: -14, y: -26}
+        - {x: -8, y: -25}
+        - {x: 4, y: -18}
+        - {x: 8, y: -14}
+        - {x: 7, y: -15}
+        - {x: 5, y: -20}
+        - {x: 5, y: -25}
+        - {x: 8, y: -28}
+        - {x: 11, y: -28}
+        - {x: 13, y: -26}
+        - {x: 13, y: -32}
+        - {x: 25, y: -32}
+        - {x: 25, y: 4}
+    - name: ScorpionDown02
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 252
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 31}
+        - {x: -25, y: 25}
+        - {x: -25, y: -31}
+        - {x: 24, y: -31}
+        - {x: 25, y: -30}
+        - {x: 25, y: -3}
+        - {x: 8, y: 31}
+    - name: ScorpionDown03
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 252
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 31}
+        - {x: -20.5, y: 10}
+        - {x: -19.5, y: 6}
+        - {x: -16.5, y: 3}
+        - {x: -14.5, y: 3}
+        - {x: -18.5, y: 3}
+        - {x: -25.5, y: -3}
+        - {x: -25.5, y: -31}
+        - {x: 25.5, y: -31}
+        - {x: 25.5, y: 19}
+        - {x: 12.5, y: 31}
+    - name: ScorpionDown04
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 252
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: -32}
+        - {x: 25.5, y: -32}
+        - {x: 25.5, y: -10}
+        - {x: 19.5, y: 16}
+        - {x: 9.5, y: 32}
+        - {x: -9.5, y: 32}
+        - {x: -25.5, y: 9}
+        - {x: -25.5, y: -32}
+        - {x: -13.5, y: -32}
+        - {x: -12.5, y: -31}
+        - {x: -6.5, y: -29}
+        - {x: -5.5, y: -24}
+    - name: ScorpionLeft01
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 382
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 23}
+        - {x: -31.5, y: -23}
+        - {x: 22.5, y: -23}
+        - {x: 31.5, y: -11}
+        - {x: 31.5, y: 23}
+    - name: ScorpionLeft02
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 382
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 25}
+        - {x: 8, y: 24}
+        - {x: 10, y: 12}
+        - {x: 15, y: 9}
+        - {x: 19, y: 9}
+        - {x: 9, y: 9}
+        - {x: 0, y: 23}
+        - {x: -31, y: 11}
+        - {x: -31, y: -4}
+        - {x: -15, y: -9}
+        - {x: -7, y: -9}
+        - {x: -10, y: -11}
+        - {x: -14, y: -9}
+        - {x: -24, y: -9}
+        - {x: -31, y: -20}
+        - {x: -31, y: -25}
+        - {x: 5, y: -25}
+        - {x: 27, y: -20}
+        - {x: 31, y: -9}
+        - {x: 31, y: 25}
+    - name: ScorpionLeft03
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 382
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 11}
+        - {x: -30.5, y: -5}
+        - {x: -23.5, y: -6}
+        - {x: -18.5, y: -5}
+        - {x: -14.5, y: -9}
+        - {x: -17.5, y: -7}
+        - {x: -22.5, y: -7}
+        - {x: -24.5, y: -9}
+        - {x: -30.5, y: -14}
+        - {x: -30.5, y: -23}
+        - {x: 24.5, y: -23}
+        - {x: 30.5, y: -11}
+        - {x: 30.5, y: 23}
+        - {x: -17.5, y: 23}
+        - {x: -28.5, y: 21}
+    - name: ScorpionLeft04
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 382
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 22}
+        - {x: 10, y: 16}
+        - {x: -22, y: 12}
+        - {x: -32, y: 5}
+        - {x: -32, y: -19}
+        - {x: -29, y: -22}
+        - {x: 16, y: -22}
+        - {x: 32, y: -14}
+        - {x: 32, y: 19}
+        - {x: 31, y: 22}
+    - name: ScorpionIdleForward
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 540
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: -14}
+        - {x: 21, y: -13}
+        - {x: 24, y: -10}
+        - {x: 24, y: 22}
+        - {x: 21, y: 26}
+        - {x: 11, y: 26}
+        - {x: 5, y: 21}
+        - {x: 6, y: 14}
+        - {x: 8, y: 10}
+        - {x: 7, y: 12}
+        - {x: 1, y: 14}
+        - {x: -3, y: 14}
+        - {x: -9, y: 9}
+        - {x: -6, y: 12}
+        - {x: -6, y: 18}
+        - {x: -9, y: 26}
+        - {x: -22, y: 26}
+        - {x: -24, y: 25}
+        - {x: -24, y: -10}
+        - {x: -17, y: -16}
+        - {x: -14, y: -14}
+        - {x: -12, y: -12}
+        - {x: -10, y: -12}
+        - {x: -12, y: -12}
+        - {x: -20, y: -21}
+        - {x: -15, y: -26}
+        - {x: 10, y: -26}
+        - {x: 21, y: -20}
+        - {x: 17, y: -15}
+        - {x: 14, y: -12}
+        - {x: 16, y: -14}
+    - name: ScorpionIdleLeft
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 542
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -3}
+        - {x: -27.5, y: -3}
+        - {x: -20.5, y: -7}
+        - {x: -15.5, y: -9}
+        - {x: -21.5, y: -8}
+        - {x: -31.5, y: -18}
+        - {x: -31.5, y: -23}
+        - {x: 25.5, y: -23}
+        - {x: 31.5, y: -13}
+        - {x: 31.5, y: 23}
+        - {x: -13.5, y: 23}
+        - {x: -31.5, y: 18}
+    - name: ScorpionIdleDown
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 542
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: -19}
+        - {x: 8.5, y: -16}
+        - {x: 9.5, y: -13}
+        - {x: 9.5, y: -10}
+        - {x: 8.5, y: -14}
+        - {x: 6.5, y: -19}
+        - {x: 6.5, y: -23}
+        - {x: 9.5, y: -27}
+        - {x: 13.5, y: -28}
+        - {x: 14.5, y: -31}
+        - {x: 25.5, y: -31}
+        - {x: 25.5, y: 8}
+        - {x: 17.5, y: 31}
+        - {x: -10.5, y: 31}
+        - {x: -25.5, y: 21}
+        - {x: -25.5, y: -31}
+        - {x: -14.5, y: -31}
+        - {x: -14.5, y: -29}
+        - {x: -8.5, y: -27}
+        - {x: -6.5, y: -23}
     outline: []
   spritePackingTag: 
   userData: 
