@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 
 	public string myLeadsToSceneName;
 	public Vector2 myStartPosition;
+	public AudioClip myActClip;
 	float myCooldown;
 	float myTimer;
 
@@ -30,6 +31,7 @@ public class SceneLoader : MonoBehaviour
 
 				myTimer = Time.time + myCooldown;
 				Application.LoadLevel ("Scenes/" + myLeadsToSceneName);
+				SoundManager.instance.ChangeBGMusic (myActClip);
 			}
 		}
 	}

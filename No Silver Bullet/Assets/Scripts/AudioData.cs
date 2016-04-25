@@ -8,8 +8,9 @@ public class AudioData {
 
 	public AudioData(string aFilePath, string aNameID)
 	{
-		myAudioClip = Resources.Load (aFilePath) as AudioClip;
-		myNameID = aNameID;
+		
+		myNameID = aNameID.Split ('.') [0]; //Ignores file ending
+		myAudioClip = (AudioClip)Resources.Load (Application.dataPath+myNameID) as AudioClip;
 	}
 
 }
