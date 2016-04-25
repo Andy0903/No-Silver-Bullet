@@ -31,7 +31,11 @@ public class SceneLoader : MonoBehaviour
 
 				myTimer = Time.time + myCooldown;
 				Application.LoadLevel ("Scenes/" + myLeadsToSceneName);
-				SoundManager.instance.ChangeBGMusic (myActClip);
+
+				if (myActClip != null)
+				{
+					SoundManager.instance.ChangeBGMusic (myActClip);
+				}
 			}
 		}
 	}

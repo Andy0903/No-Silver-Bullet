@@ -2327,7 +2327,6 @@
     <property name="ObjectIndex" value="9"/>
    </properties>
   </object>
-  <object id="190" x="1339.33" y="74.6667" width="144" height="136.667"/>
   <object id="193" gid="380" x="622.667" y="1896.67" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="10"/>

@@ -82,7 +82,6 @@ public class MapLoader : MonoBehaviour
 			{
 				int index = int.Parse (tmxObject.Properties ["ObjectIndex"]);
 				GameObject toInstantiate = myTmxObjects [index];
-
 				GameObject instance = Instantiate (toInstantiate, new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight), Quaternion.identity) as GameObject;
 				instance.transform.SetParent (myBoardHolder);
 
