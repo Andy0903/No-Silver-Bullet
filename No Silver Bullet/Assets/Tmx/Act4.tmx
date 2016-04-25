@@ -369,7 +369,7 @@
   </tile>
   <tile id="9">
    <properties>
-    <property name="UnityTileIndex" value="562"/>
+    <property name="UnityTileIndex" value="711"/>
    </properties>
   </tile>
   <tile id="10">
@@ -994,22 +994,22 @@
   <image source="../Sprites/Tiles/RedTree.png" width="68" height="68"/>
   <tile id="0">
    <properties>
-    <property name="UnityTileIndex" value="674"/>
+    <property name="UnityTileIndex" value="20"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="UnityTileIndex" value="675"/>
+    <property name="UnityTileIndex" value="21"/>
    </properties>
   </tile>
   <tile id="2">
    <properties>
-    <property name="UnityTileIndex" value="676"/>
+    <property name="UnityTileIndex" value="22"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="UnityTileIndex" value="677"/>
+    <property name="UnityTileIndex" value="23"/>
    </properties>
   </tile>
  </tileset>
