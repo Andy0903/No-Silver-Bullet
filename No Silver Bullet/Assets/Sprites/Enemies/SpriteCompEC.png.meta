@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2a8f0d38e25ae8241a3080b3973d731e
-timeCreated: 1461179362
+timeCreated: 1461584927
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -220,26 +220,20 @@ TextureImporter:
     - name: FlyingDemonLeft3
       rect:
         serializedVersion: 2
-        x: 216
+        x: 223
         y: 95
-        width: 68
+        width: 61
         height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -27, y: -23}
-        - {x: -28, y: -20}
-        - {x: -34, y: -20}
-        - {x: -34, y: -23}
-      - - {x: 13, y: 22}
-        - {x: 8, y: 23}
-        - {x: -28, y: 23}
-        - {x: -28, y: -23}
-        - {x: 11, y: -23}
-        - {x: 34, y: -10}
-        - {x: 34, y: 5}
-        - {x: 22, y: 20}
+      - - {x: -30.5, y: 23}
+        - {x: -30.5, y: -23}
+        - {x: 9.5, y: -23}
+        - {x: 30.5, y: -14}
+        - {x: 30.5, y: 12}
+        - {x: 27.5, y: 23}
     - name: FlyingDemonUp2
       rect:
         serializedVersion: 2
