@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -74,6 +75,9 @@ public class PlayerController : MonoBehaviour
 			SavedGame lastSave = SavedGame.LoadGame ();		//TODO Change for other option -Andy
 			transform.position = new Vector3 (lastSave.myPlayerX, lastSave.myPlayerY, 0);
 			ProgressTracker = lastSave.myProgressTracker;
+			SceneManager.LoadScene (lastSave.myCurrentScene);
+
+			//SoundManager.instance.ChangeBGMusic = lastSave.myMusicSourceClipName.;
 		}
 
 	}

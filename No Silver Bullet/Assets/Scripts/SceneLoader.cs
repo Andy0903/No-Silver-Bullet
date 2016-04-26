@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class SceneLoader : MonoBehaviour
 				aOther.transform.position = new Vector3 (myStartPosition.x, myStartPosition.y, 0);
 
 				myTimer = Time.time + myCooldown;
-				Application.LoadLevel ("Scenes/" + myLeadsToSceneName);
+				SceneManager.LoadScene ("Scenes/" + myLeadsToSceneName);
 
 				if (myActClip != null)
 				{

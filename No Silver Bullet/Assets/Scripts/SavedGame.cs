@@ -2,6 +2,7 @@
 using System.Collections;
 using System.IO;
 using System.Xml.Serialization;
+using UnityEngine.SceneManagement;
 
 public class SavedGame
 {
@@ -11,6 +12,8 @@ public class SavedGame
 	public float myPlayerX;
 	public float myPlayerY;
 	public ProgressTracker myProgressTracker;
+	public string myCurrentScene;
+	public string myMusicSourceClipName;
 
 	#endregion
 
@@ -23,6 +26,8 @@ public class SavedGame
 		save.myPlayerX = player.transform.position.x;
 		save.myPlayerY = player.transform.position.y;
 		save.myProgressTracker = player.GetComponent<PlayerController> ().ProgressTracker;
+		save.myCurrentScene = SceneManager.GetActiveScene ().name;
+		save.myMusicSourceClipName = SoundManager.instance.myMusicSource.clip.name; 
 		//TODO inventory
 
 		XmlSerializer serializer = new XmlSerializer (typeof(SavedGame));

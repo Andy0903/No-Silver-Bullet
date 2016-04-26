@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>6.9938</myPlayerX>
-  <myPlayerY>-67.67204</myPlayerY>
+  <myPlayerX>42.84609</myPlayerX>
+  <myPlayerY>-75.72633</myPlayerY>
   <myProgressTracker />
+  <myCurrentScene>Scenes/Act2</myCurrentScene>
+  <myMusicSourceClipName>BGMusicOverall</myMusicSourceClipName>
 </SavedGame>

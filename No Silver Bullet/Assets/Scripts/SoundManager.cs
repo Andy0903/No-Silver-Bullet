@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SoundManager : MonoBehaviour
 {
 	#region Member variables
+
 	public AudioSource myEfxSource;
 	public AudioSource myMusicSource;
-	public static SoundManager instance = null; //Rename to myInstance?
+	public static SoundManager instance = null;
+	//Rename to myInstance?
 	public float myLowPitchRange = .95f;
 	public float myHighPitchRange = 1.05f;
+
 	#endregion
 
 	#region Private methods
+
 	private void Awake ()
 	{
 		if (instance == null)
@@ -25,17 +30,19 @@ public class SoundManager : MonoBehaviour
 
 		DontDestroyOnLoad (gameObject);
 	}
+
 	#endregion
 
 	#region Public methods
-	public void ChangeBGMusic(AudioClip aClip)
+
+	public void ChangeBGMusic (AudioClip aClip)
 	{
 		myMusicSource.clip = aClip;
 
 		myMusicSource.Play ();
 	}
 
-	public void PlaySingle(AudioClip aClip)
+	public void PlaySingle (AudioClip aClip)
 	{
 		myEfxSource.clip = aClip;
 
@@ -53,6 +60,7 @@ public class SoundManager : MonoBehaviour
 
 		myEfxSource.Play ();
 	}
+
 	#endregion
 
 }
