@@ -23,13 +23,6 @@ public class CameraController : MonoBehaviour
 	{
 		Vector3 targetCameraPosition = myTarget.position + myOffset;
 		transform.position = Vector3.Lerp (transform.position, targetCameraPosition, mySmoothing * Time.deltaTime);
-
-
-		//Debug.Log("W"  +
-		//	Camera.current.pixelWidth);
-
-		//Debug.Log("H"  +
-		//	Camera.current.pixelHeight);
 	}
 
 	#endregion

@@ -30,10 +30,21 @@ public class PlayerController : MonoBehaviour
 
 	#endregion
 
+	#region Properties
+
+	public ProgressTracker ProgressTracker
+	{
+		get;
+		private set;
+	}
+
+	#endregion
+
 	#region Private methods
 
 	private void Awake ()
 	{
+		ProgressTracker = new ProgressTracker ();
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
@@ -51,6 +62,18 @@ public class PlayerController : MonoBehaviour
 		{
 			Attack ();
 			UpdateAttackDuration ();
+		}
+
+		if (Input.GetKeyDown (KeyCode.R))	//TODO change for other option? -Andy
+		{
+			SavedGame.SaveGame ();
+		}
+
+		if (Input.GetKeyDown (KeyCode.L))
+		{
+			SavedGame lastSave = SavedGame.LoadGame ();		//TODO Change for other option -Andy
+			transform.position = new Vector3 (lastSave.myPlayerX, lastSave.myPlayerY, 0);
+			ProgressTracker = lastSave.myProgressTracker;
 		}
 
 	}
