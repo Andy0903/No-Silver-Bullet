@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
 	private float myTimeSinceAttacking;
 	private const float AttackDuration = 0.2f;
 
-	private int myHorizontal;
-	private int myVertical;
+	private int myHorizontalInput;
+	private int myVerticalInput;
 
 	#endregion
 
@@ -50,45 +50,13 @@ public class PlayerController : MonoBehaviour
 		if (myIsAttacking == true)
 		{
 			Attack ();
+			UpdateAttackDuration ();
 		}
 
 	}
 
-	private void Attack ()
+	private void UpdateAttackDuration ()
 	{
-		if (myIsAttacking == true && myTimeSinceAttacking == 0)
-		{
-			Vector2 direction = Vector2.zero;
-			switch (myDirection)
-			{
-			case Direction.Down:
-				direction = Vector2.down;
-				break;
-			case Direction.Left:
-				direction = Vector2.left;
-				break;
-			case Direction.Right:
-				direction = Vector2.right;
-				break;
-			case Direction.Up:
-				direction = Vector2.up;
-				break;
-			}
-
-			RaycastHit2D[] hits = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y), direction, myRange);
-
-			for (int i = 0; i < hits.Length; i++)
-			{
-				if (hits [i].collider.tag == "Enemy")
-				{
-					GameObject enemy = hits [i].collider.gameObject;
-					EnemyController enemyController = enemy.GetComponent<EnemyController> ();
-
-					enemyController.TakeDamage (myDamage);
-				}
-			}
-		}
-
 		if (myTimeSinceAttacking >= AttackDuration)
 		{
 			myIsAttacking = false;
@@ -100,14 +68,61 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private Vector2 SetAttackDirection ()
+	{
+		switch (myDirection)
+		{
+		case Direction.Down:
+			return Vector2.down;
+		case Direction.Left:
+			return Vector2.left;
+		case Direction.Right:
+			return Vector2.right;
+		case Direction.Up:
+			return Vector2.up;
+		}
+
+		return Vector2.zero;
+	}
+
+	private RaycastHit2D[] EnemiesHit ()
+	{
+		Vector2 direction = SetAttackDirection ();
+		RaycastHit2D[] hits = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y), direction, myRange);
+
+		return hits;
+	}
+
+	private void DamageHitEnemies (RaycastHit2D[] aHitArray)
+	{
+		for (int i = 0; i < aHitArray.Length; i++)
+		{
+			if (aHitArray [i].collider.tag == "Enemy")
+			{
+				GameObject enemy = aHitArray [i].collider.gameObject;
+				EnemyController enemyController = enemy.GetComponent<EnemyController> ();
+				enemyController.TakeDamage (myDamage);
+			}
+		}
+	}
+
+	private void Attack ()
+	{
+		if (myTimeSinceAttacking == 0)
+		{
+			RaycastHit2D[] hits = EnemiesHit ();
+			DamageHitEnemies (hits);
+		}
+	}
+
 	private void Movement ()
 	{
 		myAnimator.enabled = true;
-		myHorizontal = 0;
-		myVertical = 0;
+		myHorizontalInput = 0;
+		myVerticalInput = 0;
 
-		myHorizontal = (int)(Input.GetAxisRaw ("Horizontal"));
-		myVertical = (int)(Input.GetAxisRaw ("Vertical"));
+		myHorizontalInput = (int)(Input.GetAxisRaw ("Horizontal"));
+		myVerticalInput = (int)(Input.GetAxisRaw ("Vertical"));
 
 		Move ();
 		UpdateAnimation ();
@@ -117,7 +132,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (myIsAttacking == false)
 		{
-			myMovement.Set (myHorizontal, myVertical, 0);
+			myMovement.Set (myHorizontalInput, myVerticalInput, 0);
 			myMovement = myMovement.normalized * mySpeed * Time.deltaTime;
 			myRidigBody.MovePosition (transform.position + myMovement);
 		}
@@ -133,23 +148,23 @@ public class PlayerController : MonoBehaviour
 	{
 		bool pressedNothing = false;
 
-		if (myHorizontal > 0)
+		if (myHorizontalInput > 0)
 		{
 			myAnimator.SetTrigger ("PressedRight");
 			myDirection = Direction.Right;
 
 		}
-		else if (myHorizontal < 0)
+		else if (myHorizontalInput < 0)
 		{
 			myAnimator.SetTrigger ("PressedLeft");
 			myDirection = Direction.Left;
 		}
-		else if (myVertical > 0)
+		else if (myVerticalInput > 0)
 		{
 			myAnimator.SetTrigger ("PressedUp");
 			myDirection = Direction.Up;
 		}
-		else if (myVertical < 0)
+		else if (myVerticalInput < 0)
 		{
 			myAnimator.SetTrigger ("PressedDown");
 			myDirection = Direction.Down;
