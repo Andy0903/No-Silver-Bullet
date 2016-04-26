@@ -3,13 +3,16 @@ using System.Collections;
 
 public class SoundManager : MonoBehaviour
 {
-	public AudioSource efxSource;
-	public AudioSource musicSource;
-	public static SoundManager instance = null;
-	public float lowPitchRange = .95f;
-	public float highPitchRange = 1.05f;
+	#region Member variables
+	public AudioSource myEfxSource;
+	public AudioSource myMusicSource;
+	public static SoundManager instance = null; //Rename to myInstance?
+	public float myLowPitchRange = .95f;
+	public float myHighPitchRange = 1.05f;
+	#endregion
 
-	void Awake ()
+	#region Private methods
+	private void Awake ()
 	{
 		if (instance == null)
 		{
@@ -22,31 +25,34 @@ public class SoundManager : MonoBehaviour
 
 		DontDestroyOnLoad (gameObject);
 	}
+	#endregion
 
-	public void ChangeBGMusic(AudioClip clip)
+	#region Public methods
+	public void ChangeBGMusic(AudioClip aClip)
 	{
-		musicSource.clip = clip;
+		myMusicSource.clip = aClip;
 
-		musicSource.Play ();
+		myMusicSource.Play ();
 	}
 
-	public void PlaySingle(AudioClip clip)
+	public void PlaySingle(AudioClip aClip)
 	{
-		efxSource.clip = clip;
+		myEfxSource.clip = aClip;
 
-		efxSource.Play ();
+		myEfxSource.Play ();
 	}
 
-	public void RandomizeSfx (params AudioClip[] clips)
+	public void RandomizeSfx (params AudioClip[] aClips)
 	{
-		int randomIndex = Random.Range (0, clips.Length);
-		float randomPitch = Random.Range (lowPitchRange, highPitchRange);
+		int randomIndex = Random.Range (0, aClips.Length);
+		float randomPitch = Random.Range (myLowPitchRange, myHighPitchRange);
 
-		efxSource.pitch = randomPitch;
+		myEfxSource.pitch = randomPitch;
 
-		efxSource.clip = clips [randomIndex];
+		myEfxSource.clip = aClips [randomIndex];
 
-		efxSource.Play ();
+		myEfxSource.Play ();
 	}
+	#endregion
 
 }
