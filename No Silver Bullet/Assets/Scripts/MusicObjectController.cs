@@ -30,7 +30,7 @@ public class MusicObjectController : MonoBehaviour
 		else if (distanceFromTarget > myRange && mySwappedMusic == true)
 		{
 			SoundManager.instance.ChangeBGMusic (myPreviousGlobalClip);
-			mySwappedMusic == false;
+			mySwappedMusic = false;
 		}
 	}
 	#endregion
