@@ -41,9 +41,6 @@ public class PlayerController : MonoBehaviour
 		myTimeSinceAttacking = 0;
 		myDamage = 50;
 		myRange = 0.5f;
-
-
-		//transform.position = new Vector3 (15, -57, 0);
 	}
 
 	private void Update ()
@@ -78,7 +75,6 @@ public class PlayerController : MonoBehaviour
 				break;
 			}
 
-			//Debug.DrawRay (transform.position, direction * 200f);
 			RaycastHit2D[] hits = Physics2D.RaycastAll (new Vector2 (transform.position.x, transform.position.y), direction, myRange);
 
 			for (int i = 0; i < hits.Length; i++)
