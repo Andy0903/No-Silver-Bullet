@@ -27,16 +27,7 @@ public class PlayerController : MonoBehaviour
 	private const float AttackDuration = 0.2f;
 	private int myHorizontalInput;
 	private int myVerticalInput;
-
-	#endregion
-
-	#region Properties
-
-	public ProgressTracker ProgressTracker
-	{
-		get;
-		private set;
-	}
+	public ProgressTracker myProgressTracker;
 
 	#endregion
 
@@ -44,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake ()
 	{
-		ProgressTracker = new ProgressTracker ();
+		myProgressTracker = new ProgressTracker ();
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
@@ -67,18 +58,7 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.R))	//TODO change for other option? -Andy
 		{
 			SavedGame.SaveGame ();
-		}
-		
-		if (Input.GetKeyDown (KeyCode.L))
-		{
-			SavedGame lastSave = SavedGame.LoadGame ();		//TODO Change for other option -Andy
-			transform.position = new Vector3 (lastSave.myPlayerX, lastSave.myPlayerY, 0);
-			ProgressTracker = lastSave.myProgressTracker;
-			SceneManager.LoadScene (lastSave.myCurrentScene);
-
-			//SoundManager.instance.ChangeBGMusic = lastSave.myMusicSourceClipName.;
-		}
-		
+		}		
 	}
 	
 	private void UpdateAttackDuration ()
