@@ -24,7 +24,7 @@ public class SavedGame
 		SavedGame save = new SavedGame ();
 		save.myPlayerX = player.transform.position.x;
 		save.myPlayerY = player.transform.position.y;
-		save.myProgressTracker = player.GetComponent<PlayerController> ().ProgressTracker;
+		save.myProgressTracker = player.GetComponent<PlayerController> ().myProgressTracker;
 		save.myCurrentScene = SceneManager.GetActiveScene ().name;
 		//TODO inventory
 

@@ -14,10 +14,10 @@ public class BootstrapManager : MonoBehaviour
 	 #region Private methods
 	private void Awake()
 	{
+		GameObject toInstantiate;
 		if (ClickedOnResume.myClickedOnResume == true)
 		{
 			SavedGame lastSavedGame = SavedGame.LoadGame ();
-			GameObject toInstantiate;
 
 			switch (lastSavedGame.myCurrentScene)
 			{
@@ -39,12 +39,17 @@ public class BootstrapManager : MonoBehaviour
 			default:
 				throw new System.Exception ("Faulty Scene in load");
 			}
+
 			GameObject instance = Instantiate (toInstantiate, Vector2.zero, Quaternion.identity) as GameObject;
+			GameObject player = GameObject.FindGameObjectWithTag ("Player");
+
+			player.GetComponent<PlayerController> ().myProgressTracker = lastSavedGame.myProgressTracker;
+
+			//player.transform.position = new Vector3 (lastSavedGame.myPlayerX, lastSavedGame.myPlayerY, 0);
 
 		}
 		else
 		{
-			GameObject toInstantiate;
 			toInstantiate = Act1Changer;
 			GameObject instance = Instantiate (toInstantiate, Vector2.zero, Quaternion.identity) as GameObject;
 		}

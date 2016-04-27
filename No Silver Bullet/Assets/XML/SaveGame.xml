@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>40.9865456</myPlayerX>
-  <myPlayerY>-73.50593</myPlayerY>
+  <myPlayerX>7.253965</myPlayerX>
+  <myPlayerY>-66.85351</myPlayerY>
   <myProgressTracker />
-  <myCurrentScene>Scenes/Act2</myCurrentScene>
+  <myCurrentScene>Scenes/Act3</myCurrentScene>
 </SavedGame>
