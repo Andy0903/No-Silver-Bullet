@@ -13,7 +13,6 @@ public class SavedGame
 	public float myPlayerY;
 	public ProgressTracker myProgressTracker;
 	public string myCurrentScene;
-	public string myMusicSourceClipName;
 
 	#endregion
 
@@ -27,7 +26,6 @@ public class SavedGame
 		save.myPlayerY = player.transform.position.y;
 		save.myProgressTracker = player.GetComponent<PlayerController> ().ProgressTracker;
 		save.myCurrentScene = SceneManager.GetActiveScene ().name;
-		save.myMusicSourceClipName = SoundManager.instance.myMusicSource.clip.name; 
 		//TODO inventory
 
 		XmlSerializer serializer = new XmlSerializer (typeof(SavedGame));
