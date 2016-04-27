@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
 		Right,
 		Down
 	}
-
+	
+	public AudioClip mySlashClip;
 	public float mySpeed;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
@@ -21,11 +22,9 @@ public class PlayerController : MonoBehaviour
 	private Direction myDirection;
 	private int myDamage;
 	private float myRange;
-
 	private bool myIsAttacking;
 	private float myTimeSinceAttacking;
 	private const float AttackDuration = 0.2f;
-
 	private int myHorizontalInput;
 	private int myVerticalInput;
 
@@ -64,12 +63,12 @@ public class PlayerController : MonoBehaviour
 			Attack ();
 			UpdateAttackDuration ();
 		}
-
+	
 		if (Input.GetKeyDown (KeyCode.R))	//TODO change for other option? -Andy
 		{
 			SavedGame.SaveGame ();
 		}
-
+		
 		if (Input.GetKeyDown (KeyCode.L))
 		{
 			SavedGame lastSave = SavedGame.LoadGame ();		//TODO Change for other option -Andy
@@ -79,9 +78,9 @@ public class PlayerController : MonoBehaviour
 
 			//SoundManager.instance.ChangeBGMusic = lastSave.myMusicSourceClipName.;
 		}
-
+		
 	}
-
+	
 	private void UpdateAttackDuration ()
 	{
 		if (myTimeSinceAttacking >= AttackDuration)
@@ -94,24 +93,24 @@ public class PlayerController : MonoBehaviour
 			myTimeSinceAttacking += Time.deltaTime;
 		}
 	}
-
+	
 	private Vector2 SetAttackDirection ()
 	{
 		switch (myDirection)
 		{
-		case Direction.Down:
-			return Vector2.down;
-		case Direction.Left:
-			return Vector2.left;
-		case Direction.Right:
-			return Vector2.right;
-		case Direction.Up:
-			return Vector2.up;
+			case Direction.Down:
+				return Vector2.down;
+			case Direction.Left:
+				return Vector2.left;
+			case Direction.Right:
+				return Vector2.right;
+			case Direction.Up:
+				return Vector2.up;
 		}
 
 		return Vector2.zero;
 	}
-
+	
 	private RaycastHit2D[] EnemiesHit ()
 	{
 		Vector2 direction = SetAttackDirection ();
@@ -119,7 +118,7 @@ public class PlayerController : MonoBehaviour
 
 		return hits;
 	}
-
+	
 	private void DamageHitEnemies (RaycastHit2D[] aHitArray)
 	{
 		for (int i = 0; i < aHitArray.Length; i++)
@@ -132,16 +131,17 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-
+	
 	private void Attack ()
 	{
 		if (myTimeSinceAttacking == 0)
 		{
 			RaycastHit2D[] hits = EnemiesHit ();
 			DamageHitEnemies (hits);
+			SoundManager.instance.PlaySingle (mySlashClip);
 		}
 	}
-
+	
 	private void Movement ()
 	{
 		myAnimator.enabled = true;
@@ -150,11 +150,11 @@ public class PlayerController : MonoBehaviour
 
 		myHorizontalInput = (int)(Input.GetAxisRaw ("Horizontal"));
 		myVerticalInput = (int)(Input.GetAxisRaw ("Vertical"));
-
+	
 		Move ();
 		UpdateAnimation ();
 	}
-
+	
 	private void Move ()
 	{
 		if (myIsAttacking == false)
@@ -164,22 +164,21 @@ public class PlayerController : MonoBehaviour
 			myRidigBody.MovePosition (transform.position + myMovement);
 		}
 	}
-
+	
 	private void UpdateAnimation ()
 	{
 		UpdateWalkAnimation ();
 		UpdateAttackAnimation ();
 	}
-
+	
 	private void UpdateWalkAnimation ()
 	{
 		bool pressedNothing = false;
-
+	
 		if (myHorizontalInput > 0)
 		{
 			myAnimator.SetTrigger ("PressedRight");
 			myDirection = Direction.Right;
-
 		}
 		else if (myHorizontalInput < 0)
 		{
@@ -200,40 +199,39 @@ public class PlayerController : MonoBehaviour
 		{
 			pressedNothing = true;
 		}
-
+		
 
 		myAnimator.SetBool ("PressedNothing", pressedNothing);
 
 	}
-
+	
 	private void UpdateAttackAnimation ()
 	{
 		if (Input.GetButtonDown ("Attack"))
 		{
 			myAnimator.SetBool ("PressedNothing", true);
 			myIsAttacking = true;
-			
+					
 			switch (myDirection)
 			{
-			case Direction.Down:
-				myAnimator.SetTrigger ("AttackDown");
-				break;
-			case Direction.Left:
-				myAnimator.SetTrigger ("AttackLeft");
-				break;
-			case Direction.Right:
-				myAnimator.SetTrigger ("AttackRight");
-				break;
-			case Direction.Up:
-				myAnimator.SetTrigger ("AttackUp");
-				break;
-			default:
-				break;
+				case Direction.Down:
+					myAnimator.SetTrigger ("AttackDown");
+					break;
+				case Direction.Left:
+					myAnimator.SetTrigger ("AttackLeft");
+					break;
+				case Direction.Right:
+					myAnimator.SetTrigger ("AttackRight");
+					break;
+				case Direction.Up:
+					myAnimator.SetTrigger ("AttackUp");
+					break;
+				default:
+					break;
 			}
 		}
-
+		
 		myAnimator.SetBool ("IsAttacking", myIsAttacking);
 	}
-
 	#endregion
 }
