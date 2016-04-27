@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
 		Down
 	}
 
-	public AudioClip mySlashClip;
 	public float mySpeed;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
@@ -140,7 +139,6 @@ public class PlayerController : MonoBehaviour
 		{
 			RaycastHit2D[] hits = EnemiesHit ();
 			DamageHitEnemies (hits);
-			SoundManager.instance.PlaySingle (mySlashClip);
 		}
 	}
 
