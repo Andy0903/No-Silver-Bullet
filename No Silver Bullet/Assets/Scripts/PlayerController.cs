@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
 			if (aHitArray [i].collider.tag == "Enemy")
 			{
 				GameObject enemy = aHitArray [i].collider.gameObject;
-				EnemyController enemyController = enemy.GetComponent<EnemyController> ();
+				EnemyHealth enemyController = enemy.GetComponent<EnemyHealth> ();
 				enemyController.TakeDamage (myDamage);
 			}
 		}
@@ -213,5 +213,11 @@ public class PlayerController : MonoBehaviour
 		
 		myAnimator.SetBool ("IsAttacking", myIsAttacking);
 	}
+
+	private void OnParticleCollision(GameObject aOther)
+	{
+		GetComponent<PlayerHealth> ().TakeDamage (5);
+	}
+
 	#endregion
 }

@@ -2,11 +2,12 @@
 using System.Collections;
 using UnityEditor;
 
-public class EnemyController : MonoBehaviour
-{
+public class BossController : MonoBehaviour {
+
 	#region Member variables
 
 	private const float ChasingSpeedMultiplier = 1.2f;
+	private const int NumerOfAttackParticles = 1;
 
 	private enum Direction
 	{
@@ -30,21 +31,28 @@ public class EnemyController : MonoBehaviour
 	public int myWalkingLength;
 	public int myDamage;
 	public int myParticlesOnDeath;
-	public float myTimeBetweenAttacks;
+	public float myTimeBetweenDefaultAttacks;
+	public float myTimeBetweenSecondaryAttacks;
 	public float mySpeed;
 	public float myDetectionRange;
-	public float myAttackRange;
+	public float myDefaultAttackRange;
+	public float mySecondaryAttackRange;
+	public ParticleSystem mySecondaryAttackParticleSystem;
+	public ParticleSystem myDeathParticleSystem;
 
 
 	private float myHorizontal;
 	private float myVertical;
-	private float myTimeSinceLastAttack;
+	private float myTimeSinceLastDefaultAttack;
+	private float myTimeSinceLastSecondaryAttack;
 	private float myTimeSinceDeath;
 	private float myTimeSinceIdle;
 	private bool myIsMoving;
 	private bool myIsAttacking;
+	private bool myIsDoingSecondaryAttack;
 
-	private ParticleSystem myParticleSystem;
+	//private ParticleSystem myParticleSystem;
+	//private ParticleSystem myAttackParticleSystem;
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
@@ -59,7 +67,6 @@ public class EnemyController : MonoBehaviour
 
 	#region Public methods
 
-
 	#endregion
 
 	#region Private methods
@@ -67,7 +74,7 @@ public class EnemyController : MonoBehaviour
 	private void Awake ()
 	{
 		myHealth = GetComponent<EnemyHealth> ();
-		myParticleSystem = GetComponent<ParticleSystem> ();
+		//myParticleSystem = GetComponent<ParticleSystem> ();
 		myAnimator = GetComponent<Animator> ();
 		myRigidBody = GetComponent<Rigidbody2D> ();
 		myCurrentDirection = Direction.Down;
@@ -87,7 +94,8 @@ public class EnemyController : MonoBehaviour
 			myHorizontal = myMovement.x;
 			myVertical = myMovement.y;
 			myTimeSinceIdle += Time.deltaTime;
-			myTimeSinceLastAttack += Time.deltaTime;
+			myTimeSinceLastDefaultAttack += Time.deltaTime;
+			myTimeSinceLastSecondaryAttack += Time.deltaTime;
 			UpdateWalkAnimation ();
 			UpdateAttack ();
 			Movement ();
@@ -100,23 +108,8 @@ public class EnemyController : MonoBehaviour
 
 		if (myHealth.CurrentHealth <= 0)
 		{
-			myTimeSinceDeath += Time.deltaTime;
-			myCurrentState = State.Dead;
-			if (myParticleSystem != null && (myTimeSinceDeath < myParticleSystem.duration))
-			{
-				//TODO: Add death animation or something similar
-				myParticleSystem.Emit (myParticlesOnDeath);
-			}
-			//If you forgot to attach a PS the gameObject is destroyed before an error message can arrive
-			else if (myParticleSystem == null)
-			{
-				Destroy (gameObject);
-			}
-			else if (myTimeSinceDeath > myParticleSystem.duration)
-			{
-				Destroy (gameObject);
-			}
 
+			Destroy (gameObject);
 			//Code that might be needed in the future for changing values of the component inside the code
 			/*SerializedObject so = new SerializedObject(GetComponent<ParticleSystem>());
 			so.FindProperty ("ShapeModule.arc").floatValue = angleBetweenTargetDegrees;
@@ -186,17 +179,28 @@ public class EnemyController : MonoBehaviour
 	{
 		float distanceFromTarget = Vector3.Distance (transform.position, myTarget.transform.position);
 
-		if (myAttackRange > distanceFromTarget && myTimeSinceLastAttack > myTimeBetweenAttacks)
+		if (myDefaultAttackRange > distanceFromTarget && myTimeSinceLastDefaultAttack > myTimeBetweenDefaultAttacks)
 		{
 			PlayerHealth targetHealth = myTarget.GetComponent<PlayerHealth> ();
 			targetHealth.TakeDamage (myDamage);
-			myTimeSinceLastAttack = 0;
+			myTimeSinceLastDefaultAttack = 0;
 			myCurrentState = State.Attacking;
 		}
-		else if (myAttackRange < distanceFromTarget)
+
+		if (mySecondaryAttackRange > distanceFromTarget && myTimeSinceLastSecondaryAttack > myTimeBetweenSecondaryAttacks)
 		{
-			
+			//myIsDoingSecondaryAttack = true;
+
+			myTimeSinceLastSecondaryAttack = 0;
+			/*Vector3 difference = myTarget.transform.position - transform.position;
+			difference.Normalize ();
+			myTarget.GetComponent<Rigidbody2D> ().AddF);*/
+			mySecondaryAttackParticleSystem.Emit (NumerOfAttackParticles);
 		}
+
+
+
+
 	}
 
 	private void UpdateWalkAnimation ()
@@ -211,7 +215,7 @@ public class EnemyController : MonoBehaviour
 			//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
 			if (myHorizontal * myHorizontal > myVertical * myVertical)
 			{
-				
+
 				if (myHorizontal > 0)
 				{
 					myAnimator.SetTrigger ("PressedRight");
@@ -253,7 +257,7 @@ public class EnemyController : MonoBehaviour
 			//"Cheap" way to see which direction is greater than the other TODO: Find a better way of doing it
 			if (myHorizontal * myHorizontal > myVertical * myVertical)
 			{
-				
+
 				if (myHorizontal > 0)
 				{
 					myAnimator.SetTrigger ("AttackRight");
@@ -291,7 +295,7 @@ public class EnemyController : MonoBehaviour
 				}
 			}
 		}
-			
+
 		if (myCurrentState == State.Patrol) //Changes the animation based on direction
 		{
 			myAnimator.SetBool ("IsRunning", false);
@@ -323,7 +327,7 @@ public class EnemyController : MonoBehaviour
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		
+
 		if (other.gameObject.CompareTag ("Player")) //The GO stops moving when it enters a collision with a player
 		{
 			myIsMoving = false; 	
@@ -367,31 +371,5 @@ public class EnemyController : MonoBehaviour
 			myCurrentDirection = Direction.Down;
 		}
 	}
-		
-	/*private void OnCollisionEnter2D(Collision2D other)
-	{
-		if (other.collider.IsTouching(myCircleCollider))
-		{
-			if (myDirection == Direction.Down)
-			{
-				myDirection = Direction.Left;
-			}
-			if (myDirection == Direction.Left)
-			{
-				myDirection = Direction.Up;
-			}
-			if (myDirection == Direction.Up)
-			{
-				myDirection = Direction.Right;
-			}
-			if (myDirection == Direction.Right)
-			{
-				myDirection = Direction.Down;
-			}	
-		}	
-	}*/
-
 	#endregion
-
-
 }
