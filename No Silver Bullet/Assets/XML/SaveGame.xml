@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>7.253965</myPlayerX>
-  <myPlayerY>-66.85351</myPlayerY>
-  <myProgressTracker />
-  <myCurrentScene>Scenes/Act3</myCurrentScene>
+  <myPlayerX>72.81717</myPlayerX>
+  <myPlayerY>-22.23066</myPlayerY>
+  <myProgressTracker>
+    <myProgress>
+      <item>
+        <key>
+          <Quests>DefeatAct1Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+    </myProgress>
+  </myProgressTracker>
+  <myCurrentScene>Scenes/Scene</myCurrentScene>
 </SavedGame>
