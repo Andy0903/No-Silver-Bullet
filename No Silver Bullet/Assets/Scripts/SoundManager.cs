@@ -51,7 +51,7 @@ public class SoundManager : MonoBehaviour
 
 	public void RandomizeSfx (params AudioClip[] aClips)
 	{
-		int randomIndex = Random.Range (0, aClips.Length);
+		int randomIndex = Random.Range (0, aClips.Length-1);
 		float randomPitch = Random.Range (myLowPitchRange, myHighPitchRange);
 
 		myEfxSource.pitch = randomPitch;
