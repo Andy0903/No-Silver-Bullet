@@ -101,6 +101,7 @@ public class EnemyController : MonoBehaviour
 
 		if (myHealth.CurrentHealth <= 0)
 		{
+			myTarget.GetComponent<Animator> ().SetBool(("IsTakingDamage"), false);
 			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
 			if (myParticleSystem != null && (myTimeSinceDeath < myParticleSystem.duration))
