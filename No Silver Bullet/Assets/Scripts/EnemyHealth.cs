@@ -24,7 +24,11 @@ public class EnemyHealth : MonoBehaviour
 
 	public void TakeDamage (int aDamage)
 	{
-		SoundManager.instance.RandomizeSfx (myTakingDamageGrunts);
+		//Fixes null errors when playing sounds
+		if (myTakingDamageGrunts.Length > 0)
+		{
+			SoundManager.instance.RandomizeSfx (myTakingDamageGrunts);
+		}
 		myCurrentHealth -= aDamage;
 	}
 
