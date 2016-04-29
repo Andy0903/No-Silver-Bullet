@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
 	#region Member variables
 
+	public AudioClip[] myTakingDamageGrunts;
 	public int myStartingHealth;
 	private int myCurrentHealth;
 
@@ -23,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
 
 	public void TakeDamage (int aDamage)
 	{
+		SoundManager.instance.RandomizeSfx (myTakingDamageGrunts);
 		myCurrentHealth -= aDamage;
 	}
 

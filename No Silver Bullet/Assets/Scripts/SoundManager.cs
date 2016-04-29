@@ -6,7 +6,9 @@ public class SoundManager : MonoBehaviour
 {
 	#region Member variables
 
-	public AudioSource myEfxSource;
+	public AudioSource myFirstEfxSource;
+	public AudioSource mySecondEfxSource;
+	public AudioSource myThirdEfxSource;
 	public AudioSource myMusicSource;
 	public static SoundManager instance = null;
 	//Rename to myInstance?
@@ -44,21 +46,50 @@ public class SoundManager : MonoBehaviour
 
 	public void PlaySingle (AudioClip aClip)
 	{
-		myEfxSource.clip = aClip;
+		if (myFirstEfxSource.isPlaying == false)
+		{
+			myFirstEfxSource.clip = aClip;
 
-		myEfxSource.Play ();
+			myFirstEfxSource.Play ();
+		}
+		else if (mySecondEfxSource.isPlaying == false)
+		{
+			mySecondEfxSource.clip = aClip;
+			mySecondEfxSource.Play ();
+		}
+		else if (myThirdEfxSource.isPlaying == false)
+		{
+			myThirdEfxSource.clip = aClip;
+			myThirdEfxSource.Play ();
+		}
 	}
 
 	public void RandomizeSfx (params AudioClip[] aClips)
 	{
-		int randomIndex = Random.Range (0, aClips.Length-1);
+		int randomIndex = Random.Range (0, aClips.Length);
 		float randomPitch = Random.Range (myLowPitchRange, myHighPitchRange);
 
-		myEfxSource.pitch = randomPitch;
+		myFirstEfxSource.pitch = randomPitch;
+		mySecondEfxSource.pitch = randomPitch;
 
-		myEfxSource.clip = aClips [randomIndex];
+		if (myFirstEfxSource.isPlaying == false)
+		{
+			myFirstEfxSource.clip = aClips [randomIndex];
 
-		myEfxSource.Play ();
+			myFirstEfxSource.Play ();
+		}
+		else if (mySecondEfxSource.isPlaying == false)
+		{
+			mySecondEfxSource.clip = aClips [randomIndex];
+
+			mySecondEfxSource.Play ();
+		}
+		else if (myThirdEfxSource.isPlaying == false)
+		{
+			myThirdEfxSource.clip = aClips [randomIndex];
+
+			myThirdEfxSource.Play ();
+		}
 	}
 
 	#endregion
