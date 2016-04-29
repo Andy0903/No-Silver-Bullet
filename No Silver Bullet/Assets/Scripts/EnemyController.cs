@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 	#region Member variables
 
 	private const float ChasingSpeedMultiplier = 1.2f;
+	private const float DamageIconDuration = 0.6f;
 
 	private enum Direction
 	{
@@ -184,18 +185,24 @@ public class EnemyController : MonoBehaviour
 
 	private void UpdateAttack ()
 	{
+		Animator targetAnimator = myTarget.GetComponent<Animator> ();
 		float distanceFromTarget = Vector3.Distance (transform.position, myTarget.transform.position);
 
+		//Shows the taking damage animation on the player
+		if (myTimeSinceLastAttack > DamageIconDuration)
+		{
+			targetAnimator.SetBool ("IsTakingDamage", false);
+		}
+
+		//When this is true the enemy attacks
 		if (myAttackRange > distanceFromTarget && myTimeSinceLastAttack > myTimeBetweenAttacks)
 		{
 			PlayerHealth targetHealth = myTarget.GetComponent<PlayerHealth> ();
 			targetHealth.TakeDamage (myDamage);
+
+			targetAnimator.SetBool ("IsTakingDamage", true);
 			myTimeSinceLastAttack = 0;
 			myCurrentState = State.Attacking;
-		}
-		else if (myAttackRange < distanceFromTarget)
-		{
-			
 		}
 	}
 
