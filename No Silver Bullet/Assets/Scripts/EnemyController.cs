@@ -36,7 +36,6 @@ public class EnemyController : MonoBehaviour
 	public float myDetectionRange;
 	public float myAttackRange;
 
-
 	private float myHorizontal;
 	private float myVertical;
 	private float myTimeSinceLastAttack;
@@ -54,7 +53,6 @@ public class EnemyController : MonoBehaviour
 	private GameObject myTarget;
 	private Renderer myRenderer;
 	private EnemyHealth myHealth;
-
 
 	#endregion
 
@@ -101,7 +99,7 @@ public class EnemyController : MonoBehaviour
 
 		if (myHealth.CurrentHealth <= 0)
 		{
-			myTarget.GetComponent<Animator> ().SetBool(("IsTakingDamage"), false);
+			myTarget.GetComponent<Animator> ().SetBool (("IsTakingDamage"), false);
 			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
 			if (myParticleSystem != null && (myTimeSinceDeath < myParticleSystem.duration))

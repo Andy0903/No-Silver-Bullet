@@ -1597,112 +1597,73 @@
     <property name="TeleportIndex" value=""/>
    </properties>
   </object>
-  <object id="40" gid="383" x="53" y="1102" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
   <object id="41" gid="383" x="560" y="1037" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="42" gid="383" x="50" y="1445" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="43" gid="383" x="497" y="1544" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="44" gid="383" x="629" y="1309" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="45" gid="383" x="460" y="1306" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="46" gid="383" x="732" y="1648" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="47" gid="383" x="1343" y="1237" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="48" gid="383" x="934" y="1071" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="49" gid="383" x="1178" y="1373" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="50" gid="383" x="1208" y="1677" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="52" gid="383" x="763" y="1579" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="53" gid="383" x="154" y="1611" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="54" gid="386" x="557" y="1711" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="55" gid="386" x="663" y="1545" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="56" gid="386" x="458" y="1404" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="57" gid="386" x="560" y="1172" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="58" gid="386" x="153" y="1307" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="59" gid="386" x="967" y="1678" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="60" gid="386" x="1210" y="1138" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="61" gid="386" x="121" y="2128" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="62" gid="386" x="122" y="2566" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
    </properties>
@@ -1717,17 +1678,7 @@
     <property name="ObjectIndex" value="20"/>
    </properties>
   </object>
-  <object id="65" gid="386" x="1266" y="1863.33" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
   <object id="66" gid="386" x="1340" y="2684" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="67" gid="386" x="1041" y="1793" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
    </properties>
@@ -1737,47 +1688,12 @@
     <property name="ObjectIndex" value="20"/>
    </properties>
   </object>
-  <object id="69" gid="386" x="1675.67" y="1967" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
-  <object id="70" gid="383" x="119" y="2432" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="71" gid="383" x="299" y="2667" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="72" gid="383" x="1434.67" y="2032" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
   <object id="73" gid="383" x="1206" y="2128" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
    </properties>
   </object>
-  <object id="74" gid="383" x="1072" y="2669" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="75" gid="383" x="664" y="2674" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
   <object id="76" gid="383" x="1547" y="2668" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="18"/>
-   </properties>
-  </object>
-  <object id="77" gid="383" x="1540.33" y="2168" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="18"/>
    </properties>
@@ -1892,14 +1808,10 @@
     <property name="ObjectIndex" value="20"/>
    </properties>
   </object>
-  <object id="100" gid="386" x="326" y="1513" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="20"/>
-   </properties>
-  </object>
   <object id="101" gid="386" x="1079" y="1240" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="20"/>
+    <property name="QuestIndex" value="ClearStartTown"/>
    </properties>
   </object>
   <object id="102" gid="386" x="1208" y="1958" width="34" height="34">

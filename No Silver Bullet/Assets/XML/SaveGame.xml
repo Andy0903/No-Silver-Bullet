@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>15</myPlayerX>
-  <myPlayerY>-57.7511444</myPlayerY>
+  <myPlayerX>39.56586</myPlayerX>
+  <myPlayerY>-49.3171234</myPlayerY>
   <myProgressTracker>
     <myProgress>
       <item>
         <key>
-          <Quests>DefeatAct1Boss</Quests>
+          <Quests>ClearStartTown</Quests>
         </key>
         <value>
           <boolean>true</boolean>

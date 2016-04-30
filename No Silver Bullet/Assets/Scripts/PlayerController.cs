@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 		Right,
 		Down
 	}
-	
+
 	public AudioClip mySlashClip;
 	public float mySpeed;
 	private Animator myAnimator;
@@ -35,7 +35,10 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake ()
 	{
-		myProgressTracker = new ProgressTracker ();
+		if (myProgressTracker == null)
+		{
+			myProgressTracker = new ProgressTracker ();
+		}
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
@@ -60,7 +63,7 @@ public class PlayerController : MonoBehaviour
 			SavedGame.SaveGame ();
 		}		
 	}
-	
+
 	private void UpdateAttackDuration ()
 	{
 		if (myTimeSinceAttacking >= AttackDuration)
@@ -73,24 +76,24 @@ public class PlayerController : MonoBehaviour
 			myTimeSinceAttacking += Time.deltaTime;
 		}
 	}
-	
+
 	private Vector2 SetAttackDirection ()
 	{
 		switch (myDirection)
 		{
-			case Direction.Down:
-				return Vector2.down;
-			case Direction.Left:
-				return Vector2.left;
-			case Direction.Right:
-				return Vector2.right;
-			case Direction.Up:
-				return Vector2.up;
+		case Direction.Down:
+			return Vector2.down;
+		case Direction.Left:
+			return Vector2.left;
+		case Direction.Right:
+			return Vector2.right;
+		case Direction.Up:
+			return Vector2.up;
 		}
 
 		return Vector2.zero;
 	}
-	
+
 	private RaycastHit2D[] EnemiesHit ()
 	{
 		Vector2 direction = SetAttackDirection ();
@@ -98,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
 		return hits;
 	}
-	
+
 	private void DamageHitEnemies (RaycastHit2D[] aHitArray)
 	{
 		for (int i = 0; i < aHitArray.Length; i++)
@@ -111,7 +114,7 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-	
+
 	private void Attack ()
 	{
 		if (myTimeSinceAttacking == 0)
@@ -121,7 +124,7 @@ public class PlayerController : MonoBehaviour
 			SoundManager.instance.PlaySingle (mySlashClip);
 		}
 	}
-	
+
 	private void Movement ()
 	{
 		myAnimator.enabled = true;
@@ -134,7 +137,7 @@ public class PlayerController : MonoBehaviour
 		Move ();
 		UpdateAnimation ();
 	}
-	
+
 	private void Move ()
 	{
 		if (myIsAttacking == false)
@@ -144,13 +147,13 @@ public class PlayerController : MonoBehaviour
 			myRidigBody.MovePosition (transform.position + myMovement);
 		}
 	}
-	
+
 	private void UpdateAnimation ()
 	{
 		UpdateWalkAnimation ();
 		UpdateAttackAnimation ();
 	}
-	
+
 	private void UpdateWalkAnimation ()
 	{
 		bool pressedNothing = false;
@@ -184,7 +187,7 @@ public class PlayerController : MonoBehaviour
 		myAnimator.SetBool ("PressedNothing", pressedNothing);
 
 	}
-	
+
 	private void UpdateAttackAnimation ()
 	{
 		if (Input.GetButtonDown ("Attack"))
@@ -194,27 +197,27 @@ public class PlayerController : MonoBehaviour
 					
 			switch (myDirection)
 			{
-				case Direction.Down:
-					myAnimator.SetTrigger ("AttackDown");
-					break;
-				case Direction.Left:
-					myAnimator.SetTrigger ("AttackLeft");
-					break;
-				case Direction.Right:
-					myAnimator.SetTrigger ("AttackRight");
-					break;
-				case Direction.Up:
-					myAnimator.SetTrigger ("AttackUp");
-					break;
-				default:
-					break;
+			case Direction.Down:
+				myAnimator.SetTrigger ("AttackDown");
+				break;
+			case Direction.Left:
+				myAnimator.SetTrigger ("AttackLeft");
+				break;
+			case Direction.Right:
+				myAnimator.SetTrigger ("AttackRight");
+				break;
+			case Direction.Up:
+				myAnimator.SetTrigger ("AttackUp");
+				break;
+			default:
+				break;
 			}
 		}
 		
 		myAnimator.SetBool ("IsAttacking", myIsAttacking);
 	}
 
-	private void OnParticleCollision(GameObject aOther)
+	private void OnParticleCollision (GameObject aOther)
 	{
 		GetComponent<PlayerHealth> ().TakeDamage (5);
 	}
