@@ -56,6 +56,12 @@ public class MapLoader : MonoBehaviour
 				{
 					int index = myTileGidToIndex [tile.Gid];
 					GameObject toInstantiate = myTiles [index];
+
+					if (toInstantiate == null)
+					{
+						Debug.Break ();
+					}
+
 					GameObject instance = Instantiate (toInstantiate, new Vector2 (tile.X, -tile.Y), Quaternion.identity) as GameObject;
 
 					if (tile.HorizontalFlip == true && tile.DiagonalFlip == true)
@@ -143,6 +149,14 @@ public class MapLoader : MonoBehaviour
 				case 21:
 				case 22:
 				case 23:
+					break;
+				case 24:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+				case 30:
 					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");
