@@ -57,11 +57,6 @@ public class PlayerController : MonoBehaviour
 			Attack ();
 			UpdateAttackDuration ();
 		}
-	
-		if (Input.GetKeyDown (KeyCode.R))	//TODO change for other option? -Andy
-		{
-			SavedGame.SaveGame ();
-		}		
 	}
 
 	private void UpdateAttackDuration ()
