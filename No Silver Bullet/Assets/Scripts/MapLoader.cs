@@ -57,11 +57,6 @@ public class MapLoader : MonoBehaviour
 					int index = myTileGidToIndex [tile.Gid];
 					GameObject toInstantiate = myTiles [index];
 
-					if (toInstantiate == null)
-					{
-						Debug.Break ();
-					}
-
 					GameObject instance = Instantiate (toInstantiate, new Vector2 (tile.X, -tile.Y), Quaternion.identity) as GameObject;
 
 					if (tile.HorizontalFlip == true && tile.DiagonalFlip == true)
