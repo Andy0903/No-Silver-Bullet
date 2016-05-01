@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>39.56586</myPlayerX>
-  <myPlayerY>-49.3171234</myPlayerY>
+  <myPlayerX>15</myPlayerX>
+  <myPlayerY>-57</myPlayerY>
   <myProgressTracker>
-    <myProgress>
-      <item>
-        <key>
-          <Quests>ClearStartTown</Quests>
-        </key>
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </item>
-    </myProgress>
+    <myProgress />
   </myProgressTracker>
   <myCurrentScene>Scenes/Scene</myCurrentScene>
 </SavedGame>
