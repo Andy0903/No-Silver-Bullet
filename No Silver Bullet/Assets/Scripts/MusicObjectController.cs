@@ -4,30 +4,31 @@ using System.Collections;
 public class MusicObjectController : MonoBehaviour 
 {
 	#region Member variables
-	public int myRange;
 	public AudioClip myAudioClip;
 	private AudioClip myPreviousGlobalClip;
-	private GameObject myTarget;
+	private BoxCollider2D myBoxCollider;
 	private bool mySwappedMusic = false;
 	#endregion
 
 	#region Private methods
 	private void Awake () 
 	{
-		myTarget = GameObject.FindGameObjectWithTag ("Player"); //Sets the target
+		myBoxCollider = GetComponent<BoxCollider2D> ();
 	}
 
-	private void Update () 
+	private void OnTriggerEnter2D(Collider2D aCollider)
 	{
-		float distanceFromTarget = Vector3.Distance (transform.position, myTarget.transform.position);
-
-		if (distanceFromTarget < myRange && mySwappedMusic == false)
+		if (aCollider.tag == "Player" && mySwappedMusic == false)
 		{
 			myPreviousGlobalClip = SoundManager.instance.myMusicSource.clip;
 			SoundManager.instance.ChangeBGMusic (myAudioClip);
 			mySwappedMusic = true;
 		}
-		else if (distanceFromTarget > myRange && mySwappedMusic == true)
+	}
+
+	private void OnTriggerExit2D(Collider2D aCollider)
+	{
+		if (aCollider.tag == "Player" && mySwappedMusic == true)
 		{
 			SoundManager.instance.ChangeBGMusic (myPreviousGlobalClip);
 			mySwappedMusic = false;

@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 	#region Member variables
 
 	private const float ChasingSpeedMultiplier = 1.2f;
+	private const float DamageIconDuration = 0.6f;
 
 	private enum Direction
 	{
@@ -27,7 +28,6 @@ public class EnemyController : MonoBehaviour
 	private Direction myCurrentDirection;
 	private State myCurrentState;
 
-	public int myHealth;
 	public int myWalkingLength;
 	public int myDamage;
 	public int myParticlesOnDeath;
@@ -35,7 +35,6 @@ public class EnemyController : MonoBehaviour
 	public float mySpeed;
 	public float myDetectionRange;
 	public float myAttackRange;
-
 
 	private float myHorizontal;
 	private float myVertical;
@@ -53,23 +52,12 @@ public class EnemyController : MonoBehaviour
 	//Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
 	private Renderer myRenderer;
-
+	private EnemyHealth myHealth;
 
 	#endregion
 
 	#region Public methods
 
-	public void TakeDamage (int aDamage)
-	{
-		myHealth -= aDamage;
-
-		//Test code for knockback, check into this later
-		//myRidigBody.AddForce isn't working
-		/*Vector3 difference = myTarget.transform.position - transform.position;
-		difference.Normalize ();
-		myRidigBody.MovePosition (transform.position + (-difference));*/
-
-	}
 
 	#endregion
 
@@ -77,7 +65,7 @@ public class EnemyController : MonoBehaviour
 
 	private void Awake ()
 	{
-
+		myHealth = GetComponent<EnemyHealth> ();
 		myParticleSystem = GetComponent<ParticleSystem> ();
 		myAnimator = GetComponent<Animator> ();
 		myRigidBody = GetComponent<Rigidbody2D> ();
@@ -109,8 +97,9 @@ public class EnemyController : MonoBehaviour
 	private void LateUpdate ()
 	{
 
-		if (myHealth <= 0)
+		if (myHealth.CurrentHealth <= 0)
 		{
+			myTarget.GetComponent<Animator> ().SetBool (("IsTakingDamage"), false);
 			myTimeSinceDeath += Time.deltaTime;
 			myCurrentState = State.Dead;
 			if (myParticleSystem != null && (myTimeSinceDeath < myParticleSystem.duration))
@@ -132,8 +121,6 @@ public class EnemyController : MonoBehaviour
 			/*SerializedObject so = new SerializedObject(GetComponent<ParticleSystem>());
 			so.FindProperty ("ShapeModule.arc").floatValue = angleBetweenTargetDegrees;
 			so.ApplyModifiedProperties ();*/
-
-
 		}
 	}
 
@@ -197,18 +184,24 @@ public class EnemyController : MonoBehaviour
 
 	private void UpdateAttack ()
 	{
+		Animator targetAnimator = myTarget.GetComponent<Animator> ();
 		float distanceFromTarget = Vector3.Distance (transform.position, myTarget.transform.position);
 
+		//Shows the taking damage animation on the player
+		if (myTimeSinceLastAttack > DamageIconDuration)
+		{
+			targetAnimator.SetBool ("IsTakingDamage", false);
+		}
+
+		//When this is true the enemy attacks
 		if (myAttackRange > distanceFromTarget && myTimeSinceLastAttack > myTimeBetweenAttacks)
 		{
 			PlayerHealth targetHealth = myTarget.GetComponent<PlayerHealth> ();
 			targetHealth.TakeDamage (myDamage);
+
+			targetAnimator.SetBool ("IsTakingDamage", true);
 			myTimeSinceLastAttack = 0;
 			myCurrentState = State.Attacking;
-		}
-		else if (myAttackRange < distanceFromTarget)
-		{
-			
 		}
 	}
 

@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
 	#region Member variables
 
+	public AudioClip[] myTakingDamageGrunts;
 	public int myStartingHealth;
 	private int myCurrentHealth;
 	public Slider myHealthSlider;
@@ -24,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		myIsGettingDamanged = true;
 		myCurrentHealth -= aDamage;
+		SoundManager.instance.RandomizeSfx (myTakingDamageGrunts);
 	}
 
 	#endregion

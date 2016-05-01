@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>42.84609</myPlayerX>
-  <myPlayerY>-75.72633</myPlayerY>
-  <myProgressTracker />
-  <myCurrentScene>Scenes/Act2</myCurrentScene>
-  <myMusicSourceClipName>BGMusicOverall</myMusicSourceClipName>
+  <myPlayerX>39.56586</myPlayerX>
+  <myPlayerY>-49.3171234</myPlayerY>
+  <myProgressTracker>
+    <myProgress>
+      <item>
+        <key>
+          <Quests>ClearStartTown</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+    </myProgress>
+  </myProgressTracker>
+  <myCurrentScene>Scenes/Scene</myCurrentScene>
 </SavedGame>

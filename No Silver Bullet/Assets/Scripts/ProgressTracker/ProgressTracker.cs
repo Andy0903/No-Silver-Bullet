@@ -8,13 +8,18 @@ public class ProgressTracker
 
 	public enum Quests
 	{
+		None,
+
 		DefeatAct1Boss,
 		DefeatAct2Boss,
 		DefeatAct3Boss,
 		DefeatAct4Boss,
+		DefeatAct5Boss,
+
+		ClearStartTown,
 	}
 
-	private Dictionary<Quests, bool> myProgress;
+	public SerializableDictionary<Quests, bool> myProgress;
 
 	#endregion
 
@@ -22,7 +27,7 @@ public class ProgressTracker
 
 	public ProgressTracker ()
 	{
-		myProgress = new Dictionary<Quests, bool> ();
+		myProgress = new SerializableDictionary<Quests, bool> ();
 	}
 
 	public bool GetQuestStatus (Quests aQuest)
@@ -34,8 +39,11 @@ public class ProgressTracker
 
 	public void SetQuestStatus (Quests aQuest, bool aState)
 	{
-		myProgress [aQuest] = aState;
-		SavedGame.SaveGame ();
+		if (aQuest != Quests.None)
+		{
+			myProgress [aQuest] = aState;
+			SavedGame.SaveGame ();
+		}
 	}
 
 	#endregion

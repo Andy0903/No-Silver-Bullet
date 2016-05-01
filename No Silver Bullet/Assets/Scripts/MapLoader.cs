@@ -2,6 +2,7 @@
 using System.Collections;
 using TiledSharp;
 using System.Collections.Generic;
+using System;
 
 public class MapLoader : MonoBehaviour
 {
@@ -13,16 +14,18 @@ public class MapLoader : MonoBehaviour
 	TmxMap myMap;
 	Transform myBoardHolder;
 	Dictionary<int, int> myTileGidToIndex;
+	GameObject myPlayer;
 
 	#endregion
 
 	#region Private methods
 
 	private void Awake ()
-	{
+	{ 
 		myBoardHolder = new GameObject ("Board").transform;
 		myTileGidToIndex = new Dictionary<int,int> ();
 		myMap = new TmxMap ("Assets/Tmx/" + myTMXfileName + ".tmx");
+		myPlayer = GameObject.FindGameObjectWithTag ("Player");
 
 		IndexateTiles ();
 		CreateBoardTmxObjects ();
@@ -81,12 +84,28 @@ public class MapLoader : MonoBehaviour
 			foreach (TmxObject tmxObject in objectGroup.Objects)
 			{
 				int index = int.Parse (tmxObject.Properties ["ObjectIndex"]);
+
+
+				if (IsForCompletedQuest (tmxObject))
+				{
+					continue;
+				}
+
 				GameObject toInstantiate = myTmxObjects [index];
-				GameObject instance = Instantiate (toInstantiate, new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight), Quaternion.identity) as GameObject;
+				GameObject instance = Instantiate (toInstantiate,
+					                      new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight),
+					                      Quaternion.identity) as GameObject;
 				instance.transform.SetParent (myBoardHolder);
 
-
 				SceneLoader loadAct = instance.GetComponent<SceneLoader> ();
+
+				if (tmxObject.Properties.ContainsKey ("QuestIndex"))
+				{
+					QuestLinker questLinker = instance.GetComponent<QuestLinker> ();
+					ProgressTracker.Quests quest = (ProgressTracker.Quests)Enum.Parse (typeof(ProgressTracker.Quests), tmxObject.Properties ["QuestIndex"]);       
+					questLinker.myBelongsToQuest = quest;
+				}
+
 				switch (index)
 				{
 				case 0:
@@ -125,14 +144,34 @@ public class MapLoader : MonoBehaviour
 				case 22:
 				case 23:
 					break;
-
-				//default:
-				//throw new System.Exception ("Missing case for objectIndex");
+				default:
+					throw new System.Exception ("Missing case for objectIndex");
 				}
-
 			}
 		}
+
+
+	}
+
+	private bool IsForCompletedQuest (TmxObject tmxObject)
+	{
+		if (tmxObject.Properties.ContainsKey ("QuestIndex"))
+		{
+			try
+			{
+				ProgressTracker.Quests quest = (ProgressTracker.Quests)Enum.Parse (typeof(ProgressTracker.Quests), tmxObject.Properties ["QuestIndex"]);        
+				if (Enum.IsDefined (typeof(ProgressTracker.Quests), quest))
+				{
+					return myPlayer.GetComponent<PlayerController> ().myProgressTracker.GetQuestStatus (quest);
+				}
+			}
+			catch (ArgumentException)
+			{
+			}
+		}
+		return false;
 	}
 
 	#endregion
 }
+

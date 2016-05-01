@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 		Down
 	}
 
+	public AudioClip mySlashClip;
 	public float mySpeed;
 	private Animator myAnimator;
 	private Rigidbody2D myRidigBody;
@@ -21,23 +22,12 @@ public class PlayerController : MonoBehaviour
 	private Direction myDirection;
 	private int myDamage;
 	private float myRange;
-
 	private bool myIsAttacking;
 	private float myTimeSinceAttacking;
 	private const float AttackDuration = 0.2f;
-
 	private int myHorizontalInput;
 	private int myVerticalInput;
-
-	#endregion
-
-	#region Properties
-
-	public ProgressTracker ProgressTracker
-	{
-		get;
-		private set;
-	}
+	public ProgressTracker myProgressTracker;
 
 	#endregion
 
@@ -45,7 +35,10 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake ()
 	{
-		ProgressTracker = new ProgressTracker ();
+		if (myProgressTracker == null)
+		{
+			myProgressTracker = new ProgressTracker ();
+		}
 		myAnimator = GetComponent<Animator> ();
 		myRidigBody = GetComponent<Rigidbody2D> ();
 		myDirection = Direction.Down;
@@ -64,22 +57,11 @@ public class PlayerController : MonoBehaviour
 			Attack ();
 			UpdateAttackDuration ();
 		}
-
+	
 		if (Input.GetKeyDown (KeyCode.R))	//TODO change for other option? -Andy
 		{
 			SavedGame.SaveGame ();
-		}
-
-		if (Input.GetKeyDown (KeyCode.L))
-		{
-			SavedGame lastSave = SavedGame.LoadGame ();		//TODO Change for other option -Andy
-			transform.position = new Vector3 (lastSave.myPlayerX, lastSave.myPlayerY, 0);
-			ProgressTracker = lastSave.myProgressTracker;
-			SceneManager.LoadScene (lastSave.myCurrentScene);
-
-			//SoundManager.instance.ChangeBGMusic = lastSave.myMusicSourceClipName.;
-		}
-
+		}		
 	}
 
 	private void UpdateAttackDuration ()
@@ -127,7 +109,7 @@ public class PlayerController : MonoBehaviour
 			if (aHitArray [i].collider.tag == "Enemy")
 			{
 				GameObject enemy = aHitArray [i].collider.gameObject;
-				EnemyController enemyController = enemy.GetComponent<EnemyController> ();
+				EnemyHealth enemyController = enemy.GetComponent<EnemyHealth> ();
 				enemyController.TakeDamage (myDamage);
 			}
 		}
@@ -139,6 +121,7 @@ public class PlayerController : MonoBehaviour
 		{
 			RaycastHit2D[] hits = EnemiesHit ();
 			DamageHitEnemies (hits);
+			SoundManager.instance.PlaySingle (mySlashClip);
 		}
 	}
 
@@ -150,7 +133,7 @@ public class PlayerController : MonoBehaviour
 
 		myHorizontalInput = (int)(Input.GetAxisRaw ("Horizontal"));
 		myVerticalInput = (int)(Input.GetAxisRaw ("Vertical"));
-
+	
 		Move ();
 		UpdateAnimation ();
 	}
@@ -174,12 +157,11 @@ public class PlayerController : MonoBehaviour
 	private void UpdateWalkAnimation ()
 	{
 		bool pressedNothing = false;
-
+	
 		if (myHorizontalInput > 0)
 		{
 			myAnimator.SetTrigger ("PressedRight");
 			myDirection = Direction.Right;
-
 		}
 		else if (myHorizontalInput < 0)
 		{
@@ -200,7 +182,7 @@ public class PlayerController : MonoBehaviour
 		{
 			pressedNothing = true;
 		}
-
+		
 
 		myAnimator.SetBool ("PressedNothing", pressedNothing);
 
@@ -212,7 +194,7 @@ public class PlayerController : MonoBehaviour
 		{
 			myAnimator.SetBool ("PressedNothing", true);
 			myIsAttacking = true;
-			
+					
 			switch (myDirection)
 			{
 			case Direction.Down:
@@ -231,8 +213,13 @@ public class PlayerController : MonoBehaviour
 				break;
 			}
 		}
-
+		
 		myAnimator.SetBool ("IsAttacking", myIsAttacking);
+	}
+
+	private void OnParticleCollision (GameObject aOther)
+	{
+		GetComponent<PlayerHealth> ().TakeDamage (5);
 	}
 
 	#endregion
