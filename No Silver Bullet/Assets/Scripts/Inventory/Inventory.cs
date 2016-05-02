@@ -1,14 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour, IHasChanged
 {
 	#region Member variables
 
+	[SerializeField] Transform myEquippedSlots;
+	[SerializeField] Transform myCarryingSlots;
 	List<int> myItemIDs;
 	Dictionary<Item.ItemTypes, Item> myEquppiedItems;
 	List<Item> myItems;
+
+	#endregion
+
+	#region Public methods
+
+	public void HasChanged ()
+	{
+		foreach (Transform slotTransform in myEquippedSlots)
+		{
+			GameObject item = slotTransform.GetComponent<InventorySlot> ().Item;
+
+			if (item != null)
+			{
+			}
+		}
+	}
 
 	#endregion
 
@@ -30,6 +50,11 @@ public class Inventory : MonoBehaviour
 		{
 			myItems = new List<Item> ();
 		}
+	}
+
+	private void Start ()
+	{
+		HasChanged ();
 	}
 
 	private void EquipItem (Item aItem)
