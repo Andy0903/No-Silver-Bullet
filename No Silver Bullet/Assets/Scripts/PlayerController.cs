@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody2D myRidigBody;
 	private Vector3 myMovement;
 	private Direction myDirection;
-	private int myDamage;
+	private float myDamage;
 	private float myRange;
 	private bool myIsAttacking;
 	private float myTimeSinceAttacking;
@@ -28,6 +29,25 @@ public class PlayerController : MonoBehaviour
 	private int myHorizontalInput;
 	private int myVerticalInput;
 	public ProgressTracker myProgressTracker;
+	public InventoryInformationKeeper myInventorySetup;
+	//public List<int> myItemIDs;
+
+	#endregion
+
+	#region Public methods
+
+	public void UpdateStats (float aDamage, float aHealth, float aHealthRegeneration) //TODO coupling vs cohesion debatt.
+	{
+		const float BaseDamage = 50;
+		const float BaseHealthRegeneration = 1f; // 3
+		const float BaseHealth = 100;
+
+		myDamage = BaseDamage + aDamage;
+		gameObject.GetComponent<PlayerHealth> ().MaxHealth = BaseHealth + aHealth;
+		gameObject.GetComponent<PlayerHealth> ().HealthRegeneration = BaseHealthRegeneration + aHealthRegeneration;
+		gameObject.GetComponent<PlayerHealth> ().myHealthSlider.maxValue = gameObject.GetComponent<PlayerHealth> ().MaxHealth;
+
+	}
 
 	#endregion
 
@@ -44,8 +64,8 @@ public class PlayerController : MonoBehaviour
 		myDirection = Direction.Down;
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
-		myDamage = 50;
 		myRange = 0.5f;
+		UpdateStats (0, 0, 0);
 	}
 
 	private void Update ()

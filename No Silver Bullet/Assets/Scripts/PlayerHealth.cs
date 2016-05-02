@@ -7,8 +7,7 @@ public class PlayerHealth : MonoBehaviour
 	#region Member variables
 
 	public AudioClip[] myTakingDamageGrunts;
-	public int myStartingHealth;
-	private int myCurrentHealth;
+	private float myCurrentHealth;
 	public Slider myHealthSlider;
 	public Image myDamageImage;
 	public float myFlashSpeed;
@@ -16,6 +15,22 @@ public class PlayerHealth : MonoBehaviour
 
 	private bool myIsGettingDamanged;
 	private float myHealthToBeRegenerated;
+
+	#endregion
+
+	#region Properties
+
+	public float MaxHealth
+	{
+		get;
+		set;
+	}
+
+	public float HealthRegeneration
+	{
+		get;
+		set;
+	}
 
 	#endregion
 
@@ -34,7 +49,7 @@ public class PlayerHealth : MonoBehaviour
 
 	private void Awake ()
 	{
-		myCurrentHealth = myStartingHealth;
+		myCurrentHealth = MaxHealth;
 	}
 
 	private void Update ()
@@ -59,10 +74,9 @@ public class PlayerHealth : MonoBehaviour
 
 	private void RegenerateHealth ()
 	{
-		const float HealthRegeneration = 3f;
-		float healthRegenerationRate = HealthRegeneration;	//TODO add items that give more hp reg.
+		float healthRegenerationRate = HealthRegeneration;
 
-		if (myCurrentHealth < myStartingHealth)
+		if (myCurrentHealth < MaxHealth)
 		{
 			float healthThisFrame = healthRegenerationRate * Time.deltaTime;
 			myHealthToBeRegenerated += healthThisFrame;
@@ -72,12 +86,12 @@ public class PlayerHealth : MonoBehaviour
 				myHealthToBeRegenerated += 0.5f;
 				myCurrentHealth += (int)myHealthToBeRegenerated; 
 				myHealthToBeRegenerated = 0;
-
-				if (myCurrentHealth > myStartingHealth)
-				{
-					myCurrentHealth = myStartingHealth;
-				}
 			}
+		}
+
+		if (myCurrentHealth > MaxHealth)
+		{
+			myCurrentHealth = MaxHealth;
 		}
 	}
 

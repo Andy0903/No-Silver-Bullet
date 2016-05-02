@@ -7,7 +7,7 @@ public class DontDestroyOnLoad : MonoBehaviour
 
 	private void Awake ()
 	{
-		Application.DontDestroyOnLoad (gameObject);
+		Object.DontDestroyOnLoad (gameObject);
 	}
 
 	#endregion

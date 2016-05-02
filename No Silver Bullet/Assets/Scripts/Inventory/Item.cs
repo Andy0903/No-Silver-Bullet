@@ -11,31 +11,55 @@ public class Item : MonoBehaviour
 		Chest,
 		Feet,
 		Hands,
-		Neck
+		Neck,
+		Quest
 	}
+
+	[SerializeField] private int myUniqueID;
+	[SerializeField] private ItemTypes myItemType;
+	[SerializeField] private string myName;
+	[SerializeField] private float myHealthRegeneration;
+	[SerializeField] private float myDamage;
+	[SerializeField] private float myHealth;
 
 	#endregion
 
 	#region Properties
 
+	public int UniqueID
+	{
+		get { return myUniqueID; }
+		private set { myUniqueID = value; }
+	}
+
 	public ItemTypes ItemType
 	{
-		get;
-		private set;
+		get { return myItemType; }
+		private set { myItemType = value; }
 	}
 
-	#endregion
-
-	#region Private methods
-
-	void Start ()
+	public string Name
 	{
-
+		get { return myName; }
+		private set { myName = value; }
 	}
 
-	void Update ()
+	public float HealthRegeneration
 	{
+		get { return myHealthRegeneration; }
+		private set { myHealthRegeneration = value; }
+	}
 
+	public float Damage
+	{
+		get{ return myDamage; }
+		private set { myDamage = value; }
+	}
+
+	public float Health
+	{
+		get { return myHealth; }
+		private set { myHealth = value; }
 	}
 
 	#endregion

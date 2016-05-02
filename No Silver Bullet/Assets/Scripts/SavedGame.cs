@@ -3,6 +3,7 @@ using System.Collections;
 using System.IO;
 using System.Xml.Serialization;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class SavedGame
 {
@@ -13,6 +14,7 @@ public class SavedGame
 	public float myPlayerY;
 	public ProgressTracker myProgressTracker;
 	public string myCurrentScene;
+	public InventoryInformationKeeper myInventorySetup;
 
 	#endregion
 
@@ -26,7 +28,7 @@ public class SavedGame
 		save.myPlayerY = player.transform.position.y;
 		save.myProgressTracker = player.GetComponent<PlayerController> ().myProgressTracker;
 		save.myCurrentScene = SceneManager.GetActiveScene ().name;
-		//TODO inventory
+		save.myInventorySetup = player.GetComponent<PlayerController> ().myInventorySetup;
 
 		XmlSerializer serializer = new XmlSerializer (typeof(SavedGame));
 		using (StreamWriter writer = new StreamWriter (FilePath))

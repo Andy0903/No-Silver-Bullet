@@ -36,7 +36,6 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	public void OnEndDrag (PointerEventData aEventData)
 	{
 		myItemBeingDragged.GetComponent<LayoutElement> ().ignoreLayout = false;
-		myItemBeingDragged = null;
 		gameObject.GetComponent<CanvasGroup> ().blocksRaycasts = true;
 
 		if (gameObject.transform.parent == myStartParent)
@@ -47,7 +46,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		{
 			gameObject.transform.SetParent (myStartParent);
 		}
-
+		myItemBeingDragged = null;
 	}
 
 	#endregion

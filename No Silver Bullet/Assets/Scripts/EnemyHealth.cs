@@ -7,22 +7,24 @@ public class EnemyHealth : MonoBehaviour
 	#region Member variables
 
 	public AudioClip[] myTakingDamageGrunts;
-	public int myStartingHealth;
-	private int myCurrentHealth;
+	public float myStartingHealth;
+	private float myCurrentHealth;
 
 	#endregion
 
 	#region Properties
-	public int CurrentHealth
+
+	public float CurrentHealth
 	{
 		get { return myCurrentHealth; }
 		private set { myCurrentHealth = myStartingHealth; }
 	}
+
 	#endregion
 
 	#region Public methods
 
-	public void TakeDamage (int aDamage)
+	public void TakeDamage (float aDamage)
 	{
 		//Fixes null errors when playing sounds
 		if (myTakingDamageGrunts.Length > 0)
@@ -40,5 +42,6 @@ public class EnemyHealth : MonoBehaviour
 	{
 		myCurrentHealth = myStartingHealth;
 	}
+
 	#endregion
 }

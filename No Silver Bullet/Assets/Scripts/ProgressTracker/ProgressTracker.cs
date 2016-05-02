@@ -23,12 +23,16 @@ public class ProgressTracker
 
 	#endregion
 
-	#region Private methods
+	#region Constructors
 
 	public ProgressTracker ()
 	{
 		myProgress = new SerializableDictionary<Quests, bool> ();
 	}
+
+	#endregion
+
+	#region Private methods
 
 	public bool GetQuestStatus (Quests aQuest)
 	{
