@@ -7,7 +7,7 @@ public class BossController : MonoBehaviour {
 	#region Member variables
 
 	private const float ChasingSpeedMultiplier = 1.2f;
-	private const int NumerOfAttackParticles = 1;
+	private const int NumerOfAttackParticles = 5;
 
 	private enum Direction
 	{
@@ -51,13 +51,11 @@ public class BossController : MonoBehaviour {
 	private bool myIsAttacking;
 	private bool myIsDoingSecondaryAttack;
 
-	//private ParticleSystem myParticleSystem;
-	//private ParticleSystem myAttackParticleSystem;
 	private Animator myAnimator;
 	private Rigidbody2D myRigidBody;
 	private Vector3 myMovement;
+	private Vector3 myStartPosition;
 	private Vector3 myIdleStartPosition;
-	//Might rename this to myLastDirectionChangePos? Or similar
 	private GameObject myTarget;
 	private Renderer myRenderer;
 	private EnemyHealth myHealth;
@@ -73,6 +71,7 @@ public class BossController : MonoBehaviour {
 
 	private void Awake ()
 	{
+		myStartPosition = transform.position;
 		myHealth = GetComponent<EnemyHealth> ();
 		//myParticleSystem = GetComponent<ParticleSystem> ();
 		myAnimator = GetComponent<Animator> ();
@@ -189,13 +188,15 @@ public class BossController : MonoBehaviour {
 
 		if (mySecondaryAttackRange > distanceFromTarget && myTimeSinceLastSecondaryAttack > myTimeBetweenSecondaryAttacks)
 		{
-			//myIsDoingSecondaryAttack = true;
+			myIsDoingSecondaryAttack = true;
+			transform.position = myStartPosition;
+		}
 
-			myTimeSinceLastSecondaryAttack = 0;
-			/*Vector3 difference = myTarget.transform.position - transform.position;
-			difference.Normalize ();
-			myTarget.GetComponent<Rigidbody2D> ().AddF);*/
+		if (myIsDoingSecondaryAttack)
+		{
 			mySecondaryAttackParticleSystem.Emit (NumerOfAttackParticles);
+			myIsDoingSecondaryAttack = false;
+			myTimeSinceLastSecondaryAttack = 0;
 		}
 
 
