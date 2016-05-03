@@ -359,7 +359,7 @@
   </tile>
   <tile id="9">
    <properties>
-    <property name="UnityTileIndex" value="711"/>
+    <property name="UnityTileIndex" value="619"/>
    </properties>
   </tile>
   <tile id="10">
@@ -1165,7 +1165,7 @@
   </tile>
   <tile id="28">
    <properties>
-    <property name="UnityTileIndex" value="710"/>
+    <property name="UnityTileIndex" value="561"/>
    </properties>
   </tile>
  </tileset>

@@ -231,7 +231,7 @@
   </tile>
   <tile id="28">
    <properties>
-    <property name="UnityTileIndex" value="710"/>
+    <property name="UnityTileIndex" value="561"/>
    </properties>
   </tile>
  </tileset>

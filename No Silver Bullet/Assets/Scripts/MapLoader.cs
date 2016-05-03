@@ -57,6 +57,11 @@ public class MapLoader : MonoBehaviour
 					int index = myTileGidToIndex [tile.Gid];
 					GameObject toInstantiate = myTiles [index];
 
+					if (toInstantiate == null)
+					{
+						Debug.Break ();
+					}
+
 					GameObject instance = Instantiate (toInstantiate, new Vector2 (tile.X, -tile.Y), Quaternion.identity) as GameObject;
 
 					if (tile.HorizontalFlip == true && tile.DiagonalFlip == true)
@@ -85,7 +90,6 @@ public class MapLoader : MonoBehaviour
 			foreach (TmxObject tmxObject in objectGroup.Objects)
 			{
 				int index = int.Parse (tmxObject.Properties ["ObjectIndex"]);
-
 
 				if (IsForCompletedQuest (tmxObject))
 				{
@@ -152,6 +156,17 @@ public class MapLoader : MonoBehaviour
 				case 28:
 				case 29:
 				case 30:
+				case 31:
+				case 32:
+				case 33:
+				case 34:
+				case 35:
+				case 36:
+				case 37:
+				case 38:
+				case 39:
+				case 40:
+				case 41:
 					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");
