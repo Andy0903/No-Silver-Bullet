@@ -35,6 +35,15 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 
 	#region Public methods
 
+	public void AddItem (GameObject aItem)
+	{
+		if (ContainedItem == null)
+		{
+			aItem.transform.SetParent (gameObject.transform, false);
+			ExecuteEvents.ExecuteHierarchy<IHasChanged> (gameObject, null, (x, y) => x.HasChanged ());
+		}
+	}
+
 	public void OnDrop (PointerEventData aEventData)
 	{
 		if (ContainedItem == null)

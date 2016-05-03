@@ -14,7 +14,7 @@ public class SavedGame
 	public float myPlayerY;
 	public ProgressTracker myProgressTracker;
 	public string myCurrentScene;
-	public InventoryInformationKeeper myInventorySetup;
+	public SerializableDictionary<int, int> myInventoryInformation;
 
 	#endregion
 
@@ -23,12 +23,13 @@ public class SavedGame
 	public static void SaveGame ()
 	{
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		GameObject inventory = GameObject.FindWithTag ("Inventory");
 		SavedGame save = new SavedGame ();
 		save.myPlayerX = player.transform.position.x;
 		save.myPlayerY = player.transform.position.y;
 		save.myProgressTracker = player.GetComponent<PlayerController> ().myProgressTracker;
 		save.myCurrentScene = SceneManager.GetActiveScene ().name;
-		save.myInventorySetup = player.GetComponent<PlayerController> ().myInventorySetup;
+		save.myInventoryInformation = inventory.GetComponent<Inventory> ().InventoryInformation ();
 
 		XmlSerializer serializer = new XmlSerializer (typeof(SavedGame));
 		using (StreamWriter writer = new StreamWriter (FilePath))

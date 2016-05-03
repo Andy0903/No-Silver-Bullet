@@ -29,14 +29,12 @@ public class PlayerController : MonoBehaviour
 	private int myHorizontalInput;
 	private int myVerticalInput;
 	public ProgressTracker myProgressTracker;
-	public InventoryInformationKeeper myInventorySetup;
-	//public List<int> myItemIDs;
 
 	#endregion
 
 	#region Public methods
 
-	public void UpdateStats (float aDamage, float aHealth, float aHealthRegeneration) //TODO coupling vs cohesion debatt.
+	public void UpdateStats (float aDamage, float aHealth, float aHealthRegeneration)
 	{
 		const float BaseDamage = 50;
 		const float BaseHealthRegeneration = 1f; // 3
@@ -57,6 +55,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (myProgressTracker == null)
 		{
+			UpdateStats (0, 0, 0);
 			myProgressTracker = new ProgressTracker ();
 		}
 		myAnimator = GetComponent<Animator> ();
@@ -65,7 +64,6 @@ public class PlayerController : MonoBehaviour
 		myIsAttacking = false;
 		myTimeSinceAttacking = 0;
 		myRange = 0.5f;
-		UpdateStats (0, 0, 0);
 	}
 
 	private void Update ()

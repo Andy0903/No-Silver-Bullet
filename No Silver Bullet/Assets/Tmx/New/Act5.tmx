@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="60" tilewidth="34" tileheight="34" nextobjectid="3">
+ <tileset firstgid="1" name="WaterAct5" tilewidth="34" tileheight="34" tilecount="49" columns="7">
+  <image source="../Sprites/Tiles/Act5/WaterAct5.png" width="250" height="250"/>
+  <tile id="16">
+   <properties>
+    <property name="UnityTileIndex" value="897"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="UnityTileIndex" value="898"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="UnityTileIndex" value="899"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="UnityTileIndex" value="900"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="UnityTileIndex" value="901"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="UnityTileIndex" value="902"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="UnityTileIndex" value="903"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="UnityTileIndex" value="904"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="50" name="FloorTileAct5" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiles/Act5/FloorTileAct5.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="905"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="51" name="CorruptedFloorTile" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiles/Act5/CorruptedFloorTile.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="906"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="52" name="Act5LastGate" tilewidth="34" tileheight="34" tilecount="6" columns="3">
+  <image source="../Sprites/Tiles/Act5/Act5LastGate.png" width="102" height="68"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="907"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="ObjectIndex" value="30"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="909"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="910"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="UnityTileIndex" value="911"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="UnityTileIndex" value="912"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="58" name="CastleDoor" tilewidth="34" tileheight="34" tilecount="30" columns="6">
+  <image source="../Sprites/Tiles/Act4/CastleDoor.png" width="204" height="170"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="682"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="683"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="684"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="685"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="UnityTileIndex" value="686"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="UnityTileIndex" value="687"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="UnityTileIndex" value="688"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="UnityTileIndex" value="689"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="UnityTileIndex" value="690"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="UnityTileIndex" value="691"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="UnityTileIndex" value="692"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="UnityTileIndex" value="694"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="UnityTileIndex" value="695"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="UnityTileIndex" value="696"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="UnityTileIndex" value="697"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="UnityTileIndex" value="698"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="UnityTileIndex" value="699"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="UnityTileIndex" value="700"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="UnityTileIndex" value="701"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="UnityTileIndex" value="702"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="UnityTileIndex" value="703"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="UnityTileIndex" value="704"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="UnityTileIndex" value="705"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="UnityTileIndex" value="706"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="UnityTileIndex" value="707"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="UnityTileIndex" value="708"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="UnityTileIndex" value="709"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="UnityTileIndex" value="710"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="88" name="WallAct5" tilewidth="34" tileheight="34" tilecount="21" columns="7">
+  <image source="../Sprites/Tiles/Act5/WallAct5.png" width="238" height="102"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="913"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="914"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="915"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="916"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="UnityTileIndex" value="917"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="UnityTileIndex" value="918"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="UnityTileIndex" value="919"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="UnityTileIndex" value="920"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="UnityTileIndex" value="921"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="UnityTileIndex" value="922"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="UnityTileIndex" value="923"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="UnityTileIndex" value="924"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="UnityTileIndex" value="925"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="UnityTileIndex" value="926"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="UnityTileIndex" value="927"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="UnityTileIndex" value="928"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="UnityTileIndex" value="929"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="UnityTileIndex" value="930"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="UnityTileIndex" value="932"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="UnityTileIndex" value="933"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="UnityTileIndex" value="934"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="109" name="Door" tilewidth="34" tileheight="34" tilecount="4" columns="2">
+  <image source="../Sprites/Tiles/Act4/Door.png" width="68" height="68"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="678"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="679"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="680"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="681"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="113" name="House1Inside" tilewidth="34" tileheight="34" tilecount="35" columns="7">
+  <image source="../Sprites/Tiles/AllActs/ActXX/InsideScenes/House1Inside.png" width="238" height="170"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="745"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="746"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="747"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="748"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="UnityTileIndex" value="749"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="UnityTileIndex" value="750"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="UnityTileIndex" value="751"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="UnityTileIndex" value="752"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="UnityTileIndex" value="753"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="UnityTileIndex" value="754"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="UnityTileIndex" value="755"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="UnityTileIndex" value="756"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="ObjectIndex" value="29"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="UnityTileIndex" value="758"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="UnityTileIndex" value="759"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="UnityTileIndex" value="760"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="UnityTileIndex" value="761"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="UnityTileIndex" value="762"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="UnityTileIndex" value="763"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="UnityTileIndex" value="764"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="UnityTileIndex" value="765"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="UnityTileIndex" value="766"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="UnityTileIndex" value="767"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="UnityTileIndex" value="768"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="UnityTileIndex" value="769"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="UnityTileIndex" value="770"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="UnityTileIndex" value="771"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="UnityTileIndex" value="772"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="UnityTileIndex" value="773"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="UnityTileIndex" value="774"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="UnityTileIndex" value="775"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="UnityTileIndex" value="776"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="UnityTileIndex" value="778"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="UnityTileIndex" value="778"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="UnityTileIndex" value="779"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="148" name="Hörna, chansning" tilewidth="34" tileheight="34" tilecount="4" columns="2">
+  <image source="../Sprites/Tiles/Act5/Hörna, chansning.png" width="68" height="68"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="935"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="936"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="937"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="152" name="BlackBrick" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiles/AllActs/ActXX/Inredning/BlackBrick.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="896"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="153" name="Bro" tilewidth="34" tileheight="34" tilecount="3" columns="1">
+  <image source="../Sprites/Tiles/Act5/Bro.png" width="34" height="102"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="938"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="939"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="940"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="156" name="CleansedAltar" tilewidth="34" tileheight="34" tilecount="20" columns="5">
+  <image source="../Sprites/Tiles/Act4/CleansedAltar.png" width="170" height="136"/>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="538"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="539"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="540"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="UnityTileIndex" value="541"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="UnityTileIndex" value="542"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="UnityTileIndex" value="544"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="UnityTileIndex" value="545"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="UnityTileIndex" value="546"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="UnityTileIndex" value="547"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="UnityTileIndex" value="548"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="UnityTileIndex" value="549"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="UnityTileIndex" value="550"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="UnityTileIndex" value="551"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="UnityTileIndex" value="552"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="UnityTileIndex" value="553"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="UnityTileIndex" value="554"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="UnityTileIndex" value="555"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="176" name="YellowTree" tilewidth="34" tileheight="34" tilecount="4" columns="2">
+  <image source="../Sprites/Tiles/Act4/YellowTree.png" width="68" height="68"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="666"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="667"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="668"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="UnityTileIndex" value="669"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="180" name="StoneFloorAct4" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiles/Act4/StoneFloorAct4.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="647"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="181" name="BuskeAct4" tilewidth="34" tileheight="34" tilecount="1" columns="1">
+  <image source="../Sprites/Tiles/Act4/BuskeAct4.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="537"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="182" name="WallAct4" tilewidth="34" tileheight="34" tilecount="2" columns="1">
+  <image source="../Sprites/Tiles/Act4/WallAct4.png" width="34" height="68"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="655"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="656"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="184" name="SideWallAct4" tilewidth="34" tileheight="34" tilecount="3" columns="3">
+  <image source="../Sprites/Tiles/Act4/SideWallAct4.png" width="102" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="UnityTileIndex" value="640"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="UnityTileIndex" value="641"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="UnityTileIndex" value="642"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,113,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,117,119,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,180,180,180,180,180,180,50,50,180,180,180,180,180,180,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,180,50,50,50,50,180,50,50,180,50,50,50,50,180,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,50,180,180,180,180,50,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,180,50,180,180,50,180,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,180,50,180,180,50,180,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,180,50,180,180,50,180,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+51,51,51,51,51,51,51,51,1610612853,50,50,50,50,17,18,50,50,180,50,180,180,50,180,50,50,17,18,50,50,50,50,2684354677,51,51,51,51,51,51,51,51,
+113,117,117,117,117,117,17,18,50,50,50,50,50,2684354714,2684354714,50,180,180,50,180,180,50,180,180,50,2684354714,2684354714,50,50,50,50,50,17,18,117,117,117,117,117,119,
+1610612853,50,50,50,50,50,17,18,50,50,50,50,50,17,18,50,180,50,50,180,180,50,50,180,50,17,18,50,50,50,50,50,17,18,50,50,50,50,50,2684354677,
+1610612853,50,50,50,50,50,2684354714,2684354714,2684354714,50,50,50,50,17,18,50,180,180,50,180,180,50,180,180,50,17,18,50,50,50,50,2684354714,2684354714,2684354714,50,50,50,50,50,2684354677,
+1610612853,50,50,50,50,50,17,18,50,50,50,50,50,17,18,50,50,180,50,180,180,50,180,50,50,17,18,50,50,50,50,50,17,18,50,50,50,50,50,2684354677,
+141,3221225589,3221225589,3221225589,3221225589,3221225589,17,18,50,50,50,50,50,2684354714,2684354714,50,180,180,50,180,180,50,180,180,50,2684354714,2684354714,50,50,50,50,50,17,18,3221225589,3221225589,3221225589,3221225589,3221225589,147,
+51,51,51,51,51,51,51,51,1610612853,50,50,50,50,17,18,50,50,180,50,180,180,50,180,50,50,17,18,50,50,50,50,2684354677,51,51,51,51,51,51,51,51,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,17,18,50,180,180,50,180,180,50,180,180,50,17,18,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,17,18,50,180,50,50,180,180,50,50,180,50,17,18,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,17,18,50,180,50,50,180,180,50,50,180,50,17,18,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,17,18,50,180,180,180,180,180,180,180,180,50,17,18,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,17,18,50,50,50,50,180,180,50,50,50,50,17,18,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,24,25,26,1610612754,1610612754,154,2684354577,2684354577,154,1610612754,1610612754,2684354577,1610612761,1610612768,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,31,32,33,1610612753,1610612753,154,2684354578,2684354578,154,1610612753,1610612753,2684354578,1610612760,1610612767,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612853,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,2684354677,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,141,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,50,50,50,50,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,3221225589,147,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,117,117,117,117,117,117,117,117,117,119,3221225622,50,50,150,2684354701,117,117,117,117,117,117,117,117,117,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,51,51,51,51,51,51,51,51,51,150,3221225622,50,50,150,3221225622,51,51,51,51,51,51,51,51,51,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,150,3221225622,50,50,150,3221225622,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,150,3221225622,50,50,150,3221225622,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,3221225489,50,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612768,50,51,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612768,50,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612769,51,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612768,50,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612769,50,51,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612769,50,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612768,51,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612769,50,50,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51,3221225490,1610612768,50,51,17,18,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,3221225490,1610612769,50,50,17,18,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,0,0,
+0,0,51,2684354591,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,3221225504,1610612761,1610612768,51,50,24,25,26,26,26,26,26,26,26,26,26,26,26,26,3221225504,3221225503,51,0,0,
+0,0,51,24,2684354585,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612753,1610612767,50,50,31,32,33,33,33,33,33,33,33,33,33,33,33,33,3221225497,3221225496,51,0,0,
+0,0,51,17,18,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,50,50,50,51,51,51,51,51,51,51,51,51,51,51,51,17,3221225496,51,0,0,
+0,0,51,24,18,51,51,51,51,51,50,50,50,50,50,50,50,50,50,50,50,50,50,51,51,51,51,51,51,51,51,51,51,51,51,17,3221225489,51,0,0,
+0,0,51,24,18,51,51,51,51,51,50,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,17,3221225496,51,0,0,
+0,0,51,24,18,51,51,51,51,51,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,51,51,51,51,51,51,51,51,51,51,17,3221225496,51,0,0,
+0,0,51,24,18,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,51,51,51,51,51,51,51,51,51,51,17,3221225496,51,0,0,
+0,0,51,24,18,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,50,50,50,51,51,51,51,51,51,51,17,3221225496,51,0,0,
+0,0,51,24,18,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,51,51,51,51,51,51,51,17,3221225489,51,0,0,
+0,0,51,24,25,26,26,26,26,3221225503,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,51,51,2684354591,2684354584,3221225505,3221225505,3221225505,1610612761,3221225496,51,0,0,
+0,0,51,31,32,3221225498,3221225498,3221225498,3221225497,3221225496,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,51,50,51,51,2684354592,2684354585,3221225498,3221225498,3221225498,1610612760,1610612767,51,0,0,
+0,0,51,51,51,51,51,51,1610612762,2684354586,51,51,51,51,51,51,51,51,51,51,50,50,50,50,50,50,50,50,51,51,1610612762,2684354586,51,51,51,51,51,51,0,0,
+0,0,0,0,0,0,0,51,1610612762,2684354586,51,51,51,51,51,51,51,51,51,51,50,51,51,51,51,51,51,51,51,51,1610612762,2684354586,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,1610612762,2684354586,51,51,51,51,51,51,51,51,51,51,50,50,50,51,51,51,51,51,51,51,1610612762,2684354586,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,17,18,51,51,51,51,51,51,51,51,51,51,50,50,50,51,51,51,51,51,51,51,1610612762,2684354586,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,17,18,51,51,51,51,51,51,51,50,50,50,50,50,50,51,51,51,51,51,51,51,1610612762,3221225489,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,17,25,26,26,26,26,26,26,26,50,51,51,50,50,50,26,26,26,26,26,26,26,1610612761,3221225496,51,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,51,31,32,33,33,33,33,33,33,33,50,50,50,50,50,50,33,33,33,33,33,33,33,33,1610612767,51,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tile Layer 2" width="40" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,184,185,186,184,185,186,184,185,186,184,185,186,184,185,186,184,185,186,184,185,186,184,185,186,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,176,177,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,181,181,181,181,0,178,179,0,181,181,181,181,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,156,157,158,159,160,0,181,0,0,0,0,181,0,156,157,158,159,160,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,161,162,163,164,165,0,0,0,0,0,0,0,0,161,162,163,164,165,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,166,167,168,169,170,0,0,0,0,0,0,0,0,166,167,168,169,170,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,171,172,173,174,175,0,0,0,0,0,0,0,0,171,172,173,174,175,0,181,0,182,0,0,0,0,0,0,0,
+184,185,186,186,184,185,186,183,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,183,184,185,186,184,185,184,185,
+0,0,52,0,54,0,0,0,3221225620,181,0,0,2684354715,0,0,1610612891,0,0,0,0,0,0,0,0,2684354715,0,0,1610612891,0,0,181,1610612884,0,0,0,52,0,54,0,0,
+0,0,55,56,57,0,0,0,0,181,0,0,0,0,0,0,0,181,0,0,0,0,181,0,0,0,0,0,0,0,181,0,0,0,0,55,56,57,0,0,
+0,0,0,0,0,1610612889,0,0,0,2684354713,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610612889,0,0,0,2684354713,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,181,0,0,0,0,0,0,181,0,0,0,0,0,0,181,0,0,0,0,0,0,181,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2684354708,181,0,0,2684354715,0,0,1610612891,0,0,0,0,0,0,0,0,2684354715,0,0,1610612891,0,0,181,148,0,0,0,0,0,0,0,0,
+184,185,186,186,184,185,186,182,0,181,0,0,0,0,0,0,181,0,0,0,0,0,0,181,0,0,0,0,0,0,181,0,182,184,185,186,184,185,184,185,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,153,0,0,153,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,0,0,0,0,0,0,0,0,155,0,0,155,0,0,0,0,0,0,0,0,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,181,181,181,181,181,181,181,181,181,0,0,0,0,181,181,181,181,181,181,181,181,181,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,2684354708,0,0,148,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,109,110,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,183,184,185,186,184,185,186,185,186,182,0,0,109,110,0,0,182,184,185,186,185,186,184,185,186,183,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,109,110,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,109,110,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,1610612884,3221225620,111,112,1610612884,3221225620,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,182,184,185,186,184,185,186,184,185,186,184,184,185,186,183,0,0,0,0,0,0,183,184,185,186,186,184,185,186,184,185,186,184,185,186,182,0,0,
+0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,
+0,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,
+0,0,182,0,0,181,181,182,184,185,186,184,185,186,184,185,184,185,186,0,0,0,0,182,184,185,186,184,185,186,184,185,186,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,182,0,0,0,184,185,186,184,185,186,184,185,186,184,185,186,182,0,0,0,0,0,0,0,0,0,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,182,0,0,0,0,0,0,184,185,186,186,186,186,186,186,186,182,0,0,0,0,0,0,0,0,0,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,182,181,0,0,182,0,0,
+0,0,182,0,0,181,181,183,184,185,186,184,185,182,0,184,185,186,184,185,186,0,0,184,185,186,182,0,182,185,186,184,185,186,181,0,0,182,0,0,
+0,0,182,0,0,0,0,0,0,0,181,181,181,182,0,0,0,0,0,0,0,0,0,0,0,0,182,0,182,181,0,0,0,0,0,0,0,182,0,0,
+0,0,182,0,0,0,0,0,0,0,181,181,181,182,0,0,0,0,0,182,184,185,186,184,185,186,183,0,182,181,0,0,0,0,0,0,0,182,0,0,
+0,0,183,184,185,186,186,182,0,0,181,181,181,183,184,185,184,185,186,182,0,0,0,0,0,0,0,0,182,181,0,0,182,184,185,186,186,183,0,0,
+0,0,0,0,0,0,0,182,0,0,181,181,181,181,181,181,181,181,181,182,0,184,185,186,184,185,186,185,183,181,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,88,89,90,91,92,93,94,181,181,182,0,0,0,88,89,90,91,92,93,94,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,95,96,97,98,99,100,101,181,181,183,0,0,0,95,96,97,98,99,100,101,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,102,103,104,105,106,107,108,58,59,0,0,62,63,102,103,104,105,106,107,108,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,0,0,64,65,66,67,68,69,0,0,0,0,0,0,0,0,0,182,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,183,0,0,0,0,0,0,0,0,0,70,71,72,73,74,75,0,0,0,0,0,0,0,0,0,183,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" gid="53" x="111" y="403.667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="30"/>
+   </properties>
+  </object>
+  <object id="2" gid="53" x="1232.33" y="405" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="30"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

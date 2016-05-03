@@ -10,22 +10,77 @@ public class Inventory : MonoBehaviour, IHasChanged
 
 	[SerializeField] Transform myEquippedSlots;
 	[SerializeField] Transform myCarryingSlots;
-	//List<int> myItemIDs;
-	//Dictionary<Item.ItemTypes, Item> myEquppiedItems;
-	//List<Item> myItems;
 	[SerializeField] GameObject myPlayer;
+	[SerializeField] List<GameObject> myItemList;
 
 	#endregion
 
 	#region Public methods
+
+	public void LoadInventory (SerializableDictionary<int, int> aInformation)
+	{
+		for (int i = 0; i < myEquippedSlots.transform.childCount; i++)
+		{
+			InventorySlot slot = myEquippedSlots.GetChild (i).GetComponent<InventorySlot> ();
+			int itemID;
+
+			if (aInformation.TryGetValue (slot.UniqueID, out itemID))
+			{
+				GameObject item = Instantiate (myItemList [itemID]);
+				slot.AddItem (item);
+			}
+		}
+
+		for (int i = 0; i < myCarryingSlots.transform.childCount; i++)
+		{
+			InventorySlot slot = myCarryingSlots.GetChild (i).GetComponent<InventorySlot> ();
+			int itemID;
+
+			if (aInformation.TryGetValue (slot.UniqueID, out itemID))
+			{
+				GameObject item = Instantiate (myItemList [itemID]);
+				slot.AddItem (item);
+			}
+		}
+	}
+
+	public SerializableDictionary<int, int> InventoryInformation ()
+	{
+		SerializableDictionary<int, int> inventoryInfo = new SerializableDictionary<int, int> ();
+
+		foreach (Transform slotTransform in myEquippedSlots)
+		{
+			GameObject item = slotTransform.GetComponent<InventorySlot> ().ContainedItem;
+
+			if (item != null)
+			{
+
+				int slotID = slotTransform.GetComponent<InventorySlot> ().UniqueID;
+				int itemID = slotTransform.GetComponent<InventorySlot> ().ContainedItem.GetComponent<Item> ().UniqueID;
+				inventoryInfo.Add (slotID, itemID);
+			}
+		}
+
+		foreach (Transform slotTransform in myCarryingSlots)
+		{
+			GameObject item = slotTransform.GetComponent<InventorySlot> ().ContainedItem;
+
+			if (item != null)
+			{
+				int slotID = slotTransform.GetComponent<InventorySlot> ().UniqueID;
+				int itemID = slotTransform.GetComponent<InventorySlot> ().ContainedItem.GetComponent<Item> ().UniqueID;
+				inventoryInfo.Add (slotID, itemID);
+			}
+		}
+
+		return inventoryInfo;
+	}
 
 	public void HasChanged ()
 	{
 		float totalDamage = 0;
 		float totalHealth = 0;
 		float totalHealthRegeneration = 0;
-		myPlayer.GetComponent<PlayerController> ().myInventorySetup = new InventoryInformationKeeper ();
-		//myItemIDs = new List<int> ();
 
 		foreach (Transform slotTransform in myEquippedSlots)
 		{
@@ -37,85 +92,19 @@ public class Inventory : MonoBehaviour, IHasChanged
 				totalDamage += itemInfo.Damage;
 				totalHealth += itemInfo.Health;
 				totalHealthRegeneration += itemInfo.HealthRegeneration;
-				//myItemIDs.Add (item.GetComponent<Item> ().UniqueID);
-
-				int slotID = slotTransform.GetComponent<InventorySlot> ().UniqueID;
-				int itemID = slotTransform.GetComponent<InventorySlot> ().ContainedItem.GetComponent<Item> ().UniqueID;
-				myPlayer.GetComponent<PlayerController> ().myInventorySetup.myInventoryInformation.Add (slotID, itemID);
 			}
 		}
 
 		myPlayer.GetComponent<PlayerController> ().UpdateStats (totalDamage, totalHealth, totalHealthRegeneration);
-
-		foreach (Transform slotTransform in myCarryingSlots)
-		{
-			GameObject item = slotTransform.GetComponent<InventorySlot> ().ContainedItem;
-
-			if (item != null)
-			{
-				int slotID = slotTransform.GetComponent<InventorySlot> ().UniqueID;
-				int itemID = slotTransform.GetComponent<InventorySlot> ().ContainedItem.GetComponent<Item> ().UniqueID;
-				myPlayer.GetComponent<PlayerController> ().myInventorySetup.myInventoryInformation.Add (slotID, itemID);
-			}
-		}
-
-//		myPlayer.GetComponent<PlayerController> ().myItemIDs = myItemIDs;
 	}
 
 	#endregion
 
 	#region Private methods
 
-	private void Awake ()
-	{
-/*		if (myItemIDs == null)
-		{
-			myItemIDs = new List<int> ();
-		}
-
-		if (myEquppiedItems == null)
-		{
-			myEquppiedItems = new Dictionary<Item.ItemTypes, Item> ();
-		}
-
-		if (myItems == null)
-		{
-			myItems = new List<Item> ();
-		}*/
-	}
-
 	private void Start ()
 	{
 		HasChanged ();
-	}
-
-	private void EquipItem (Item aItem)
-	{
-/*		Item oldEquippedItem = myEquppiedItems [aItem.ItemType];
-		myEquppiedItems [aItem.ItemType] = aItem;
-
-		RemoveItemFromBag (aItem);
-		PutItemInBag (oldEquippedItem);*/
-
-	}
-
-	private void PutItemInBag (Item aItem)
-	{
-/*		if (aItem != null)
-		{
-			if (myItems.Count < myItems.Capacity)
-			{
-				myItems.Add (aItem);
-			}
-		}*/
-	}
-
-	private void RemoveItemFromBag (Item aItem)
-	{
-/*		if (aItem != null)
-		{
-			myItems.Remove (aItem);
-		}*/
 	}
 
 	#endregion

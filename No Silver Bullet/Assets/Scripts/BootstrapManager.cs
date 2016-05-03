@@ -4,20 +4,25 @@ using System.Collections;
 public class BootstrapManager : MonoBehaviour
 {
 	#region Member variables
+
 	public GameObject Act1Changer;
 	public GameObject Act2Changer;
 	public GameObject Act3Changer;
 	public GameObject Act4Changer;
 	public GameObject Act5Changer;
+
 	#endregion
 
-	 #region Private methods
-	private void Awake()
+	#region Private methods
+
+	private void Awake ()
 	{
 		GameObject toInstantiate;
 		if (ClickedOnResume.myClickedOnResume == true)
 		{
 			SavedGame lastSavedGame = SavedGame.LoadGame ();
+			GameObject inventory = GameObject.FindWithTag ("Inventory");
+			inventory.GetComponent<Inventory> ().LoadInventory (lastSavedGame.myInventoryInformation);
 
 			switch (lastSavedGame.myCurrentScene)
 			{
@@ -44,6 +49,7 @@ public class BootstrapManager : MonoBehaviour
 			GameObject player = GameObject.FindGameObjectWithTag ("Player");
 
 			player.GetComponent<PlayerController> ().myProgressTracker = lastSavedGame.myProgressTracker;
+			inventory.GetComponent<Inventory> ().HasChanged ();
 
 			//player.transform.position = new Vector3 (lastSavedGame.myPlayerX, lastSavedGame.myPlayerY, 0);
 
@@ -54,5 +60,6 @@ public class BootstrapManager : MonoBehaviour
 			GameObject instance = Instantiate (toInstantiate, Vector2.zero, Quaternion.identity) as GameObject;
 		}
 	}
-	#endregion                                                                                                                              
+
+	#endregion
 }
