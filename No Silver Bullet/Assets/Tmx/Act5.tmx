@@ -878,11 +878,13 @@
   <object id="1" gid="53" x="111" y="403.667" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="30"/>
+    <property name="TeleportIndex" value="0"/>
    </properties>
   </object>
   <object id="2" gid="53" x="1232.33" y="405" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="30"/>
+    <property name="TeleportIndex" value="0"/>
    </properties>
   </object>
  </objectgroup>
