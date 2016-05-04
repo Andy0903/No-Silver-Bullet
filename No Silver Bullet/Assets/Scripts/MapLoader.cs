@@ -103,6 +103,7 @@ public class MapLoader : MonoBehaviour
 				instance.transform.SetParent (myBoardHolder);
 
 				SceneLoader loadAct = instance.GetComponent<SceneLoader> ();
+				TeleportManager teleport = instance.GetComponent<TeleportManager> ();
 
 				if (tmxObject.Properties.ContainsKey ("QuestIndex"))
 				{
@@ -114,13 +115,28 @@ public class MapLoader : MonoBehaviour
 				switch (index)
 				{
 				case 0:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 1:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 2:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 3:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 4:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 5:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 6:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 7:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
 				case 8:
 					loadAct.myLeadsToSceneName = "Scene";
@@ -138,9 +154,17 @@ public class MapLoader : MonoBehaviour
 					loadAct.myLeadsToSceneName = "Act5";
 					break;
 				case 13:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 14:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 15:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 16:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 17:
 				case 18:
 				case 19:
@@ -150,23 +174,46 @@ public class MapLoader : MonoBehaviour
 				case 23:
 					break;
 				case 24:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 25:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 26:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 27:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 28:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 29:
 				case 30:
 				case 31:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 32:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 33:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 34:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 35:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 36:
 				case 37:
 				case 38:
 				case 39:
 				case 40:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
 				case 41:
+					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");
