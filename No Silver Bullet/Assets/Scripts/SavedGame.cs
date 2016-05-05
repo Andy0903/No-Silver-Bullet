@@ -23,7 +23,7 @@ public class SavedGame
 	public static void SaveGame ()
 	{
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		GameObject inventory = GameObject.FindWithTag ("Inventory");
+		GameObject inventory = GameObject.FindGameObjectWithTag ("GUI").transform.FindChild ("InventoryGUI").gameObject;
 		SavedGame save = new SavedGame ();
 		save.myPlayerX = player.transform.position.x;
 		save.myPlayerY = player.transform.position.y;

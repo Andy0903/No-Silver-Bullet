@@ -34,7 +34,6 @@ public class KillProgressUpdater : MonoBehaviour
 					}
 				}
 
-				Debug.Log (aliveEnemiesForQuestFoundBeforeRemovingThis);
 				if (aliveEnemiesForQuestFoundBeforeRemovingThis == 1)
 				{
 					myPlayer.GetComponent<PlayerController> ().myProgressTracker.SetQuestStatus (gameObject.GetComponent<QuestLinker> ().myBelongsToQuest, true);

@@ -6,30 +6,5 @@
     <myProgress />
   </myProgressTracker>
   <myCurrentScene>Scenes/Scene</myCurrentScene>
-  <myInventoryInformation>
-    <item>
-      <key>
-        <int>1</int>
-      </key>
-      <value>
-        <int>0</int>
-      </value>
-    </item>
-    <item>
-      <key>
-        <int>11</int>
-      </key>
-      <value>
-        <int>2</int>
-      </value>
-    </item>
-    <item>
-      <key>
-        <int>14</int>
-      </key>
-      <value>
-        <int>1</int>
-      </value>
-    </item>
-  </myInventoryInformation>
+  <myInventoryInformation />
 </SavedGame>

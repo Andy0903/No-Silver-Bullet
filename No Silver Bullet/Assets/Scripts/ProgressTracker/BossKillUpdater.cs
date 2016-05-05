@@ -26,6 +26,14 @@ public class BossKillUpdater : MonoBehaviour
 			{
 			case 1:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct1Boss;
+
+				GameObject[] tilesToBeRemoved = GameObject.FindGameObjectsWithTag ("QuestTile");
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					Destroy (tile);
+				}
+
 				break;
 			case 2:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct2Boss;
