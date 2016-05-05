@@ -232,6 +232,15 @@ public class MapLoader : MonoBehaviour
 				case 48:
 				case 49:
 					break;
+				case 50:
+					loadAct.myLeadsToSceneName = "Scene";
+					break;
+				case 51:
+					loadAct.myLeadsToSceneName = "Act2";
+					break;
+				case 52:
+					loadAct.myLeadsToSceneName = "Act3";
+					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");
 				}
