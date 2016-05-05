@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>15</myPlayerX>
-  <myPlayerY>-57</myPlayerY>
+  <myPlayerX>10.4770441</myPlayerX>
+  <myPlayerY>-36.31283</myPlayerY>
   <myProgressTracker>
-    <myProgress />
+    <myProgress>
+      <item>
+        <key>
+          <Quests>DefeatAct3Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+    </myProgress>
   </myProgressTracker>
-  <myCurrentScene>Scenes/Scene</myCurrentScene>
+  <myCurrentScene>Scenes/Act3</myCurrentScene>
   <myInventoryInformation />
 </SavedGame>

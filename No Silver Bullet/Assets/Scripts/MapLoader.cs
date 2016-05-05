@@ -97,6 +97,12 @@ public class MapLoader : MonoBehaviour
 				}
 
 				GameObject toInstantiate = myTmxObjects [index];
+
+				if (toInstantiate == null)
+				{
+					Debug.Log (index);
+				}
+
 				GameObject instance = Instantiate (toInstantiate,
 					                      new Vector2 ((int)tmxObject.X / myMap.TileWidth, (int)-tmxObject.Y / myMap.TileHeight),
 					                      Quaternion.identity) as GameObject;
@@ -190,6 +196,7 @@ public class MapLoader : MonoBehaviour
 					break;
 				case 29:
 				case 30:
+					break;
 				case 31:
 					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
@@ -206,16 +213,22 @@ public class MapLoader : MonoBehaviour
 					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
 				case 36:
-					//
-					break;
 				case 37:
 				case 38:
 				case 39:
+					break;
 				case 40:
 					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
 				case 41:
 					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
+					break;
+				case 42:
+				case 43:
+				case 44:
+				case 45:
+				case 46:
+				case 47:
 					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");

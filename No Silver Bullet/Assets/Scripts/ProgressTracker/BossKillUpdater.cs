@@ -22,12 +22,12 @@ public class BossKillUpdater : MonoBehaviour
 		if (gameObject.GetComponent<EnemyHealth> ().CurrentHealth <= 0)
 		{
 			ProgressTracker.Quests bossDefeatEnum;
+			GameObject[] tilesToBeRemoved = GameObject.FindGameObjectsWithTag ("QuestTile");
+
 			switch (myActIndex)
 			{
 			case 1:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct1Boss;
-
-				GameObject[] tilesToBeRemoved = GameObject.FindGameObjectsWithTag ("QuestTile");
 
 				foreach (GameObject tile in tilesToBeRemoved)
 				{
@@ -37,12 +37,30 @@ public class BossKillUpdater : MonoBehaviour
 				break;
 			case 2:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct2Boss;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					Destroy (tile);
+				}
+
 				break;
 			case 3:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct3Boss;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					Destroy (tile);
+				}
+
 				break;
 			case 4:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					Destroy (tile);
+				}
+
 				break;
 			case 5:
 				bossDefeatEnum = ProgressTracker.Quests.DefeatAct5Boss;
