@@ -229,6 +229,8 @@ public class MapLoader : MonoBehaviour
 				case 45:
 				case 46:
 				case 47:
+				case 48:
+				case 49:
 					break;
 				default:
 					throw new System.Exception ("Missing case for objectIndex");
