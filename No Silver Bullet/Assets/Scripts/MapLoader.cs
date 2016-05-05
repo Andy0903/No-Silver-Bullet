@@ -206,6 +206,8 @@ public class MapLoader : MonoBehaviour
 					teleport.myTeleportIndex = int.Parse (tmxObject.Properties ["TeleportIndex"]);
 					break;
 				case 36:
+					//
+					break;
 				case 37:
 				case 38:
 				case 39:
