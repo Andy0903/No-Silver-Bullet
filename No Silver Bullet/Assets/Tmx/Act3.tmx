@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="80" tilewidth="34" tileheight="34" nextobjectid="141">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="80" tilewidth="34" tileheight="34" nextobjectid="277">
  <tileset firstgid="1" name="DarkBridgeEnd" tilewidth="34" tileheight="34" tilecount="2" columns="1">
   <image source="../Sprites/Tiles/Dark/DarkBridgeEnd.png" width="34" height="68"/>
   <tile id="0">
@@ -776,18 +776,38 @@
  </tileset>
  <tileset firstgid="254" name="Demon" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/Demon.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="ObjectIndex" value="63"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="255" name="Skeleton" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/Skeleton.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="256" name="Wolf" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/Wolf.png" width="34" height="34"/>
  </tileset>
  <tileset firstgid="257" name="Zombie" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/Zombie.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="ObjectIndex" value="65"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="258" name="SheNPC" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/SheNPC.png" width="34" height="34"/>
+  <tile id="0">
+   <properties>
+    <property name="ObjectIndex" value="61"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="259" name="HeNPC" tilewidth="34" tileheight="34" tilecount="1" columns="1">
   <image source="../Sprites/Tiled/HeNPC.png" width="34" height="34"/>
@@ -1821,6 +1841,551 @@
   <object id="140" gid="380" x="76.6667" y="2166.33" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="51"/>
+   </properties>
+  </object>
+  <object id="141" gid="255" x="4049" y="1872" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="142" gid="255" x="4123" y="1063" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="143" gid="255" x="3967" y="1019" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="144" gid="255" x="4367" y="1067" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="145" gid="255" x="4555" y="443" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="146" gid="255" x="4319" y="239" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="147" gid="255" x="4499" y="103" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="149" gid="255" x="4687" y="151" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="150" gid="255" x="4615" y="683" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="151" gid="255" x="3807" y="307" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="152" gid="255" x="3799" y="167" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="153" gid="255" x="3983" y="343" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="154" gid="255" x="371" y="2279" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="155" gid="255" x="571" y="2355" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="156" gid="255" x="703" y="2315" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="157" gid="255" x="823" y="2407" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="158" gid="255" x="1175" y="2091" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="159" gid="255" x="1167" y="2251" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="160" gid="255" x="1207" y="2355" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="161" gid="255" x="1247" y="2095" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="162" gid="255" x="1251" y="1975" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="163" gid="255" x="1139" y="1983" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="164" gid="255" x="1295" y="2007" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="165" gid="255" x="1343" y="1883" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="166" gid="255" x="1483" y="1779" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="167" gid="255" x="1459" y="1643" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="168" gid="255" x="1579" y="1775" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="169" gid="255" x="1671" y="2411" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="170" gid="255" x="1971" y="2039" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="171" gid="255" x="2051" y="1935" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="172" gid="255" x="2263" y="2363" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="173" gid="255" x="2039" y="2367" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="174" gid="255" x="1803" y="2315" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="175" gid="255" x="1487" y="2511" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="176" gid="255" x="1971" y="947" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="177" gid="255" x="1723" y="979" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="178" gid="255" x="1795" y="867" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="179" gid="255" x="1791" y="1055" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="180" gid="255" x="1527" y="1059" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="181" gid="255" x="1567" y="927" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="182" gid="255" x="1655" y="1187" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="183" gid="255" x="1679" y="1055" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="184" gid="255" x="1871" y="1047" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="185" gid="255" x="2139" y="871" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="186" gid="255" x="1251" y="727" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="187" gid="255" x="1387" y="583" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="188" gid="255" x="1111" y="671" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="189" gid="255" x="331" y="339" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="190" gid="255" x="411" y="483" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="191" gid="255" x="467" y="619" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="192" gid="255" x="575" y="327" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="193" gid="255" x="747" y="327" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="194" gid="255" x="839" y="319" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="82"/>
+   </properties>
+  </object>
+  <object id="195" gid="254" x="2719" y="2127" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="219" gid="254" x="2835" y="2275" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="220" gid="254" x="2995" y="2167" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="221" gid="254" x="2955" y="2315" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="222" gid="254" x="2671" y="2399" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="223" gid="254" x="2631" y="2527" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="224" gid="254" x="3087" y="2503" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="225" gid="254" x="3023" y="2371" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="226" gid="254" x="2811" y="2383" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="227" gid="254" x="4043" y="2203" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="228" gid="254" x="4491" y="2495" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="229" gid="254" x="3983" y="2215" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="230" gid="254" x="4187" y="1063" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="231" gid="254" x="4527" y="1123" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="233" gid="254" x="3835" y="899" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="234" gid="254" x="4555" y="319" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="235" gid="254" x="3907" y="151" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="236" gid="254" x="1159" y="703" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="237" gid="254" x="591" y="711" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="238" gid="254" x="2751" y="2243" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="239" gid="254" x="2627" y="2135" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="240" gid="254" x="3635" y="2515" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="242" gid="254" x="3643" y="2215" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="243" gid="254" x="3635" y="1659" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="245" gid="254" x="2911" y="1667" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="246" gid="254" x="2839" y="1511" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="247" gid="254" x="2927" y="1351" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="248" gid="254" x="3027" y="1207" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="249" gid="254" x="3107" y="1079" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="84"/>
+   </properties>
+  </object>
+  <object id="250" gid="257" x="2823" y="923" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="251" gid="257" x="3163" y="719" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="252" gid="257" x="3327" y="479" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="253" gid="257" x="3099" y="587" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="254" gid="257" x="3319" y="307" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="255" gid="257" x="3091" y="163" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="256" gid="257" x="2899" y="203" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="257" gid="257" x="2771" y="595" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="258" gid="257" x="2727" y="711" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="259" gid="257" x="2843" y="703" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="260" gid="257" x="2839" y="951" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="261" gid="257" x="2623" y="1011" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="262" gid="257" x="2699" y="807" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="263" gid="257" x="2671" y="459" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="264" gid="257" x="2871" y="419" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="265" gid="257" x="2771" y="451" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="266" gid="257" x="2699" y="75" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="85"/>
+   </properties>
+  </object>
+  <object id="267" gid="258" x="4483" y="2191" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="268" gid="258" x="4523" y="1867" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="269" gid="258" x="3975" y="2515" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="270" gid="258" x="4047" y="2519" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="271" gid="258" x="3023" y="275" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="272" gid="258" x="1027" y="319" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="273" gid="258" x="1555" y="1643" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="274" gid="258" x="3739" y="303" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="275" gid="258" x="4615" y="127" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
+   </properties>
+  </object>
+  <object id="276" gid="258" x="3635" y="1359" width="34" height="34">
+   <properties>
+    <property name="ObjectIndex" value="62"/>
    </properties>
   </object>
  </objectgroup>
