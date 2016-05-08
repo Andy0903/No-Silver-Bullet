@@ -1848,21 +1848,6 @@
     <property name="ObjectIndex" value="82"/>
    </properties>
   </object>
-  <object id="142" gid="255" x="4123" y="1063" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
-  <object id="143" gid="255" x="3967" y="1019" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
-  <object id="144" gid="255" x="4367" y="1067" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
   <object id="145" gid="255" x="4555" y="443" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="82"/>
@@ -1884,21 +1869,6 @@
    </properties>
   </object>
   <object id="150" gid="255" x="4615" y="683" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
-  <object id="151" gid="255" x="3807" y="307" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
-  <object id="152" gid="255" x="3799" y="167" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="82"/>
-   </properties>
-  </object>
-  <object id="153" gid="255" x="3983" y="343" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="82"/>
    </properties>
@@ -2168,27 +2138,7 @@
     <property name="ObjectIndex" value="84"/>
    </properties>
   </object>
-  <object id="230" gid="254" x="4187" y="1063" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="231" gid="254" x="4527" y="1123" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="233" gid="254" x="3835" y="899" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
   <object id="234" gid="254" x="4555" y="319" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="235" gid="254" x="3907" y="151" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="84"/>
    </properties>
@@ -2209,21 +2159,6 @@
    </properties>
   </object>
   <object id="239" gid="254" x="2627" y="2135" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="240" gid="254" x="3635" y="2515" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="242" gid="254" x="3643" y="2215" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="84"/>
-   </properties>
-  </object>
-  <object id="243" gid="254" x="3635" y="1659" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="84"/>
    </properties>
@@ -2373,17 +2308,7 @@
     <property name="ObjectIndex" value="62"/>
    </properties>
   </object>
-  <object id="274" gid="258" x="3739" y="303" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="62"/>
-   </properties>
-  </object>
   <object id="275" gid="258" x="4615" y="127" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="62"/>
-   </properties>
-  </object>
-  <object id="276" gid="258" x="3635" y="1359" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="62"/>
    </properties>

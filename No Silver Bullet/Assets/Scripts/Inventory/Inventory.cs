@@ -17,6 +17,22 @@ public class Inventory : MonoBehaviour, IHasChanged
 
 	#region Public methods
 
+	public void AddItemToFirstEmptyCarryingSlot (int aItemIndex)
+	{
+		bool addedItem = false;
+		for (int i = 0; i < myCarryingSlots.transform.childCount && addedItem == false; i++)
+		{
+			InventorySlot slot = myCarryingSlots.GetChild (i).GetComponent<InventorySlot> ();
+
+			if (slot.ContainedItem == null)
+			{
+				GameObject item = Instantiate (myItemList [aItemIndex]);
+				slot.AddItem (item);
+				addedItem = true;
+			}
+		}
+	}
+
 	public void LoadInventory (SerializableDictionary<int, int> aInformation)
 	{
 		for (int i = 0; i < myEquippedSlots.transform.childCount; i++)

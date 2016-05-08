@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SavedGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <myPlayerX>70.4766541</myPlayerX>
-  <myPlayerY>-22.7950535</myPlayerY>
+  <myPlayerX>17.979</myPlayerX>
+  <myPlayerY>-7.507</myPlayerY>
   <myProgressTracker>
     <myProgress>
       <item>
@@ -12,8 +12,81 @@
           <boolean>true</boolean>
         </value>
       </item>
+      <item>
+        <key>
+          <Quests>DefeatAct2Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+      <item>
+        <key>
+          <Quests>DefeatAct3Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+      <item>
+        <key>
+          <Quests>DefeatAct4Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
+      <item>
+        <key>
+          <Quests>DefeatAct5Boss</Quests>
+        </key>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </item>
     </myProgress>
   </myProgressTracker>
-  <myCurrentScene>Scenes/Scene</myCurrentScene>
-  <myInventoryInformation />
+  <myCurrentScene>Scenes/Act5</myCurrentScene>
+  <myInventoryInformation>
+    <item>
+      <key>
+        <int>0</int>
+      </key>
+      <value>
+        <int>4</int>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>1</int>
+      </key>
+      <value>
+        <int>0</int>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>2</int>
+      </key>
+      <value>
+        <int>2</int>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>3</int>
+      </key>
+      <value>
+        <int>1</int>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>5</int>
+      </key>
+      <value>
+        <int>3</int>
+      </value>
+    </item>
+  </myInventoryInformation>
 </SavedGame>

@@ -6,7 +6,8 @@ public class BossKillUpdater : MonoBehaviour
 	#region Member variables
 
 	GameObject myPlayer;
-	public int myActIndex;
+	[SerializeField] int myActIndex;
+	[SerializeField] int myItemDropIndex;
 
 	#endregion
 
@@ -69,7 +70,10 @@ public class BossKillUpdater : MonoBehaviour
 				throw new System.Exception ("Missing ActIndex");
 			}
 
+			GameObject inventory = GameObject.FindGameObjectWithTag ("GUI").transform.FindChild ("InventoryGUI").gameObject;
+			inventory.GetComponent<Inventory> ().AddItemToFirstEmptyCarryingSlot (myItemDropIndex);
 			myPlayer.GetComponent<PlayerController> ().myProgressTracker.SetQuestStatus (bossDefeatEnum, true);
+
 		}
 	}
 

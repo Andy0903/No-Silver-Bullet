@@ -2686,16 +2686,6 @@
     <property name="ObjectIndex" value="75"/>
    </properties>
   </object>
-  <object id="137" gid="350" x="3634" y="1668" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="75"/>
-   </properties>
-  </object>
-  <object id="138" gid="350" x="3640" y="1362" width="34" height="34">
-   <properties>
-    <property name="ObjectIndex" value="75"/>
-   </properties>
-  </object>
   <object id="139" gid="350" x="3179" y="2082" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="75"/>
