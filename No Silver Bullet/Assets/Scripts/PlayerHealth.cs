@@ -18,6 +18,8 @@ public class PlayerHealth : MonoBehaviour
 
 	[SerializeField] PlayerController myPlayerController;
 
+	[SerializeField] GameObject myGameOverCanvas;
+
 	#endregion
 
 	#region Properties
@@ -57,12 +59,14 @@ public class PlayerHealth : MonoBehaviour
 
 	private void Awake ()
 	{
-		myCurrentHealth = MaxHealth;
 		IsAlive = true;
+		myCurrentHealth = MaxHealth;
 	}
 
 	private void Update ()
 	{
+		Debug.Log (MaxHealth);
+		
 		UpdateDamageFlash ();
 		RegenerateHealth ();
 		myHealthSlider.value = myCurrentHealth;
@@ -77,8 +81,8 @@ public class PlayerHealth : MonoBehaviour
 	private void Death ()
 	{
 		IsAlive = false;
-		myPlayerController.enabled = false;
 		Time.timeScale = 0;
+		myGameOverCanvas.SetActive (!IsAlive);
 	}
 
 	private void UpdateDamageFlash ()

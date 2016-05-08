@@ -20,6 +20,7 @@ public class BossKillUpdater : MonoBehaviour
 
 	private void Update ()
 	{
+		Debug.Log (gameObject.GetComponent<EnemyHealth> ().CurrentHealth <= 0);
 		if (gameObject.GetComponent<EnemyHealth> ().CurrentHealth <= 0)
 		{
 			ProgressTracker.Quests bossDefeatEnum;

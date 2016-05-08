@@ -21,7 +21,7 @@ public class BootstrapManager : MonoBehaviour
 		if (ClickedOnResume.myClickedOnResume == true)
 		{
 			SavedGame lastSavedGame = SavedGame.LoadGame ();
-			GameObject inventory = GameObject.FindWithTag ("Inventory");
+			GameObject inventory = GameObject.FindGameObjectWithTag ("GUI").transform.FindChild ("InventoryGUI").gameObject;
 			inventory.GetComponent<Inventory> ().LoadInventory (lastSavedGame.myInventoryInformation);
 
 			switch (lastSavedGame.myCurrentScene)
@@ -50,8 +50,6 @@ public class BootstrapManager : MonoBehaviour
 
 			player.GetComponent<PlayerController> ().myProgressTracker = lastSavedGame.myProgressTracker;
 			inventory.GetComponent<Inventory> ().HasChanged ();
-
-			//player.transform.position = new Vector3 (lastSavedGame.myPlayerX, lastSavedGame.myPlayerY, 0);
 
 		}
 		else
