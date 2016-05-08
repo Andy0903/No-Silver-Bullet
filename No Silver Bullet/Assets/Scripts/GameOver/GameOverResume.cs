@@ -17,8 +17,6 @@ public class GameOverResume : MenuButtonClick
 
 			Destroy (SceneObject);
 		}
-
-		ClickedOnResume.myClickedOnResume = true;
 		gameObject.transform.parent.gameObject.SetActive (false);
 		SceneManager.LoadScene ("Scenes/Bootstrap");
 

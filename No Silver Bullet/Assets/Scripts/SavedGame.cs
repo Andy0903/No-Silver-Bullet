@@ -22,6 +22,8 @@ public class SavedGame
 
 	public static void SaveGame ()
 	{
+		ClickedOnResume.myClickedOnResume = true;
+
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		GameObject inventory = GameObject.FindGameObjectWithTag ("GUI").transform.FindChild ("InventoryGUI").gameObject;
 		SavedGame save = new SavedGame ();
