@@ -16,9 +16,17 @@ public class PlayerHealth : MonoBehaviour
 	private bool myIsGettingDamanged;
 	private float myHealthToBeRegenerated;
 
+	[SerializeField] PlayerController myPlayerController;
+
 	#endregion
 
 	#region Properties
+
+	public bool IsAlive
+	{
+		get;
+		private set;
+	}
 
 	public float MaxHealth
 	{
@@ -50,6 +58,7 @@ public class PlayerHealth : MonoBehaviour
 	private void Awake ()
 	{
 		myCurrentHealth = MaxHealth;
+		IsAlive = true;
 	}
 
 	private void Update ()
@@ -57,6 +66,19 @@ public class PlayerHealth : MonoBehaviour
 		UpdateDamageFlash ();
 		RegenerateHealth ();
 		myHealthSlider.value = myCurrentHealth;
+
+		if (myCurrentHealth <= 0 && IsAlive == true)
+		{
+			Death ();
+		}
+		Debug.Log (Time.timeScale);
+	}
+
+	private void Death ()
+	{
+		IsAlive = false;
+		myPlayerController.enabled = false;
+		Time.timeScale = 0;
 	}
 
 	private void UpdateDamageFlash ()

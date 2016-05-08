@@ -5,8 +5,17 @@ public class PauseMenuManager : MonoBehaviour
 {
 	#region Member variables
 
-	bool myIsPaused;
 	public GameObject myCanvas;
+
+	#endregion
+
+	#region Properties
+
+	public bool IsPaused
+	{
+		get;
+		private set;
+	}
 
 	#endregion
 
@@ -25,13 +34,13 @@ public class PauseMenuManager : MonoBehaviour
 
 	private void ShiftPausedState ()
 	{
-		myIsPaused = !myIsPaused;
+		IsPaused = !IsPaused;
 	}
 
 	private void Start ()
 	{
-		myIsPaused = false;
-		myCanvas.SetActive (myIsPaused);
+		IsPaused = false;
+		myCanvas.SetActive (IsPaused);
 	}
 
 	private void Update ()
@@ -50,16 +59,7 @@ public class PauseMenuManager : MonoBehaviour
 
 	private void PausedUpdates ()
 	{
-		if (myIsPaused == true)
-		{
-			Time.timeScale = 0;
-		}
-		else
-		{
-			Time.timeScale = 1;
-		}
-
-		myCanvas.SetActive (myIsPaused);
+		myCanvas.SetActive (IsPaused);
 	}
 
 	#endregion
