@@ -21,7 +21,7 @@ public class TimeManager : MonoBehaviour
 
 	void Update ()
 	{
-		if (myPauseMenuManager.GetComponent<PauseMenuManager> ().IsPaused == true
+		if (myPauseMenuManager.GetComponent<PauseMenumanager> ().IsPaused == true
 		    || myPlayerHealth.GetComponent<PlayerHealth> ().IsAlive == false)
 		{
 			Time.timeScale = 0;

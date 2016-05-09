@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PauseMenuManager : MonoBehaviour
+public class PauseMenumanager : MonoBehaviour
 {
 	#region Member variables
 
