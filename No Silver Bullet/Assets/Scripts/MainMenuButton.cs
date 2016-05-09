@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GameOverResume : MenuButtonClick
+public class MainMenuButton : MenuButtonClick
 {
 	#region Public methods
 
@@ -12,8 +12,10 @@ public class GameOverResume : MenuButtonClick
 		{
 			Destroy (SceneObject);
 		}
+
+		ClickedOnResume.myClickedOnResume = false;
 		gameObject.transform.parent.gameObject.SetActive (false);
-		SceneManager.LoadScene ("Scenes/Bootstrap");
+		SceneManager.LoadScene ("Scenes/MainMenu");
 
 
 		#endregion

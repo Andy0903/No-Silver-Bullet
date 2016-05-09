@@ -6,6 +6,7 @@ public class PauseMenuManager : MonoBehaviour
 	#region Member variables
 
 	public GameObject myCanvas;
+	[SerializeField] GameObject myPlayer;
 
 	#endregion
 
@@ -51,7 +52,7 @@ public class PauseMenuManager : MonoBehaviour
 
 	private void ReadInput ()
 	{
-		if (Input.GetKeyDown (KeyCode.Escape))
+		if (Input.GetKeyDown (KeyCode.Escape) && myPlayer.GetComponent<PlayerHealth> ().IsAlive == true)
 		{
 			ShiftPausedState ();
 		}

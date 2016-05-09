@@ -65,8 +65,6 @@ public class PlayerHealth : MonoBehaviour
 
 	private void Update ()
 	{
-		Debug.Log (MaxHealth);
-		
 		UpdateDamageFlash ();
 		RegenerateHealth ();
 		myHealthSlider.value = myCurrentHealth;
@@ -75,7 +73,6 @@ public class PlayerHealth : MonoBehaviour
 		{
 			Death ();
 		}
-		Debug.Log (Time.timeScale);
 	}
 
 	private void Death ()

@@ -22,7 +22,7 @@ public class SceneLoader : MonoBehaviour
 		myCooldown = 2f;
 	}
 
-	private void OnTriggerEnter2D (Collider2D aOther)
+	private void OnTriggerStay2D (Collider2D aOther)
 	{
 		if (aOther.tag == "Player")
 		{

@@ -5,8 +5,8 @@ public class TimeManager : MonoBehaviour
 {
 	#region Member variables
 
-	[SerializeField] PauseMenuManager myPauseMenumanager;
-	[SerializeField] PlayerHealth myPlayerHealth;
+	[SerializeField] GameObject myPauseMenuManager;
+	[SerializeField] GameObject myPlayerHealth;
 
 	#endregion
 
@@ -21,7 +21,8 @@ public class TimeManager : MonoBehaviour
 
 	void Update ()
 	{
-		if (myPauseMenumanager.IsPaused == true || myPlayerHealth.IsAlive == false)
+		if (myPauseMenuManager.GetComponent<PauseMenuManager> ().IsPaused == true
+		    || myPlayerHealth.GetComponent<PlayerHealth> ().IsAlive == false)
 		{
 			Time.timeScale = 0;
 		}
