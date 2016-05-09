@@ -3130,7 +3130,7 @@
     <property name="ObjectIndex" value="22"/>
    </properties>
   </object>
-  <object id="188" gid="381" x="2435" y="733" width="34" height="34">
+  <object id="188" gid="381" x="2628.5" y="806.5" width="34" height="34">
    <properties>
     <property name="ObjectIndex" value="21"/>
     <property name="QuestIndex" value="DefeatAct1Boss"/>
