@@ -8,6 +8,7 @@ public class BossKillUpdater : MonoBehaviour
 	GameObject myPlayer;
 	[SerializeField] int myActIndex;
 	[SerializeField] int myItemDropIndex;
+	[SerializeField] AudioClip myCompletionClip;
 
 	#endregion
 
@@ -73,6 +74,7 @@ public class BossKillUpdater : MonoBehaviour
 			GameObject inventory = GameObject.FindGameObjectWithTag ("GUI").transform.FindChild ("InventoryGUI").gameObject;
 			inventory.GetComponent<Inventory> ().AddItemToFirstEmptyCarryingSlot (myItemDropIndex);
 			myPlayer.GetComponent<PlayerController> ().myProgressTracker.SetQuestStatus (bossDefeatEnum, true);
+			SoundManager.instance.PlaySingle (myCompletionClip);
 
 		}
 	}
