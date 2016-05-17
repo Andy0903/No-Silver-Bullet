@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
 
 	[SerializeField] GameObject myPauseMenuManager;
 	[SerializeField] GameObject myPlayerHealth;
+	[SerializeField] GameObject myWinScreenManager;
 
 	#endregion
 
@@ -22,7 +23,8 @@ public class TimeManager : MonoBehaviour
 	void Update ()
 	{
 		if (myPauseMenuManager.GetComponent<PauseMenumanager> ().IsPaused == true
-		    || myPlayerHealth.GetComponent<PlayerHealth> ().IsAlive == false)
+		    || myPlayerHealth.GetComponent<PlayerHealth> ().IsAlive == false
+		    || myWinScreenManager.GetComponent<WinScreenManager> ().HasWon == true)
 		{
 			Time.timeScale = 0;
 		}
