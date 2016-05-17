@@ -13,9 +13,28 @@ public class Inventory : MonoBehaviour, IHasChanged
 	[SerializeField] GameObject myPlayer;
 	[SerializeField] List<GameObject> myItemList;
 
+	public GameObject myTooltip;
+
 	#endregion
 
 	#region Public methods
+
+	public void ShowTooltip (Vector2 aSlotPosition, GameObject aItem)
+	{
+		myTooltip.SetActive (true);
+
+		myTooltip.transform.position = aSlotPosition;
+
+		myTooltip.transform.FindChild ("Name").GetComponent<Text> ().text = aItem.GetComponent<Item> ().Name;
+		myTooltip.transform.FindChild ("Health").GetComponent<Text> ().text = "Health: " + aItem.GetComponent<Item> ().Health.ToString ();
+		myTooltip.transform.FindChild ("Damage").GetComponent<Text> ().text = "Damage: " + aItem.GetComponent<Item> ().Damage.ToString ();
+		myTooltip.transform.FindChild ("Health regeneration").GetComponent<Text> ().text = "Health Reg.: " + aItem.GetComponent<Item> ().HealthRegeneration.ToString ();
+	}
+
+	public void CloseTooltip ()
+	{
+		myTooltip.SetActive (false);
+	}
 
 	public void AddItemToFirstEmptyCarryingSlot (int aItemIndex)
 	{

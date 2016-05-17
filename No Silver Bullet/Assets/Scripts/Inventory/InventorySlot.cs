@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour, IDropHandler
+public class InventorySlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
 	#region Member variables
 
@@ -34,6 +34,22 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 	#endregion
 
 	#region Public methods
+
+	public void OnPointerEnter (PointerEventData aData)
+	{
+		if (ContainedItem != null)
+		{
+			gameObject.GetComponentInParent<Inventory> ().ShowTooltip (gameObject.transform.position, ContainedItem);
+		}
+	}
+
+	public void OnPointerExit (PointerEventData aData)
+	{
+		if (ContainedItem != null)
+		{
+			gameObject.GetComponentInParent<Inventory> ().CloseTooltip ();
+		}
+	}
 
 	public void AddItem (GameObject aItem)
 	{

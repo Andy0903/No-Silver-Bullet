@@ -54,7 +54,7 @@ public class BootstrapManager : MonoBehaviour
 		}
 		else
 		{
-			toInstantiate = Act5Changer;//Act1Changer;
+			toInstantiate = Act1Changer;
 			GameObject instance = Instantiate (toInstantiate, Vector2.zero, Quaternion.identity) as GameObject;
 		}
 	}
