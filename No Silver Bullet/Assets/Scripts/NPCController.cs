@@ -176,7 +176,7 @@ public class NPCController : MonoBehaviour
 	{
 		if (aOther.gameObject.CompareTag ("Player"))
 		{
-			if (Input.GetKeyDown (KeyCode.T))
+			if (Input.GetKeyDown (KeyCode.E))
 			{
 				myIsTalking = true;
 			}
