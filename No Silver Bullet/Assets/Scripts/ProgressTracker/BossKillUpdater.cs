@@ -33,7 +33,10 @@ public class BossKillUpdater : MonoBehaviour
 
 				foreach (GameObject tile in tilesToBeRemoved)
 				{
-					Destroy (tile);
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
 				}
 
 				break;
@@ -42,7 +45,10 @@ public class BossKillUpdater : MonoBehaviour
 
 				foreach (GameObject tile in tilesToBeRemoved)
 				{
-					Destroy (tile);
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
 				}
 
 				break;
@@ -51,16 +57,58 @@ public class BossKillUpdater : MonoBehaviour
 
 				foreach (GameObject tile in tilesToBeRemoved)
 				{
-					Destroy (tile);
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
 				}
 
 				break;
-			case 4:
-				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss;
+			case 41:
+				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss1;
 
 				foreach (GameObject tile in tilesToBeRemoved)
 				{
-					Destroy (tile);
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
+				}
+
+				break;
+			case 42:
+				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss2;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
+				}
+
+				break;
+			case 43:
+				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss3;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
+				}
+
+				break;
+			case 44:
+				bossDefeatEnum = ProgressTracker.Quests.DefeatAct4Boss4;
+
+				foreach (GameObject tile in tilesToBeRemoved)
+				{
+					if (tile.gameObject.GetComponent<QuestLinker> ().myBelongsToQuest == bossDefeatEnum)
+					{
+						Destroy (tile);
+					}
 				}
 
 				break;

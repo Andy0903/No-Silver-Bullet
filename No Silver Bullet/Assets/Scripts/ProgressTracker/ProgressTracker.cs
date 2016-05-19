@@ -13,7 +13,10 @@ public class ProgressTracker
 		DefeatAct1Boss,
 		DefeatAct2Boss,
 		DefeatAct3Boss,
-		DefeatAct4Boss,
+		DefeatAct4Boss1,
+		DefeatAct4Boss2,
+		DefeatAct4Boss3,
+		DefeatAct4Boss4,
 		DefeatAct5Boss,
 
 		ClearStartTown,

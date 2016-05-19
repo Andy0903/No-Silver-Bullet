@@ -2275,42 +2275,42 @@
   </object>
   <object id="267" gid="258" x="4483" y="2191" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="268" gid="258" x="4523" y="1867" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="269" gid="258" x="3975" y="2515" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="270" gid="258" x="4047" y="2519" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="271" gid="258" x="3023" y="275" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="272" gid="258" x="1027" y="319" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="273" gid="258" x="1555" y="1643" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
   <object id="275" gid="258" x="4615" y="127" width="34" height="34">
    <properties>
-    <property name="ObjectIndex" value="62"/>
+    <property name="ObjectIndex" value="83"/>
    </properties>
   </object>
  </objectgroup>
