@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 6dec7041252e5db47acd05f769106675
-timeCreated: 1463652790
+timeCreated: 1463677760
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NpcWomanDown0
+    21300002: NpcWomanDown1
+    21300004: NpcWomanDown2
+    21300006: NpcWomanDown3
+    21300008: NpcWomanDown4
+    21300010: NpcWomanDown5
+    21300012: NpcWomanUp0
+    21300014: NpcWomanUp1
+    21300016: NpcWomanUp2
+    21300018: NpcWomanUp3
+    21300020: NpcWomanUp4
+    21300022: NpcWomanUp5
+    21300024: NpcWomanLeft0
+    21300026: NpcWomanLeft1
+    21300028: NpcWomanLeft2
+    21300030: NpcWomanLeft3
+    21300032: NpcWomanLeft4
+    21300034: NpcWomanLeft5
+    21300036: NpcWomanRight0
+    21300038: NpcWomanRight1
+    21300040: NpcWomanRight2
+    21300042: NpcWomanRight3
+    21300044: NpcWomanRight4
+    21300046: NpcWomanRight5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +54,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +62,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +73,271 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: NpcWomanDown0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 208
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanDown1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 208
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanDown2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 206
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanDown3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 206
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanDown4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 206
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanDown5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 206
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 142
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 142
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 142
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 142
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 142
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanUp5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 142
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 78
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 78
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 78
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 78
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 78
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanLeft5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 78
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 14
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 14
+        width: 19
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 14
+        width: 19
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 14
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 14
+        width: 18
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NpcWomanRight5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 14
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: ded8befc2b15de24d8cbefdb72869a44
-timeCreated: 1463652792
+timeCreated: 1463676716
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NPCFarmerDown0
+    21300002: NPCFarmerDown1
+    21300004: NPCFarmerDown2
+    21300006: NPCFarmerDown3
+    21300008: NPCFarmerDown4
+    21300010: NPCFarmerDown5
+    21300012: NPCFarmerUp0
+    21300014: NPCFarmerUp1
+    21300016: NPCFarmerUp2
+    21300018: NPCFarmerUp3
+    21300020: NPCFarmerUp4
+    21300022: NPCFarmerUp5
+    21300024: NPCFarmerLeft0
+    21300026: NPCFarmerLeft1
+    21300028: NPCFarmerLeft2
+    21300030: NPCFarmerLeft3
+    21300032: NPCFarmerLeft4
+    21300034: NPCFarmerLeft5
+    21300036: NPCFarmerRight0
+    21300038: NPCFarmerRight1
+    21300040: NPCFarmerRight2
+    21300042: NPCFarmerRight3
+    21300044: NPCFarmerRight4
+    21300046: NPCFarmerRight5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +54,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +62,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +73,271 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: NPCFarmerDown0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 209
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerDown1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 209
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerDown2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 207
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerDown3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 207
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerDown4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 207
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerDown5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 207
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 145
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 145
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 143
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 143
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 143
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerUp5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 143
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 81
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 81
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 79
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 79
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 79
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerLeft5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 79
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 17
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 17
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 16
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 15
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 15
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NPCFarmerRight5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 15
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
