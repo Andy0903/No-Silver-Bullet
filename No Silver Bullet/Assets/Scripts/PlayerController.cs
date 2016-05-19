@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
 	#region Member variables
 
+	private const int DamageFromSecondaryAttack = 10; //Shit solution
+
 	private enum Direction
 	{
 		Up,
@@ -232,7 +234,7 @@ public class PlayerController : MonoBehaviour
 
 	private void OnParticleCollision (GameObject aOther)
 	{
-		GetComponent<PlayerHealth> ().TakeDamage (5);
+		GetComponent<PlayerHealth> ().TakeDamage (DamageFromSecondaryAttack);
 	}
 
 	#endregion
