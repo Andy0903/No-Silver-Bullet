@@ -32,6 +32,8 @@ public class NPCController : MonoBehaviour
 	private Renderer myRenderer;
 	private DialogueReader myDialogueReader;
 	private bool myIsTalking;
+	private bool myIsFirstTalk;
+	private int myDialogueChoice;
 
 	#endregion
 
@@ -158,17 +160,24 @@ public class NPCController : MonoBehaviour
 	{
 		if (myIsTalking == true)
 		{
+			
 			GUIStyle style = new GUIStyle ();
 			style.fontSize = 24;
 			style.alignment = TextAnchor.UpperCenter;
 			int offset = 50;
-			CharacterData tempData = myDialogueReader.FindCharacter ("QuestGiver1");	//Tag used to be instead of test val QuestGiver1
+			CharacterData tempData = myDialogueReader.FindCharacter ("NPC");	//Tag used to be instead of test val QuestGiver1
+			if (myIsFirstTalk == true)
+			{
+				myDialogueChoice = Random.Range (0, tempData.dialogue.Length);
+				myIsFirstTalk = false;
+			}
 			//To be used for testing in the future
 			//Needs to be redone
 			//GUI.Label (new Rect (Screen.currentResolution.width / 2 - offset, Screen.currentResolution.height - offset, 50, 50), 
 			//	tempData.dialogue [0]); //TODO: Write out each dialogue line
 			GUI.enabled = true;
-			GUI.Label (new Rect (Camera.main.pixelWidth / 2 - offset, Camera.main.pixelHeight - offset, 200, 200), tempData.dialogue [0], style);
+			GUI.Label (new Rect (Camera.main.pixelWidth / 2 - offset, Camera.main.pixelHeight - offset, 200, 200), 
+				tempData.dialogue [myDialogueChoice], style);
 		}
 	}
 
@@ -179,6 +188,7 @@ public class NPCController : MonoBehaviour
 			if (Input.GetKeyDown (KeyCode.E))
 			{
 				myIsTalking = true;
+				myIsFirstTalk = true;	
 			}
 		}
 	}
@@ -189,6 +199,7 @@ public class NPCController : MonoBehaviour
 		{
 			myIsTalking = false;
 			GUI.enabled = false;
+			myIsFirstTalk = true;	
 		}
 	}
 

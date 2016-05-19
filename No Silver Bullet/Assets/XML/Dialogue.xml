@@ -1,140 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Dialogues>
     <Characters>
-	<!-- START Act1 -->
-		<Character name = "QuestGiver1"> 
+		<Character name = "NPC"> 
 			<Dialogue>
-				<Text>I've tried to keep you alive during these two weeks, but I almost think I made you stronger.</Text>
-				<Text>Can you please help to cleanse the village, for every day more and more villagers turn to zombie.</Text>
+				<Text>I used to be a hero like you until I took a silver bullet to the knee</Text>
+				<Text>Do you think that you are prepared?</Text>
+				<Text>Rise and shine hero. Rise and Shine.</Text>
+				<Text>You need to construct additional silver bullets.</Text>
+				<Text>All your silver bullets are belong to us</Text>
+				<Text>Your silver bullet is in another castle</Text>
+				<Text>Your silver bullet is a lie!</Text>
+				<Text>Do you have a silver bullet in your pants or are you just happy to see me?</Text>
+				<Text>I am here to kick ass and shoot silver bullets, but I am all out of silver bullets</Text>
+				<Text>Well excuuuuuuuse me, Hero!</Text>
 			</Dialogue>
 		</Character>
-		
-		<Character name = "ScrollQuest1">
-			<Dialogue>
-				<Text>Now finally our army has reached Tetor Empire. Destroy the cities first and then the woods.</Text>
-				<Text>Corrupt the waters and spread the werewolf disease. Destroy their alchemy lab in on of the village houses to prevent them from making antidotes</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "AlchemyMan">
-			<Dialogue>
-				<Text>They destroyed the alchemy set, or else I have the solution for the werewolf disease. The first part you need is one demon ghost vial.</Text>
-				<Text>To keep, moving I'll have to ask you to go out to find my friend Eric in the woods, he will have more answers on what happened to your lover.</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Eric">
-			<Dialogue>
-				<Text>You found me, I've been lost here since the evil forces attacked us. </Text>
-				<Text>All I know is that everyone that gets kidnapped will be turned werewolves and all others will be either killed or devoured by demons or zombies or whatever is out here in the woods.</Text>
-				<Text>I know that there is a cure and I know that there is a demon ghost now ruling this part of the world, I think he is impossible to kill.</Text>
-				<Text>But I know a wizard that maybe can help you, but you have to prove yourself first.</Text>
-			</Dialogue>
-		</Character>
-		
-		<!-- Still being used? -->
-		<Character name = "Wizard">
-			<Dialogue>
-			
-				<Text>I can see you there girl, and I can see the despair in your eyes just as in many eyes the last weeks.</Text>
-				<Text>I want to help you in your quest to free your lover from the disease and I know where you can find the first part to your antidote.</Text>
-				<Text>But even if I told you and I helped you I want you to help me restore the bridge to "act2 namn". They have been struck much worse and there you can also find a part of your antidote.</Text>
-				<Text>To help me build the bridge I want you to collect my missing builders, Collect a stack of wood they piled up just up north in the small woods. </Text>
-			</Dialogue>
-		</Character>
-	  
-		<!-- END Act1 -->
-		
-		<!-- START Act2 -->
-		<Character name = "WizardAct2">
-			<Dialogue>
-				<Text>Two of the 3 lakes has been drought and the last one the big one in the middle of the land is now being corrupted and soon there will be no more Pure oasis water.</Text>
-				<!-- INSERT QUEST TEXT HERE -->
-				<Text>Ayy lmao fam</Text>
-			</Dialogue>
-		</Character>
-		<Character name = "WizardWifeAct2">
-			<Dialogue>
-				<Text>Hmm, yes, my husband send me a letter with our crow and told me that you are coming. He said you proved yourself to him, but for me it's not good enough.</Text>
-				<!-- INSERT QUEST TEXT HERE VI VILL INTE BACKTRACKA TILL ACT 1 RITE?-->
-				<Text>Ayy lmao fam</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Blacksmith Uldu">
-			<Dialogue>
-				<Text>So you've rescued me now. Thank you, you can buy anything you want from me.</Text>
-				<Text> This strange wizard knew I was here for a long time and did not send anyone until now. I think he is mad at me for giving my secret pie recepie to his wife and not him.  </Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Akram">
-			<Dialogue>
-				<Text>Ok you found me, I've been hiding as a disguised zombie here for weeks when the portal master decides to invade our village he won't kill me. </Text>
-				<Text>But I don't think I look a lot like a zombie anymore, I need some more skin.</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Hilda">
-			<Dialogue>
-				<Text>The friggin Zombie dog ate all my sheeps.  And I planned for lambracks this evening. Please after you slay the dog, come back to me with his body and the village will feast on his meat instead.</Text>
-			</Dialogue>
-		</Character>
-		<!-- END Act2 -->
-		
-		<!-- START Act3 -->
-		<Character name = "Act3QuestDude">
-			<Dialogue>
-				<Text>You need to go north and find the cave entrance, hurry up before it's too late!</Text>
-			</Dialogue>
-		</Character>
-		<!-- TODO: Act3 wat do? -->
-		
-		<!-- END Act3 -->
-		
-		<!-- START Act4 -->
-		<Character name = "Lamme">
-			<Dialogue>
-				<Text>Me as hunter have a hard time hunting here alone, all the animals not corrupted is hiding from the corrupted ones and I'm forced to eat Pershas asparagus soup. </Text>
-				<Text>Please help me cleanse the lands from corrupted animals.</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Maya">
-			<Dialogue>
-				<Text>We've heard your story and we are also fighting for your love. I wanted you to have the best weapon for this moment for free</Text>
-				<Text>but in the last week a foul monster stole it from us during night. I think that it took it to his cave. Search the south-east corner, our hunter tracked the beast there.</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Minna">
-			<Dialogue>
-				<Text>I've held the grounds here for many weeks now. But this morning I got hurt when cooking the foul asparagus soup.</Text>
-				<Text>Well, we need someone to make my work so I'm happy you came here. If you make it I will bless you with my armor since I don't need it when I'm hurt..</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Persha">
-			<Dialogue>
-				<Text>I've been trying to sell some things here now for some weeks but insead these people see me as a warrior. </Text>
-				<Text>I really need to get out of here and you are my only hope. Well, to get out of here is quite hard.</Text>
-				<Text>But I saw some nice mushrooms in the corrupt forrest. Bring me some mushrooms to make some tea for myself</Text>
-			</Dialogue>
-		</Character>
-		
-		<Character name = "Giliah">
-			<Dialogue>
-				<Text>Can you please find my friends, the last we heard from them was summoning the 4 fires in middle of the lands.</Text>
-			</Dialogue>
-		</Character>
-
-		<Character name = "Alchemist">
-			<Dialogue>
-				<Text>The keywatcher could be anywhere on the map right now. Go fight him, get the key and kill Fernis. This is your time to shine.</Text>
-			</Dialogue>
-		</Character>
-		
-		<!-- END Act3 -->
     </Characters>
 	
 	
