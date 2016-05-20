@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: f3668808f374637499c5e820ea8d99ab
+timeCreated: 1461688249
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RoundShape
+    21300002: buttons1_1
+    21300004: buttons1_2
+    21300006: buttons1_3
+    21300008: NewGame
+    21300010: Exit
+    21300012: buttons1_6
+    21300014: buttons1_7
+    21300016: LeftArrow
+    21300018: RightArrow
+    21300020: BlockShape
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RoundShape
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 234
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 31}
+        - {x: -20, y: 29}
+        - {x: -29, y: 16}
+        - {x: -29, y: -20}
+        - {x: -18, y: -31}
+        - {x: 19, y: -31}
+        - {x: 29, y: -24}
+        - {x: 29, y: 21}
+        - {x: 25, y: 31}
+    - name: buttons1_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 229
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 31.5}
+        - {x: -29, y: -31.5}
+        - {x: 29, y: -31.5}
+        - {x: 29, y: 31.5}
+    - name: buttons1_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 227
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 37}
+        - {x: -5, y: 37}
+        - {x: -33, y: 17}
+        - {x: -33, y: -18}
+        - {x: -10, y: -37}
+        - {x: 14, y: -37}
+        - {x: 33, y: -14}
+        - {x: 33, y: 6}
+        - {x: 31, y: 11}
+    - name: buttons1_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 232
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 35}
+        - {x: -32, y: 28}
+        - {x: -32, y: -19}
+        - {x: -22, y: -35}
+        - {x: 18, y: -35}
+        - {x: 32, y: -21}
+        - {x: 32, y: 30}
+        - {x: 19, y: 35}
+    - name: buttons1_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 45
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 35}
+        - {x: -19, y: 14}
+        - {x: -19, y: -5}
+        - {x: 15, y: -35}
+        - {x: 19, y: -35}
+        - {x: 19, y: 35}
+    - name: buttons1_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 46
+        width: 38
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 33.5}
+        - {x: -19, y: -33.5}
+        - {x: -9, y: -33.5}
+        - {x: 19, y: -7.5}
+        - {x: 19, y: 8.5}
+        - {x: -4, y: 33.5}
+    - name: LeftArrow
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 37
+        width: 82
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 34}
+        - {x: -41, y: 14}
+        - {x: -41, y: -3}
+        - {x: -6, y: -34}
+        - {x: 33, y: -34}
+        - {x: 41, y: -21}
+        - {x: 41, y: 32}
+        - {x: 31, y: 34}
+    - name: RightArrow
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 38
+        width: 81
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 33.5}
+        - {x: -40.5, y: 19.5}
+        - {x: -40.5, y: -20.5}
+        - {x: -10.5, y: -33.5}
+        - {x: 15.5, y: -33.5}
+        - {x: 40.5, y: -4.5}
+        - {x: 40.5, y: 13.5}
+        - {x: 17.5, y: 33.5}
+    - name: BlockShape
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 50
+        width: 77
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 31.5}
+        - {x: -38.5, y: 25.5}
+        - {x: -38.5, y: -17.5}
+        - {x: -31.5, y: -31.5}
+        - {x: 28.5, y: -31.5}
+        - {x: 38.5, y: -15.5}
+        - {x: 38.5, y: 30.5}
+        - {x: 29.5, y: 31.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

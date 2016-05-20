@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: bc0b97bba56b72049a58605db2b46c9a
+timeCreated: 1459872694
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DemonLeft01
+    21300002: DemonLeft02
+    21300004: DemonLeft03
+    21300006: DemonLeft04
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DemonLeft01
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -10, y: 11}
+        - {x: -11, y: 8}
+        - {x: -11, y: -15}
+        - {x: 11, y: -15}
+        - {x: 12, y: -12}
+        - {x: 12, y: 16}
+    - name: DemonLeft02
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -9}
+        - {x: -8, y: -15}
+        - {x: 6, y: -15}
+        - {x: 8, y: -14}
+        - {x: 12, y: -10}
+        - {x: 12, y: 16}
+        - {x: -9, y: 16}
+    - name: DemonLeft03
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -9, y: 11}
+        - {x: -11, y: -1}
+        - {x: -11, y: -15}
+        - {x: 12, y: -15}
+        - {x: 14, y: -12}
+        - {x: 14, y: 4}
+        - {x: 12, y: 16}
+    - name: DemonLeft04
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -9, y: 12}
+        - {x: -9, y: -15}
+        - {x: 5, y: -15}
+        - {x: 8, y: -14}
+        - {x: 12, y: -8}
+        - {x: 12, y: 16}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

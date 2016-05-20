@@ -1,0 +1,69 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\TiledSharp.dll (this message is harmless)
+Loading C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\TiledSharp.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\System.Xml.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initialized touch support.
+UnloadTime: 0.511230 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.001583 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 200.
+Total: 0.175613 ms (FindLiveObjects: 0.023715 ms CreateObjectMapping: 0.022514 ms MarkObjects: 0.119477 ms  DeleteObjects: 0.009005 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.545452 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 259.
+Total: 0.205932 ms (FindLiveObjects: 0.017711 ms CreateObjectMapping: 0.019812 ms MarkObjects: 0.163005 ms  DeleteObjects: 0.004803 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.378544 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 745.
+Total: 0.391152 ms (FindLiveObjects: 0.027617 ms CreateObjectMapping: 0.068144 ms MarkObjects: 0.285784 ms  DeleteObjects: 0.009005 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.442785 ms
+Platform assembly: C:\Users\Andy\Desktop\git\No-Silver-Bullet\No Silver Bullet\Build\No Silver Bullet_Data\Managed\System.Xml.Linq.dll (this message is harmless)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 46458.
+Total: 10.843001 ms (FindLiveObjects: 1.642060 ms CreateObjectMapping: 0.774199 ms MarkObjects: 8.368203 ms  DeleteObjects: 0.057637 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.954916 ms
+
+Unloading 5786 unused Assets to reduce memory usage. Loaded Objects now: 772.
+Total: 3.093197 ms (FindLiveObjects: 0.474606 ms CreateObjectMapping: 0.258466 ms MarkObjects: 0.502524 ms  DeleteObjects: 1.856698 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.400158 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 46485.
+Total: 10.417926 ms (FindLiveObjects: 1.524684 ms CreateObjectMapping: 0.566465 ms MarkObjects: 8.277244 ms  DeleteObjects: 0.048931 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: df8 -> priority: 1 
+  Thread -> id: 3220 -> priority: 1 

@@ -1,0 +1,1075 @@
+fileFormatVersion: 2
+guid: 2f7d97e6b71107b4485615fd1b70a843
+timeCreated: 1460030516
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WolfEnemyRight01
+    21300002: WolfEnemyRight02
+    21300004: WolfEnemyRight03
+    21300006: WolfEnemyRight04
+    21300008: WolfEnemyRight05
+    21300010: WolfEnemyLeft01
+    21300012: WolfEnemyLeft02
+    21300014: WolfEnemyLeft03
+    21300016: WolfEnemyLeft04
+    21300018: WolfEnemyLeft05
+    21300020: WolfEnemyDown01
+    21300022: WolfEnemyDown02
+    21300024: WolfEnemyDown03
+    21300026: WolfEnemyDown04
+    21300028: WolfEnemyForward01
+    21300030: WolfEnemyForward02
+    21300032: WolfEnemyForward03
+    21300034: WolfEnemyForward04
+    21300036: WolfEnemyDeadRight01
+    21300038: WolfEnemyDeadRight02
+    21300040: WolfEnemyDeadRight03
+    21300042: WolfEnemyDeadRight04
+    21300044: WolfEnemyDeadLeft01
+    21300046: WolfEnemyDeadLeft02
+    21300048: WolfEnemyDeadLeft03
+    21300050: WolfEnemyDeadLeft04
+    21300052: WolfEnemyAttackLeft02
+    21300054: WolfEnemyAttackLeft03
+    21300056: WolfEnemyAttackLeft01
+    21300058: WolfEnemyAttackLeft04
+    21300060: WolfEnemyAttackLeft05
+    21300062: WolfEnemyAttackRight01
+    21300064: WolfEnemyAttackRight02
+    21300066: WolfEnemyAttackRight03
+    21300068: WolfEnemyAttackRight04
+    21300070: WolfEnemyAttackRight05
+    21300072: WolfEnemyRunRight01
+    21300074: WolfEnemyRunRight02
+    21300076: WolfEnemyRunRight03
+    21300078: WolfEnemyRunRight04
+    21300080: WolfEnemyRunRight05
+    21300082: WolfEnemyRunLeft01
+    21300084: WolfEnemyRunLeft02
+    21300086: WolfEnemyRunLeft03
+    21300088: WolfEnemyRunLeft04
+    21300090: WolfEnemyRunLeft05
+    21300092: WolfEnemyRunDown01
+    21300094: WolfEnemyRunDown02
+    21300096: WolfEnemyRunDown03
+    21300098: WolfEnemyRunDown04
+    21300100: WolfEnemyRunDown05
+    21300102: WolfEnemyRunForward01
+    21300104: WolfEnemyRunForward02
+    21300106: WolfEnemyRunForward03
+    21300108: WolfEnemyRunForward04
+    21300110: WolfEnemyRunForward05
+    21300112: WolfEnemyAttackDown01
+    21300114: WolfEnemyAttackDown02
+    21300116: WolfEnemyAttackDown03
+    21300118: WolfEnemyAttackDown04
+    21300120: WolfEnemyAttackDown05
+    21300122: WolfEnemyAttackForward01
+    21300124: WolfEnemyAttackForward02
+    21300126: WolfEnemyAttackForward03
+    21300128: WolfEnemyAttackForward04
+    21300130: WolfEnemyAttackForward05
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WolfEnemyRight01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: -16}
+        - {x: 31.5, y: -4}
+        - {x: 31.5, y: 10}
+        - {x: 29.5, y: 16}
+        - {x: -4.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -4}
+        - {x: -29.5, y: -7}
+        - {x: -17.5, y: -16}
+        - {x: -0.5, y: -16}
+        - {x: -0.5, y: -13}
+        - {x: -3.5, y: -10}
+        - {x: 5.5, y: -16}
+    - name: WolfEnemyRight02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -16}
+        - {x: 29, y: -16}
+        - {x: 32, y: -7}
+        - {x: 32, y: 16}
+        - {x: -14, y: 16}
+        - {x: -32, y: 11}
+        - {x: -32, y: -8}
+        - {x: -26, y: -16}
+        - {x: 13, y: -16}
+        - {x: 13, y: -13}
+        - {x: 13, y: -15}
+    - name: WolfEnemyRight03
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -28, y: 13}
+        - {x: -32, y: 4}
+        - {x: -32, y: -3}
+        - {x: -28, y: -3}
+        - {x: -27, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 14}
+        - {x: 31, y: 16}
+    - name: WolfEnemyRight04
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 16}
+        - {x: -32, y: 2}
+        - {x: -32, y: -14}
+        - {x: -30, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 11}
+        - {x: 27, y: 16}
+    - name: WolfEnemyRight05
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -32, y: 8}
+        - {x: -32, y: -9}
+        - {x: -22, y: -16}
+        - {x: 23, y: -16}
+        - {x: 32, y: -6}
+        - {x: 32, y: 9}
+        - {x: 28, y: 16}
+    - name: WolfEnemyLeft01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 16}
+        - {x: -27.5, y: 16}
+        - {x: -31.5, y: 7}
+        - {x: -31.5, y: -7}
+        - {x: -26.5, y: -16}
+        - {x: 25.5, y: -16}
+        - {x: 31.5, y: -10}
+        - {x: 31.5, y: 4}
+        - {x: 23.5, y: 15}
+    - name: WolfEnemyLeft02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 16}
+        - {x: -32, y: 13}
+        - {x: -32, y: -16}
+        - {x: 21, y: -16}
+        - {x: 32, y: -8}
+        - {x: 32, y: 8}
+        - {x: 7, y: 16}
+    - name: WolfEnemyLeft03
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 14}
+        - {x: -2, y: 16}
+        - {x: -28, y: 16}
+        - {x: -32, y: 9}
+        - {x: -32, y: -6}
+        - {x: -24, y: -16}
+        - {x: 27, y: -16}
+        - {x: 32, y: -4}
+        - {x: 32, y: 4}
+        - {x: 25, y: 9}
+    - name: WolfEnemyLeft04
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: 20, y: -16}
+        - {x: 32, y: -3}
+        - {x: 32, y: 3}
+        - {x: 21, y: 16}
+    - name: WolfEnemyLeft05
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 16}
+        - {x: -32, y: 8}
+        - {x: -32, y: -12}
+        - {x: -31, y: -16}
+        - {x: 30, y: -16}
+        - {x: 32, y: -10}
+        - {x: 32, y: 4}
+        - {x: 17, y: 16}
+    - name: WolfEnemyDown01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 32}
+        - {x: -3, y: 28}
+        - {x: -13, y: 14}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 16}
+        - {x: 5, y: 32}
+    - name: WolfEnemyDown02
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 32}
+        - {x: -13, y: 21}
+        - {x: -13, y: -29}
+        - {x: 14, y: -29}
+        - {x: 14, y: 24}
+        - {x: 5, y: 32}
+    - name: WolfEnemyDown03
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 32}
+        - {x: -12, y: 28}
+        - {x: -13, y: 21}
+        - {x: -13, y: -30}
+        - {x: -3, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 15}
+        - {x: 4, y: 32}
+    - name: WolfEnemyDown04
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 32}
+        - {x: -13, y: 17}
+        - {x: -13, y: -29}
+        - {x: 14, y: -29}
+        - {x: 14, y: 15}
+        - {x: 6, y: 32}
+    - name: WolfEnemyForward01
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 28}
+        - {x: -13, y: 14}
+        - {x: -13, y: -30}
+        - {x: -9, y: -32}
+        - {x: -1, y: -32}
+        - {x: 14, y: -24}
+        - {x: 14, y: 20}
+        - {x: 4, y: 28}
+    - name: WolfEnemyForward02
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 26}
+        - {x: -13, y: 11}
+        - {x: -13, y: -31}
+        - {x: 13, y: -31}
+        - {x: 14, y: -30}
+        - {x: 14, y: 10}
+        - {x: 7, y: 26}
+    - name: WolfEnemyForward03
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 26}
+        - {x: 2, y: 28}
+        - {x: -4, y: 28}
+        - {x: -13, y: 18}
+        - {x: -13, y: -22}
+        - {x: 1, y: -31}
+        - {x: 7, y: -32}
+        - {x: 12, y: -32}
+        - {x: 14, y: -28}
+        - {x: 14, y: 12}
+    - name: WolfEnemyForward04
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 26}
+        - {x: -13, y: 19}
+        - {x: -13, y: -31}
+        - {x: 14, y: -31}
+        - {x: 14, y: 11}
+        - {x: 5, y: 26}
+    - name: WolfEnemyDeadRight01
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 353
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadRight02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadRight03
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 352
+        width: 61
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadRight04
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 352
+        width: 60
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadLeft01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 16}
+        - {x: -27.5, y: 16}
+        - {x: -31.5, y: 13}
+        - {x: -31.5, y: -12}
+        - {x: -30.5, y: -16}
+        - {x: 24.5, y: -16}
+        - {x: 31.5, y: -9}
+        - {x: 31.5, y: 4}
+        - {x: 23.5, y: 15}
+    - name: WolfEnemyDeadLeft02
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 160
+        width: 63
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadLeft03
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 160
+        width: 61
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyDeadLeft04
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 160
+        width: 60
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackLeft02
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackLeft03
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 16}
+        - {x: -31.5, y: -4}
+        - {x: -20.5, y: -16}
+        - {x: 31.5, y: -16}
+        - {x: 31.5, y: 15}
+        - {x: 27.5, y: 16}
+    - name: WolfEnemyAttackLeft01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackLeft04
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackLeft05
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 0
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackRight01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackRight02
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 192
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackRight03
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -8}
+        - {x: 32, y: -6}
+        - {x: 32, y: 16}
+        - {x: -28, y: 16}
+        - {x: -32, y: 12}
+        - {x: -32, y: -16}
+        - {x: -10, y: -16}
+        - {x: -10, y: -12}
+        - {x: -4, y: -16}
+        - {x: 19, y: -16}
+    - name: WolfEnemyAttackRight04
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 65
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackRight05
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 192
+        width: 61
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunRight01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 222
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -16}
+        - {x: 23.5, y: -13}
+        - {x: 16.5, y: -13}
+        - {x: 15.5, y: -16}
+      - - {x: -18.5, y: 16}
+        - {x: -30.5, y: 12}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -8}
+        - {x: -8.5, y: -16}
+        - {x: 14.5, y: -16}
+        - {x: 31.5, y: -13}
+        - {x: 31.5, y: 11}
+        - {x: 25.5, y: 16}
+    - name: WolfEnemyRunRight02
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 224
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunRight03
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 16}
+        - {x: -4.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -14}
+        - {x: -26.5, y: -16}
+        - {x: 24.5, y: -16}
+        - {x: 31.5, y: -1}
+    - name: WolfEnemyRunRight04
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 223
+        width: 63
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 16.5}
+        - {x: -31.5, y: 10.5}
+        - {x: -31.5, y: 2.5}
+        - {x: -29.5, y: 0.5}
+        - {x: -26.5, y: 0.5}
+        - {x: -27.5, y: -16.5}
+        - {x: 28.5, y: -16.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 10.5}
+        - {x: 28.5, y: 16.5}
+    - name: WolfEnemyRunRight05
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 224
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 16}
+        - {x: -31.5, y: -16}
+        - {x: 31.5, y: -16}
+        - {x: 31.5, y: 13}
+        - {x: 25.5, y: 16}
+    - name: WolfEnemyRunLeft01
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunLeft02
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 32
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunLeft03
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 30
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 17}
+        - {x: -31.5, y: -17}
+        - {x: 24.5, y: -17}
+        - {x: 31.5, y: -15}
+        - {x: 31.5, y: 8}
+        - {x: 22.5, y: 17}
+    - name: WolfEnemyRunLeft04
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 32
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -7}
+        - {x: -26.5, y: -16}
+        - {x: 25.5, y: -16}
+        - {x: 31.5, y: 0}
+        - {x: 31.5, y: 9}
+        - {x: 20.5, y: 16}
+    - name: WolfEnemyRunLeft05
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 32
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 13}
+        - {x: -3.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -16}
+        - {x: 31.5, y: -16}
+    - name: WolfEnemyRunDown01
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 133
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunDown02
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 131
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunDown03
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunDown04
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunDown05
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 130
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunForward01
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 131
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunForward02
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 130
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunForward03
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 129
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunForward04
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 132
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyRunForward05
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 131
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackDown01
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackDown02
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackDown03
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackDown04
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 65
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackDown05
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 65
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackForward01
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 68
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackForward02
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 68
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackForward03
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 67
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackForward04
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 68
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: WolfEnemyAttackForward05
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 68
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

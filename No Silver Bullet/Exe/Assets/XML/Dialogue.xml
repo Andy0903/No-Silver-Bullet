@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogues>
+    <Characters>
+		<Character name = "NPC"> 
+			<Dialogue>
+				<Text>I used to be a hero like you until I took a silver bullet to the knee</Text>
+				<Text>Do you think that you are prepared?</Text>
+				<Text>Rise and shine hero. Rise and Shine.</Text>
+				<Text>You need to construct additional silver bullets.</Text>
+				<Text>All your silver bullets are belong to us</Text>
+				<Text>Your silver bullet is in another castle</Text>
+				<Text>Your silver bullet is a lie!</Text>
+				<Text>Do you have a silver bullet in your pants or are you just happy to see me?</Text>
+				<Text>I am here to kick ass and shoot silver bullets, but I am all out of silver bullets</Text>
+				<Text>Well excuuuuuuuse me, Hero!</Text>
+			</Dialogue>
+		</Character>
+    </Characters>
+	
+	
+
+</Dialogues>

@@ -1,0 +1,1017 @@
+fileFormatVersion: 2
+guid: 917a6275fde77ff4f86944ca966e8602
+timeCreated: 1460122034
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Environment_2
+    21300002: Environment_3
+    21300004: Environment_4
+    21300006: Environment_5
+    21300008: Environment_6
+    21300010: Environment_10
+    21300012: Environment_11
+    21300014: Environment_12
+    21300016: Environment_13
+    21300018: Environment_14
+    21300020: Environment_18
+    21300022: Environment_19
+    21300024: Environment_20
+    21300026: Environment_21
+    21300028: Environment_22
+    21300030: Environment_26
+    21300032: Environment_27
+    21300034: Environment_28
+    21300036: Environment_29
+    21300038: Environment_30
+    21300040: Environment_34
+    21300042: Environment_35
+    21300044: Environment_36
+    21300046: Environment_37
+    21300048: Environment_38
+    21300050: Environment_42
+    21300052: Environment_43
+    21300054: Environment_44
+    21300056: Environment_45
+    21300058: Environment_46
+    21300060: Environment_0
+    21300062: Environment_1
+    21300064: Environment_8
+    21300066: Environment_9
+    21300068: Environment_16
+    21300070: Environment_17
+    21300072: Environment_24
+    21300074: Environment_25
+    21300076: Environment_32
+    21300078: Environment_33
+    21300080: Environment_39
+    21300082: Environment_40
+    21300084: Environment_41
+    21300086: Environment_47
+    21300088: Environment_48
+    21300090: Environment_49
+    21300092: Environment_50
+    21300094: Environment_51
+    21300096: Environment_52
+    21300098: Environment_53
+    21300100: Environment_54
+    21300102: Environment_55
+    21300104: Environment_56
+    21300106: Environment_57
+    21300108: Environment_58
+    21300110: Environment_59
+    21300112: Environment_60
+    21300114: Environment_61
+    21300116: Environment_62
+    21300118: Environment_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 34
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Environment_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_30
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_36
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_39
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_42
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_45
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_46
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_54
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_55
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_57
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_58
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_62
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: Environment_63
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

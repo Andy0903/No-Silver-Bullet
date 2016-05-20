@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 397aa0a23dbbaea49967577fc37c4b92
+timeCreated: 1463691522
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ZombieDown0
+    21300002: ZombieDown1
+    21300004: ZombieDown2
+    21300006: SkeletonDown0
+    21300008: SkeletonDown1
+    21300010: SkeletonDown2
+    21300012: ZombieLeft0
+    21300014: ZombieLeft1
+    21300016: ZombieLeft2
+    21300018: SkeletonLeft0
+    21300020: SkeletonLeft1
+    21300022: SkeletonLeft2
+    21300024: ZombieRight0
+    21300026: ZombieRight1
+    21300028: ZombieRight2
+    21300030: SkeletonRight0
+    21300032: SkeletonRight1
+    21300034: SkeletonRight2
+    21300036: ZombieUp0
+    21300038: ZombieUp1
+    21300040: ZombieUp2
+    21300042: SkeletonUp0
+    21300044: SkeletonUp1
+    21300046: SkeletonUp2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ZombieDown0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieDown1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 193
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieDown2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonDown0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonDown1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 193
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonDown2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieLeft0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieLeft1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 129
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieLeft2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 129
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonLeft0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 129
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonLeft1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 129
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonLeft2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 129
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieRight0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieRight1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 65
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieRight2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 65
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonRight0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 65
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonRight1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 65
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonRight2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 65
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieUp0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieUp1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ZombieUp2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonUp0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonUp1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SkeletonUp2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

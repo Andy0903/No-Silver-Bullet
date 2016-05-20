@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: ff8c6ee5ee82a574ca23b1b738955a69
+timeCreated: 1461089107
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: StoneHeights2_0
+    21300002: StoneHeights2_1
+    21300004: StoneHeights2_2
+    21300006: StoneHeights2_3
+    21300008: StoneHeights2_4
+    21300010: StoneHeights2_5
+    21300012: StoneHeights2_6
+    21300014: StoneHeights2_7
+    21300016: StoneHeights2_8
+    21300018: StoneHeights2_9
+    21300020: StoneHeights2_10
+    21300022: StoneHeights2_11
+    21300024: StoneHeights2_12
+    21300026: StoneHeights2_13
+    21300028: StoneHeights2_14
+    21300030: StoneHeights2_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 34
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: StoneHeights2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    - name: StoneHeights2_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 17}
+        - {x: -17, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
